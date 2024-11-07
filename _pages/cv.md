@@ -11,35 +11,34 @@ redirect_from:
 
 Education
 ======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012
+
+* M.S. in Astrophysics, Ludwig-Maximilians-Universität München, April 2022 - August 2024
+* B.S. in Physics, Universität Duisburg-Essen, October 2018 - March 2022
 
 Work experience
 ======
-* Spring 2024: Academic Pages Collaborator
-  * Github University
-  * Duties includes: Updates and improvements to template
-  * Supervisor: The Users
+* April 2023 - Present: Research Assistant
+  * University Observatory Munich
+  * Duties includes: Algorithm Development, Scientific Writing
+  * Supervisor: Prof. Dr. Joseph Mohr
 
-* Fall 2015: Research Assistant
-  * Github University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
+* April 2021 - September 2021: Research Assistant
+  * Universität Duisburg-Essen
+  * Duties included: Experimental Instruments Design
+  * Supervisor: Prof. Dr. Gerhard Wurm
 
-* Summer 2015: Research Assistant
-  * Github University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
   
 Skills
 ======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+* Astrophysics
+* Statistics
+* Python
+  * NumPy
+  * healpy
+  * scikit-learn
+  * TensorFlow
+* LaTeX
+* CAD
 
 Publications
 ======
