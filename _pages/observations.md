@@ -30,8 +30,7 @@ I participated in both observing and image processing for these images, using th
   </a>
   <figcaption>
     <h3>M33 — Triangulum Galaxy</h3>
-    <div class="gallery-meta"><span><strong>Telescope:</strong> 43 cm telescope, Wendelstein Observatory.</span>
-      <span><strong>My contribution:</strong> Observing and image processing.</span></div>
+    <div class="gallery-meta"><span><strong>Telescope:</strong> 43 cm telescope, Wendelstein Observatory.</span></div>
     
     <a class="gallery-original" href="{{ '/images/observations/m33-43cm.png' | relative_url }}">View full-resolution image</a>
   </figcaption>
@@ -44,8 +43,7 @@ I participated in both observing and image processing for these images, using th
   </a>
   <figcaption>
     <h3>M42 — Orion Nebula</h3>
-    <div class="gallery-meta"><span><strong>Telescope:</strong> 2 m Fraunhofer telescope, Wendelstein Observatory.</span>
-      <span><strong>My contribution:</strong> Observing and image processing.</span></div>
+    <div class="gallery-meta"><span><strong>Telescope:</strong> 2 m Fraunhofer telescope, Wendelstein Observatory.</span></div>
     
     <a class="gallery-original" href="{{ '/images/observations/m42-fraunhofer.jpg' | relative_url }}">View full-resolution image</a>
   </figcaption>
@@ -58,10 +56,20 @@ I participated in both observing and image processing for these images, using th
   </a>
   <figcaption>
     <h3>M33 — Triangulum Galaxy</h3>
-    <div class="gallery-meta"><span><strong>Telescope:</strong> 2 m Fraunhofer telescope, Wendelstein Observatory.</span>
-      <span><strong>My contribution:</strong> Observing and image processing.</span></div>
+    <div class="gallery-meta"><span><strong>Telescope:</strong> 2 m Fraunhofer telescope, Wendelstein Observatory.</span></div>
     
     <a class="gallery-original" href="{{ '/images/observations/m33-fraunhofer.jpg' | relative_url }}">View full-resolution image</a>
+  </figcaption>
+</figure>
+<figure>
+  <a class="gallery-photo" href="{{ '/images/observations/dumbbell-43cm.png' | relative_url }}">
+    <img data-src="{{ '/images/observations/dumbbell-43cm.png' | relative_url }}" alt="Dumbbell Nebula" width="1500" height="1500" loading="lazy" decoding="async">
+    <noscript><img src="{{ '/images/observations/dumbbell-43cm.png' | relative_url }}" alt="Dumbbell Nebula" width="1500" height="1500" loading="lazy"></noscript>
+  </a>
+  <figcaption>
+    <h3>Dumbbell Nebula</h3>
+    <div class="gallery-meta"><span><strong>Telescope:</strong> 43 cm telescope, Wendelstein Observatory.</span></div>
+    <a class="gallery-original" href="{{ '/images/observations/dumbbell-43cm.png' | relative_url }}">View full-resolution image</a>
   </figcaption>
 </figure>
 </div>
