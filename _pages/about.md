@@ -30,6 +30,12 @@ Today, my projects explore adaptive optics, wavefront sensing, astrophotonics an
 
 [View all selected projects]({{ '/projects/' | relative_url }}) · [GitHub](https://github.com/xhvoid)
 
+## Observational astronomy
+
+I have participated in observing and image processing at Wendelstein Observatory, using the 43 cm telescope and the 2 m Fraunhofer telescope. My image gallery includes the Triangulum Galaxy (M33) and the Orion Nebula (M42).
+
+[View my observing gallery]({{ '/observations/' | relative_url }})
+
 ## Beyond the lab
 
 Astronomy, especially observation, is a strong personal interest. Outside my studies, I enjoy mountaineering.

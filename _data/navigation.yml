@@ -5,5 +5,7 @@ main:
     url: /experience/
   - title: "Projects"
     url: /projects/
+  - title: "Observations"
+    url: /observations/
   - title: "GitHub"
     url: https://github.com/xhvoid
