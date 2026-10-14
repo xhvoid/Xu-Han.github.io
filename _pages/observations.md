@@ -20,7 +20,7 @@ This gallery brings together my participation in observing and image processing 
 
 ## Wendelstein Observatory
 
-I participated in both observing and image processing for these images, using the observatory's 43 cm telescope and 2 m Fraunhofer telescope.
+I participated in both observing and image processing for these images, using the observatory's 43 cm telescope.
 
 <div class="photo-gallery">
 <figure>
@@ -37,28 +37,27 @@ I participated in both observing and image processing for these images, using th
 </figure>
 
 <figure>
-  <a class="gallery-photo" href="{{ '/images/observations/m42-fraunhofer.jpg' | relative_url }}">
-    <img data-src="{{ '/images/observations/m42-fraunhofer.jpg' | relative_url }}" alt="M42 — Orion Nebula" width="1846" height="1935" loading="lazy" decoding="async">
-    <noscript><img src="{{ '/images/observations/m42-fraunhofer.jpg' | relative_url }}" alt="M42 — Orion Nebula" width="1846" height="1935" loading="lazy"></noscript>
+  <a class="gallery-photo" href="{{ '/images/observations/m42-43cm.jpg' | relative_url }}">
+    <img data-src="{{ '/images/observations/m42-43cm.jpg' | relative_url }}" alt="M42 — Orion Nebula" width="1846" height="1935" loading="lazy" decoding="async">
+    <noscript><img src="{{ '/images/observations/m42-43cm.jpg' | relative_url }}" alt="M42 — Orion Nebula" width="1846" height="1935" loading="lazy"></noscript>
   </a>
   <figcaption>
     <h3>M42 — Orion Nebula</h3>
-    <div class="gallery-meta"><span><strong>Telescope:</strong> 2 m Fraunhofer telescope, Wendelstein Observatory.</span></div>
+    <div class="gallery-meta"><span><strong>Telescope:</strong> 43 cm telescope, Wendelstein Observatory.</span></div>
     
-    <a class="gallery-original" href="{{ '/images/observations/m42-fraunhofer.jpg' | relative_url }}">View full-resolution image</a>
+    <a class="gallery-original" href="{{ '/images/observations/m42-43cm.jpg' | relative_url }}">View full-resolution image</a>
   </figcaption>
 </figure>
 
 <figure>
-  <a class="gallery-photo" href="{{ '/images/observations/m33-fraunhofer.jpg' | relative_url }}">
-    <img data-src="{{ '/images/observations/m33-fraunhofer.jpg' | relative_url }}" alt="M33 — Triangulum Galaxy" width="1838" height="1933" loading="lazy" decoding="async">
-    <noscript><img src="{{ '/images/observations/m33-fraunhofer.jpg' | relative_url }}" alt="M33 — Triangulum Galaxy" width="1838" height="1933" loading="lazy"></noscript>
+  <a class="gallery-photo" href="{{ '/images/observations/bubble-43cm.webp' | relative_url }}">
+    <img data-src="{{ '/images/observations/bubble-43cm.webp' | relative_url }}" alt="Bubble Nebula" width="1440" height="1287" loading="lazy" decoding="async">
+    <noscript><img src="{{ '/images/observations/bubble-43cm.webp' | relative_url }}" alt="Bubble Nebula" width="1440" height="1287" loading="lazy"></noscript>
   </a>
   <figcaption>
-    <h3>M33 — Triangulum Galaxy</h3>
-    <div class="gallery-meta"><span><strong>Telescope:</strong> 2 m Fraunhofer telescope, Wendelstein Observatory.</span></div>
-    
-    <a class="gallery-original" href="{{ '/images/observations/m33-fraunhofer.jpg' | relative_url }}">View full-resolution image</a>
+    <h3>Bubble Nebula</h3>
+    <div class="gallery-meta"><span><strong>Telescope:</strong> 43 cm telescope, Wendelstein Observatory.</span></div>
+    <a class="gallery-original" href="{{ '/images/observations/bubble-43cm.webp' | relative_url }}">View full-resolution image</a>
   </figcaption>
 </figure>
 <figure>
