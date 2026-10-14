@@ -32,10 +32,12 @@ Today, my projects explore adaptive optics, wavefront sensing, astrophotonics an
 
 ## Observational astronomy
 
-I have participated in observing and image processing at Wendelstein Observatory, using the 43 cm telescope and the 2 m Fraunhofer telescope. My image gallery includes the Triangulum Galaxy (M33) and the Orion Nebula (M42).
+I have participated in observing and image processing at Wendelstein Observatory, using the 43 cm telescope and the 2 m Fraunhofer telescope. I also practise DSLR astrophotography with a Canon EOS 250D, photographing the Milky Way, Orion and nebulae.
 
 [View my observing gallery]({{ '/observations/' | relative_url }})
 
 ## Beyond the lab
 
-Astronomy, especially observation, is a strong personal interest. Outside my studies, I enjoy mountaineering.
+Outside my studies, I enjoy mountaineering, from snowy alpine ridges to rock routes in the Dolomites.
+
+[View my mountaineering gallery]({{ '/mountaineering/' | relative_url }})

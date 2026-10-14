@@ -1,0 +1,14 @@
+<script>
+(function () {
+  var images = document.querySelectorAll(".photo-gallery img[data-src]");
+  function load(image) { image.src = image.dataset.src; image.removeAttribute("data-src"); }
+  if ("IntersectionObserver" in window) {
+    var observer = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) { if (entry.isIntersecting) { load(entry.target); observer.unobserve(entry.target); } });
+    }, { rootMargin: "120px" });
+    images.forEach(function (image) { observer.observe(image); });
+  } else {
+    images.forEach(load);
+  }
+}());
+</script>
