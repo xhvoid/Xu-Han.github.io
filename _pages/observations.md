@@ -1,17 +1,17 @@
 ---
 permalink: /observations/
 title: "Observational astronomy"
-excerpt: "Observing and image processing at Wendelstein Observatory, alongside personal DSLR astrophotography."
+excerpt: "Observing and image processing at Wendelstein Observatory, alongside personal astrophotography."
 author_profile: true
 ---
 
-Astronomy, especially observation, is a strong personal interest. This gallery brings together my participation in observing and image processing at **Wendelstein Observatory** and my **DSLR astrophotography**.
+Astronomy, especially observation, is a strong personal interest. This gallery brings together my participation in observing and image processing at **Wendelstein Observatory** and my **personal astrophotography**.
 
 {% include photo-gallery-styles.html %}
 
 <nav class="observation-jump" aria-label="Gallery sections">
   <a href="#wendelstein-observatory">Wendelstein Observatory</a>
-  <a href="#dslr-astrophotography">DSLR astrophotography</a>
+  <a href="#personal-astrophotography">Personal astrophotography</a>
 </nav>
 
 ## Wendelstein Observatory
@@ -62,9 +62,9 @@ I participated in both observing and image processing for these images, using th
 </figure>
 </div>
 
-## DSLR astrophotography
+## Personal astrophotography
 
-Images made with my Canon EOS 250D, from wide-field views of the Milky Way and Orion to nebulae photographed at longer focal lengths. Capture settings are listed where available.
+Images made with my Canon EOS 250D and Sony DSC-RX100M6, from wide-field views of the Milky Way and Orion to nebulae and alpine nightscapes. Capture settings are listed where available.
 
 <div class="photo-gallery">
 <figure>
@@ -125,6 +125,22 @@ Images made with my Canon EOS 250D, from wide-field views of the Milky Way and O
       <span><strong>Tracking:</strong> iOptron SkyGuider Pro.</span></div>
     <p class="gallery-note">The Eagle Nebula (M16) is on the right; the Omega Nebula (M17) is on the left.</p>
     <a class="gallery-original" href="{{ '/images/observations/eagle-omega-eos250d.jpg' | relative_url }}">View full-resolution image</a>
+  </figcaption>
+</figure>
+<figure>
+  <a class="gallery-photo" href="{{ '/images/observations/allalingletscher-night-sky.jpg' | relative_url }}">
+    <img data-src="{{ '/images/observations/allalingletscher-night-sky.jpg' | relative_url }}" alt="Night sky above snow-covered mountains over the Allalingletscher, looking south" width="1616" height="1080" loading="lazy" decoding="async">
+    <noscript><img src="{{ '/images/observations/allalingletscher-night-sky.jpg' | relative_url }}" alt="Night sky above snow-covered mountains over the Allalingletscher, looking south" width="1616" height="1080" loading="lazy"></noscript>
+  </a>
+  <figcaption>
+    <h3>Night sky over the Allalingletscher</h3>
+    <div class="gallery-meta"><span><strong>Camera:</strong> Sony DSC-RX100M6.</span>
+      <span><strong>Lens:</strong> 9 mm at f/2.8.</span>
+      <span><strong>Exposure:</strong> 30 s.</span>
+      <span><strong>ISO:</strong> 2000.</span>
+      <span><strong>Date:</strong> 1 November 2024.</span></div>
+    <p class="gallery-note">Looking south over the Allalingletscher in early November.</p>
+    <a class="gallery-original" href="{{ '/images/observations/allalingletscher-night-sky.jpg' | relative_url }}">View full-resolution image</a>
   </figcaption>
 </figure>
 </div>

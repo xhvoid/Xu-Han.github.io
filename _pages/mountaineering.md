@@ -57,6 +57,17 @@ Away from the lab and the night sky, I enjoy mountaineering. These photographs c
     <a class="gallery-original" href="{{ '/images/mountaineering/cima-grande-via-normale.jpg' | relative_url }}">View full-resolution image</a>
   </figcaption>
 </figure>
+<figure>
+  <a class="gallery-photo" href="{{ '/images/mountaineering/allalinhorn-hohlaubgrat.jpg' | relative_url }}">
+    <img data-src="{{ '/images/mountaineering/allalinhorn-hohlaubgrat.jpg' | relative_url }}" alt="A roped climber on snow and rock on the Allalinhorn Hohlaubgrat" width="3024" height="4032" loading="lazy" decoding="async">
+    <noscript><img src="{{ '/images/mountaineering/allalinhorn-hohlaubgrat.jpg' | relative_url }}" alt="A roped climber on snow and rock on the Allalinhorn Hohlaubgrat" width="3024" height="4032" loading="lazy"></noscript>
+  </a>
+  <figcaption>
+    <h3>Allalinhorn — Hohlaubgrat</h3>
+    <p class="gallery-note">A winter ascent of the Hohlaubgrat with Dr. Bo Peng.</p>
+    <a class="gallery-original" href="{{ '/images/mountaineering/allalinhorn-hohlaubgrat.jpg' | relative_url }}">View full-resolution image</a>
+  </figcaption>
+</figure>
 </div>
 
 [Explore my observing and astrophotography gallery]({{ '/observations/' | relative_url }})
