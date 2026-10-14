@@ -164,7 +164,6 @@ exclude:
   - "_pages/archive-layout-with-content.md"
   - "_pages/category-archive.html"
   - "_pages/collection-archive.html"
-  - "_pages/cv.md"
   - "_pages/markdown.md"
   - "_pages/non-menu-page.md"
   - "_pages/page-archive.html"

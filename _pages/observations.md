@@ -1,15 +1,19 @@
 ---
-permalink: /observations/
-title: "Observational astronomy"
-excerpt: "Observing and image processing at Wendelstein Observatory, alongside personal astrophotography."
+permalink: /hobbies/astronomical-photography/
+title: "Astronomical Photography"
+excerpt: "The initial perturbation: looking at the stars, from Wendelstein Observatory to alpine night skies."
 author_profile: true
 ---
 
-Astronomy, especially observation, is a strong personal interest. This gallery brings together my participation in observing and image processing at **Wendelstein Observatory** and my **personal astrophotography**.
+[Hobbies]({{ '/hobbies/' | relative_url }}) / Astronomical Photography
+
+Looking at the stars was the *initial perturbation* that set me on the path towards physics, mountaineering and photonics.
+
+This gallery brings together my participation in observing and image processing at **Wendelstein Observatory** and my **personal astronomical photography**.
 
 {% include photo-gallery-styles.html %}
 
-<nav class="observation-jump" aria-label="Gallery sections">
+<nav class="gallery-jump" aria-label="Gallery sections">
   <a href="#wendelstein-observatory">Wendelstein Observatory</a>
   <a href="#personal-astrophotography">Personal astrophotography</a>
 </nav>
@@ -64,7 +68,7 @@ I participated in both observing and image processing for these images, using th
 
 ## Personal astrophotography
 
-Images made with my Canon EOS 250D and Sony DSC-RX100M6, from wide-field views of the Milky Way and Orion to nebulae and alpine nightscapes. Capture settings are listed where available.
+Images made with my Canon EOS 250D, Sony DSC-RX100M6 and a Xiaomi smartphone, from wide-field views of the Milky Way and Orion to nebulae and alpine nightscapes. Capture settings are listed where available.
 
 <div class="photo-gallery">
 <figure>
@@ -104,7 +108,7 @@ Images made with my Canon EOS 250D and Sony DSC-RX100M6, from wide-field views o
     <h3>Orion</h3>
     <div class="gallery-meta"><span><strong>Camera:</strong> Canon EOS 250D.</span>
       <span><strong>Lens:</strong> 50 mm at f/2.8.</span>
-      <span><strong>Exposure:</strong> 180 × 2 s · 6 min total.</span>
+      <span><strong>Exposure:</strong> 180 × 60 s · 3 h total.</span>
       <span><strong>ISO:</strong> 6400.</span></div>
     
     <a class="gallery-original" href="{{ '/images/observations/orion-eos250d.jpg' | relative_url }}">View full-resolution image</a>
@@ -143,10 +147,26 @@ Images made with my Canon EOS 250D and Sony DSC-RX100M6, from wide-field views o
     <a class="gallery-original" href="{{ '/images/observations/allalingletscher-night-sky.jpg' | relative_url }}">View full-resolution image</a>
   </figcaption>
 </figure>
+<figure>
+  <a class="gallery-photo" href="{{ '/images/observations/grossglockner-milky-way.jpg' | relative_url }}">
+    <img data-src="{{ '/images/observations/grossglockner-milky-way.jpg' | relative_url }}" alt="The Milky Way above mountain silhouettes at Großglockner" width="3000" height="4000" loading="lazy" decoding="async">
+    <noscript><img src="{{ '/images/observations/grossglockner-milky-way.jpg' | relative_url }}" alt="The Milky Way above mountain silhouettes at Großglockner" width="3000" height="4000" loading="lazy"></noscript>
+  </a>
+  <figcaption>
+    <h3>Milky Way over Großglockner</h3>
+    <div class="gallery-meta"><span><strong>Camera:</strong> Xiaomi 2107113SG.</span>
+      <span><strong>Lens:</strong> 5.96 mm at f/1.75.</span>
+      <span><strong>Exposure:</strong> 30 s.</span>
+      <span><strong>ISO:</strong> 6400.</span>
+      <span><strong>Date:</strong> 7 September 2026.</span></div>
+    <p class="gallery-note">The Milky Way over Großglockner, Austria.</p>
+    <a class="gallery-original" href="{{ '/images/observations/grossglockner-milky-way.jpg' | relative_url }}">View full-resolution image</a>
+  </figcaption>
+</figure>
 </div>
 
 Select **View full-resolution image** to open each photograph. The Orion image is a high-quality JPEG at its original pixel dimensions; the other photographs retain their original files.
 
-[Explore my research and laboratory experience]({{ '/experience/' | relative_url }})
+[Explore my mountaineering gallery]({{ '/hobbies/mountaineering/' | relative_url }}) · [Explore my research and laboratory experience]({{ '/experience/' | relative_url }})
 
 {% include photo-gallery-lazy.html %}

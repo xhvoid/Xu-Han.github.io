@@ -20,7 +20,7 @@ My experience spans building a laboratory apparatus, analysing cosmological maps
 
 Today, my projects explore adaptive optics, wavefront sensing, astrophotonics and optoelectronic signal chains. I aim for clear physical assumptions, validation against theory and reproducible analysis.
 
-[Explore my education and experience]({{ '/experience/' | relative_url }})
+[Explore my education and experience]({{ '/experience/' | relative_url }}) · [View my CV]({{ '/cv/' | relative_url }})
 
 ## Selected work
 
@@ -30,14 +30,8 @@ Today, my projects explore adaptive optics, wavefront sensing, astrophotonics an
 
 [View all selected projects]({{ '/projects/' | relative_url }}) · [GitHub](https://github.com/xhvoid)
 
-## Observational astronomy
+## Hobbies
 
-I have participated in observing and image processing at Wendelstein Observatory, using the 43 cm telescope and the 2 m Fraunhofer telescope. I also practise DSLR astrophotography with a Canon EOS 250D, photographing the Milky Way, Orion and nebulae.
+Looking at the stars was the *initial perturbation* that set me on the path towards physics, mountaineering and photonics. My interest in astronomical photography takes me from observatory telescopes to dark alpine skies; mountaineering began as a way to reach those skies.
 
-[View my observing gallery]({{ '/observations/' | relative_url }})
-
-## Beyond the lab
-
-Outside my studies, I enjoy mountaineering, from snowy alpine ridges to rock routes in the Dolomites.
-
-[View my mountaineering gallery]({{ '/mountaineering/' | relative_url }})
+[Explore my hobbies]({{ '/hobbies/' | relative_url }}): [Astronomical Photography]({{ '/hobbies/astronomical-photography/' | relative_url }}) · [Mountaineering]({{ '/hobbies/mountaineering/' | relative_url }})

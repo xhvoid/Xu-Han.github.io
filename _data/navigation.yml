@@ -5,9 +5,9 @@ main:
     url: /experience/
   - title: "Projects"
     url: /projects/
-  - title: "Observations"
-    url: /observations/
-  - title: "Mountaineering"
-    url: /mountaineering/
+  - title: "CV"
+    url: /cv/
+  - title: "Hobbies"
+    url: /hobbies/
   - title: "GitHub"
     url: https://github.com/xhvoid

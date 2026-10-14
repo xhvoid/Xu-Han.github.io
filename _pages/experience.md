@@ -10,7 +10,7 @@ author_profile: true
 - **M.Sc. in Photonics — Hochschule München:** Currently pursuing, with coursework in physical optics, optical measurement technology, and fibre and micro-optics.
 - **M.Sc. in Astrophysics — LMU Munich:** Completed, with experience in cosmology, scientific data analysis and astronomical instrumental techniques.
 - **Bachelor's degree in Physics — University of Duisburg-Essen, Germany:** Experimental thesis combining apparatus development, electronic measurements and data analysis.
-- **Bachelor's degree in Electrical Engineering and Automation — China:** Earlier engineering training.
+- **B.Eng. in Electrical Engineering and Automation — Hubei University of Technology, China:** Earlier engineering training.
 
 ## Experimental physics: building a measurement apparatus
 
@@ -40,7 +40,7 @@ During my astrophysics studies, I completed laboratory courses in astronomical i
 - **Adaptive optics:** Tuning experiments using a deformable mirror to observe how an AO system corrects wavefront error.
 - **Radio astronomy:** Measuring the rotation velocity of the Milky Way.
 
-I also completed a literature project on adaptive optics and presented the study in a **40-minute academic talk**. My current simulation projects extend this interest through numerical work on turbulence, wavefront sensing, reconstruction and control.
+In **November 2022**, I gave a **40-minute academic talk** on large ground-based astronomical telescopes for my master's **Advanced Astrophysical Seminar**. The literature study covered different telescope designs and adaptive-optics technologies. My current [Adaptive Optics — Basics project](https://github.com/xhvoid/Adaptive-Optics---Basics) extends this interest through numerical work on atmospheric turbulence, wavefront sensing, reconstruction and closed-loop control.
 
 ## Photonics laboratory work
 
@@ -64,4 +64,4 @@ I am studying Zemax systematically through a Physical Optics course, building on
 - **Optical modelling:** Adaptive-optics and spectrograph simulations, noise analysis and calibration studies.
 - **Zemax:** Introductory practical experience, with systematic coursework in progress.
 
-[Explore my projects]({{ '/projects/' | relative_url }})
+[Explore my projects]({{ '/projects/' | relative_url }}) · [View my CV]({{ '/cv/' | relative_url }})
