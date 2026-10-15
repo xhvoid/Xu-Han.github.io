@@ -1,7 +1,7 @@
 ---
 permalink: /
 title: "Xu Han"
-excerpt: "Astrophysics, photonics and astronomical instrumentation."
+excerpt: "Photonics, experimental instrumentation and astrophysics: from physical measurements to optical systems."
 author_profile: true
 redirect_from:
   - /about/
@@ -10,28 +10,45 @@ redirect_from:
 
 **Astrophysics · Photonics · Astronomical instrumentation · Alpinist**
 
-I am an astrophysics graduate and photonics master's student with a background in electrical engineering, experimental physics and cosmology. I am particularly interested in observational astronomy and the instruments that make astronomical measurements possible.
+I am a photonics master's student at Hochschule München and an astrophysics graduate of LMU Munich, with earlier degrees in Physics and Electrical Engineering and Automation.
 
-I hold an M.Sc. in Astrophysics from LMU Munich and am currently pursuing an M.Sc. in Photonics at Hochschule München. My earlier training includes bachelor's degrees in Electrical Engineering and Automation in China and Physics at the University of Duisburg-Essen, Germany.
+My work connects **optical modelling, experimental apparatus development and astronomical data analysis**. I am interested in wavefront sensing and control, optical design, instrument characterisation and AO-fed spectroscopy.
 
-## From experiments to astronomical measurements
+[View my CV]({{ '/cv/' | relative_url }}) · [Education and experience]({{ '/experience/' | relative_url }}) · [GitHub](https://github.com/xhvoid)
 
-My experience spans building a laboratory apparatus, analysing cosmological maps, and modelling optical systems in Python. For my physics bachelor's thesis, I designed and assembled an apparatus to measure triboelectric charging in granular materials. My astrophysics master's thesis then focused on cosmic-void detection in weak-lensing convergence maps.
+## Selected research and engineering work
 
-Today, my projects explore adaptive optics, wavefront sensing, astrophotonics and optoelectronic signal chains. I aim for clear physical assumptions, validation against theory and reproducible analysis.
+{% include portfolio-styles.html %}
 
-[Explore my education and experience]({{ '/experience/' | relative_url }}) · [View my CV]({{ '/cv/' | relative_url }})
+<div class="portfolio-highlights">
+  <article class="portfolio-highlight">
+    <span class="portfolio-kicker">Independent project</span>
+    <h3><a href="{{ '/projects/#adaptive-optics' | relative_url }}">Wavefront sensing &amp; AO</a></h3>
+    <p>Shack-Hartmann measurements, calibrated reconstruction, feedback control and image-quality diagnostics.</p>
+  </article>
+  <article class="portfolio-highlight">
+    <span class="portfolio-kicker">Physics bachelor's thesis</span>
+    <h3><a href="{{ '/projects/#experimental-apparatus' | relative_url }}">Experimental apparatus</a></h3>
+    <p>CAD design, 3D printing, mechanical assembly, electronic measurement integration and experimental analysis.</p>
+  </article>
+  <article class="portfolio-highlight">
+    <span class="portfolio-kicker">Astrophysics master's thesis</span>
+    <h3><a href="{{ '/projects/#weak-lensing' | relative_url }}">Weak lensing research</a></h3>
+    <p>Watershed void detection, DES Y3 convergence maps and quantitative characterisation of cosmic structure.</p>
+  </article>
+</div>
 
-## Selected work
+[Explore the projects and supporting work]({{ '/projects/' | relative_url }})
 
-- **[Adaptive Optics — Basics](https://github.com/xhvoid/Adaptive-Optics---Basics):** Atmospheric turbulence, wavefront sensing and closed-loop correction, with tutorial notebooks and checks against theory.
-- **[Astrophotonics](https://github.com/xhvoid/Astrophotonics):** Linking wavefront quality and injection stability to fibre coupling and spectroscopic performance.
-- **[2D-Voids](https://github.com/xhvoid/2D-Voids):** Watershed detection and characterisation of cosmic voids in weak-lensing maps.
+## From measurements to astronomical instruments
 
-[View all selected projects]({{ '/projects/' | relative_url }}) · [GitHub](https://github.com/xhvoid)
+My physics thesis took a measurement from CAD and 3D-printed parts to an assembled apparatus, electronic readout and data analysis. My astrophysics thesis developed a cosmic-void finder for weak-lensing maps. I now study **optical design with Zemax** and model the wavefront-to-image chain in adaptive optics.
+
+Further independent projects explore [astrophotonic fibre coupling]({{ '/projects/#astrophotonics' | relative_url }}), [AO-fed IFU spectroscopy]({{ '/projects/#ifu-spectrograph' | relative_url }}) and [optoelectronic measurement chains]({{ '/projects/#optoelectronics' | relative_url }}).
 
 ## Hobbies
 
 Looking at the stars was the *initial perturbation* that set me on the path towards physics, mountaineering and photonics. My interest in astronomical photography takes me from observatory telescopes to dark alpine skies; mountaineering began as a way to reach those skies.
 
 [Explore my hobbies]({{ '/hobbies/' | relative_url }}): [Astronomical Photography]({{ '/hobbies/astronomical-photography/' | relative_url }}) · [Mountaineering]({{ '/hobbies/mountaineering/' | relative_url }})
+

@@ -11,7 +11,7 @@ locale                   : "en-US"
 title                    : "Xu Han"
 title_separator          : "-"
 name                     : &name "Xu Han"
-description              : &description "Astrophysics, photonics and astronomical instrumentation — experimental work, cosmological data analysis and optical simulations."
+description              : &description "Photonics and astronomical instrumentation — adaptive optics, experimental apparatus development and quantitative astrophysics."
 url                      : "https://xhvoid.github.io"
 baseurl                  : "/Xu-Han.github.io"
 repository               : "xhvoid/Xu-Han.github.io"
@@ -24,7 +24,7 @@ author:
   avatar           : "xu-han-lmu-avatar.png"
   name             : "Xu Han"
   pronouns         : # example: "she/her"  
-  bio              : "Astrophysics graduate · Photonics MSc student · Astronomical instrumentation · Alpinist"
+  bio              : "Photonics MSc student · Astrophysics graduate · Astronomical instrumentation · Alpinist"
   location         :
   employer         :
   uri              : # URL

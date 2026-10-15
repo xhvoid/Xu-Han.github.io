@@ -1,67 +1,86 @@
 ---
 permalink: /experience/
 title: "Education & experience"
-excerpt: "Experimental instrumentation, cosmology, astronomical laboratory work and photonics."
+excerpt: "Photonics and optical design, experimental instrumentation, astrophysics research and astronomical laboratory training."
 author_profile: true
 ---
 
+My training combines electrical engineering, experimental physics, astrophysics and photonics. My [research and engineering projects]({{ '/projects/' | relative_url }}) show how I have applied that background to optical modelling, apparatus development and astronomical data analysis.
+
 ## Education
 
-- **M.Sc. in Photonics — Hochschule München:** Currently pursuing, with coursework in physical optics, optical measurement technology, and fibre and micro-optics.
-- **M.Sc. in Astrophysics — LMU Munich:** Completed, with experience in cosmology, scientific data analysis and astronomical instrumental techniques.
-- **Bachelor's degree in Physics — University of Duisburg-Essen, Germany:** Experimental thesis combining apparatus development, electronic measurements and data analysis.
-- **B.Eng. in Electrical Engineering and Automation — Hubei University of Technology, China:** Earlier engineering training.
+### M.Sc. Photonics — Hochschule München
 
-## Experimental physics: building a measurement apparatus
+**March 2026–present · Munich University of Applied Sciences**
 
-For my physics bachelor's thesis, I designed and built an apparatus to measure triboelectric charging in granular materials. The work connected mechanical construction with electronic measurements:
+My studies develop my optical-engineering background, including **optical design with Zemax** through Physical Optics and Modelling coursework, building on earlier independent exploration and practical use.
 
-- Designed the mechanical components in CAD.
-- Fabricated parts using 3D printing and assembled the apparatus.
-- Integrated and debugged electronic measurement modules.
-- Conducted experiments and analysed the resulting data.
+**Selected coursework:** Physical Optics and Modelling; Micro and Fiber Optics; Optical Measurement Technology; Laser Physics — Non-linear Optics — Ultrafast Optics; Semiconductor Optics and Components.
 
-The experiment tested a hypothesis concerning dust growth through collisions during the early stages of planet formation. This project gave me experience carrying a physical measurement from apparatus design through assembly, integration, experimental execution and analysis.
+### M.Sc. Astrophysics — LMU Munich
 
-## Cosmology: cosmic voids and weak gravitational lensing
+**April 2022–August 2024 · Grade: 1.55 (German scale)**
 
-My astrophysics master's thesis focused on a watershed cosmic-void finder for weak gravitational lensing in 2D full-sky convergence maps. My cosmology experience also includes working with Dark Energy Survey Year 3 (DES Y3) weak-lensing maps.
+Research training in cosmology, quantitative data analysis and astronomical instrumentation. My thesis developed a watershed void finder for weak-lensing convergence maps, with work on DES Y3 data.
 
-The related [2D-Voids project](https://github.com/xhvoid/2D-Voids) includes watershed void detection and calculations of void profiles, effective radii and ellipticity. It connects map-based scientific analysis with algorithm development.
+**Selected coursework:** Essentials of Advanced Astrophysics; Cosmology and Structure Formation; Statistical Methods; Advanced Astrophysical Seminar; Instrumental Laboratory Courses.
 
-[Read my master's thesis (PDF)]({{ '/files/Watershed_Voids%EF%BC%88thesis%EF%BC%89.pdf' | relative_url }})
+[Master's thesis project]({{ '/projects/#weak-lensing' | relative_url }})
 
-## Astronomical instrumentation and adaptive optics
+### B.Sc. Physics — University of Duisburg-Essen
 
-During my astrophysics studies, I completed laboratory courses in astronomical instrumental techniques:
+**October 2018–March 2022 · Grade: 1.8 (German scale)**
 
-- **Scientific CCD imaging:** CCD imaging principles, image acquisition and subsequent data reduction.
-- **Optical interferometry:** Laboratory experience with interferometric measurements.
-- **Adaptive optics:** Tuning experiments using a deformable mirror to observe how an AO system corrects wavefront error.
-- **Radio astronomy:** Measuring the rotation velocity of the Milky Way.
+My experimental thesis involved CAD design, 3D-printed fabrication, assembly, electronic measurement integration and analysis of collisional charging in granular materials.
 
-In **November 2022**, I gave a **40-minute academic talk** on large ground-based astronomical telescopes for my master's **Advanced Astrophysical Seminar**. The literature study covered different telescope designs and adaptive-optics technologies. My current [Adaptive Optics — Basics project](https://github.com/xhvoid/Adaptive-Optics---Basics) extends this interest through numerical work on atmospheric turbulence, wavefront sensing, reconstruction and closed-loop control.
+**Selected coursework:** Quantum Mechanics; Statistical Mechanics; Fundamentals of Astrophysics; Advanced Laboratory Courses.
 
-## Photonics laboratory work
+[Experimental apparatus project]({{ '/projects/#experimental-apparatus' | relative_url }})
 
-My optical laboratory experience includes experiments involving:
+### B.Eng. Electrical Engineering and Automation — Hubei University of Technology
 
-- Avalanche photodiodes (APDs).
-- Laser spectra and laser interferometry.
-- Nonlinear optics.
-- Fibre Bragg gratings (FBGs) and fibre coupling.
+**September 2013–July 2017 · China**
 
-These complement my interests in photodetection, optical measurements and the coupling of light into astronomical instruments.
+Foundation in electronics, signals and systems, control systems and embedded systems.
 
-## Current learning
+## Laboratory and observatory experience
 
-I am studying Zemax systematically through a Physical Optics course, building on earlier independent exploration and introductory hands-on use. My current coursework also includes Optical Measurement Technology and Fibre and Micro-Optics; I previously completed Semiconductor in Photonics.
+### Photonics laboratory
+
+Laboratory experiments in APD measurements, laser spectra, nonlinear optics, laser interferometry, fibre Bragg gratings and fibre coupling.
+
+### Astronomical instrumentation laboratory
+
+- **Scientific CCD imaging:** Imaging principles, image acquisition and subsequent data reduction.
+- **Optical interferometry:** Interferometric measurements.
+- **Adaptive optics:** Tuning experiments with a deformable mirror to observe correction of wavefront error.
+- **Radio astronomy:** Measurements of Galactic rotation.
+
+At **Wendelstein Observatory**, I participated in observing and image processing using the **43 cm telescope**.
+
+[Astronomical photography gallery]({{ '/hobbies/astronomical-photography/' | relative_url }})
+
+## Professional experience
+
+### Python Developer — BaryonBib
+
+**December 2024–February 2025 · MAX!mize start-up team, MPA, Garching**
+
+Contributed to a centralised bibliography platform in Python, including implementation and testing of LLM-based functionality.
+
+## Talks, workshops and schools
+
+- **MAVIS 2026 workshop** — September 2026.
+- **Tonale Winter School on Cosmology** — December 2024.
+- **ORIGINS Lensing Day** — November 2024; [*Watershed on the curved sky*](https://indico.ph.tum.de/event/7717/timetable/?view=nicecompact).
+- **Cambridge-LMU Cosmology Meeting** — December 2023.
+- **Advanced Astrophysical Seminar, LMU Munich** — November 2022; a **40-minute course presentation and literature study** on large ground-based astronomical telescopes, telescope designs and adaptive optics.
 
 ## Tools and methods
 
-- **Scientific computing:** Python, NumPy, SciPy, Matplotlib and Jupyter.
-- **Experimental work:** CAD, 3D printing, mechanical assembly, integration and debugging of measurement electronics, and data analysis.
-- **Optical modelling:** Adaptive-optics and spectrograph simulations, noise analysis and calibration studies.
-- **Zemax:** Introductory practical experience, with systematic coursework in progress.
+- **Optical modelling:** Wavefronts, Fourier PSFs, detector noise, calibration and inverse problems; HCIPy, TIPTOP and Zemax optical-design coursework.
+- **Scientific computing:** Python, NumPy, SciPy, Matplotlib, pandas, MATLAB, Mathematica, statistics and MCMC.
+- **Experimental methods:** CAD, 3D printing, mechanical assembly, electronic measurement integration, optical alignment and interferometry.
+- **Research tools:** Linux, Git, Jupyter and LaTeX.
 
-[Explore my projects]({{ '/projects/' | relative_url }}) · [View my CV]({{ '/cv/' | relative_url }})
+[Research and engineering projects]({{ '/projects/' | relative_url }}) · [CV]({{ '/cv/' | relative_url }})
