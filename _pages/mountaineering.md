@@ -67,6 +67,15 @@ These photographs capture alpine ridges and rock routes, often shared with frien
     <p class="gallery-note">A winter ascent of the Hohlaubgrat with Dr. Bo Peng.</p>
   </figcaption>
 </figure>
+<figure>
+  <div class="gallery-photo">
+    <img data-src="{{ '/images/mountaineering/mont-blanc-sunrise.jpg' | relative_url }}" alt="Sunrise on the snowy slopes of Mont Blanc" width="3280" height="2464" loading="lazy" decoding="async">
+    <noscript><img src="{{ '/images/mountaineering/mont-blanc-sunrise.jpg' | relative_url }}" alt="Sunrise on the snowy slopes of Mont Blanc" width="3280" height="2464" loading="lazy"></noscript>
+  </div>
+  <figcaption>
+    <h3>Sunrise on Mont Blanc</h3>
+  </figcaption>
+</figure>
 </div>
 
 [Explore my astronomical photography gallery]({{ '/hobbies/astronomical-photography/' | relative_url }})

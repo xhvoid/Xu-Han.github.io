@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-**Astrophysics · Photonics · Astronomical instrumentation**
+**Astrophysics · Photonics · Astronomical instrumentation · Alpinist**
 
 I am an astrophysics graduate and photonics master's student with a background in electrical engineering, experimental physics and cosmology. I am particularly interested in observational astronomy and the instruments that make astronomical measurements possible.
 
