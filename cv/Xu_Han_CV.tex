@@ -1,0 +1,355 @@
+\documentclass[10pt, letterpaper]{article}
+
+% Packages:
+\usepackage[
+    ignoreheadfoot, % set margins without considering header and footer
+    top=2 cm, % seperation between body and page edge from the top
+    bottom=2 cm, % seperation between body and page edge from the bottom
+    left=2 cm, % seperation between body and page edge from the left
+    right=2 cm, % seperation between body and page edge from the right
+    footskip=1.0 cm, % seperation between body and footer
+    % showframe % for debugging 
+]{geometry} % for adjusting page geometry
+\usepackage{titlesec} % for customizing section titles
+\usepackage{tabularx} % for making tables with fixed width columns
+\usepackage{array} % tabularx requires this
+\usepackage[dvipsnames]{xcolor} % for coloring text
+\definecolor{primaryColor}{RGB}{0, 79, 144} % define primary color
+\usepackage{enumitem} % for customizing lists
+\usepackage{fontawesome5} % for using icons
+\usepackage{amsmath} % for math
+\usepackage[
+    pdftitle={Xu Han's CV},
+    pdfauthor={Xu Han},
+    pdfcreator={LaTeX with RenderCV},
+    colorlinks=true,
+    urlcolor=primaryColor
+]{hyperref} % for links, metadata and bookmarks
+\usepackage[pscoord]{eso-pic} % for floating text on the page
+\usepackage{calc} % for calculating lengths
+\usepackage{bookmark} % for bookmarks
+\usepackage{lastpage} % for getting the total number of pages
+\usepackage{changepage} % for one column entries (adjustwidth environment)
+\usepackage{paracol} % for two and three column entries
+\usepackage{ifthen} % for conditional statements
+\usepackage{needspace} % for avoiding page brake right after the section title
+\usepackage{etoolbox}
+\usepackage{iftex} % check if engine is pdflatex, xetex or luatex
+
+% Ensure that generate pdf is machine readable/ATS parsable:
+\ifPDFTeX
+    \input{glyphtounicode}
+    \pdfgentounicode=1
+    % \usepackage[T1]{fontenc} % this breaks sb2nov
+    \usepackage[utf8]{inputenc}
+    \usepackage{lmodern}
+\fi
+
+
+
+% Some settings:
+\AtBeginEnvironment{adjustwidth}{\partopsep0pt} % remove space before adjustwidth environment
+\pagestyle{empty} % no header or footer
+\setcounter{secnumdepth}{0} % no section numbering
+\setlength{\parindent}{0pt} % no indentation
+\setlength{\topskip}{0pt} % no top skip
+\setlength{\columnsep}{0cm} % set column seperation
+\makeatletter
+\let\ps@customFooterStyle\ps@plain % Copy the plain style to customFooterStyle
+\patchcmd{\ps@customFooterStyle}{\thepage}{
+    \color{gray}\textit{\small Xu Han - Page \thepage{} of \pageref*{LastPage}}
+}{}{} % replace number by desired string
+\makeatother
+\pagestyle{customFooterStyle}
+
+\titleformat{\section}{\needspace{4\baselineskip}\bfseries\large}{}{0pt}{}[\vspace{1pt}\titlerule]
+
+\titlespacing{\section}{
+    % left space:
+    -1pt
+}{
+    % top space:
+    0.3 cm
+}{
+    % bottom space:
+    0.2 cm
+} % section title spacing
+
+\renewcommand\labelitemi{$\circ$} % custom bullet points
+\newenvironment{highlights}{
+    \begin{itemize}[
+        topsep=0.10 cm,
+        parsep=0.10 cm,
+        partopsep=0pt,
+        itemsep=0pt,
+        leftmargin=0.4 cm + 10pt
+    ]
+}{
+    \end{itemize}
+} % new environment for highlights
+
+\newenvironment{highlightsforbulletentries}{
+    \begin{itemize}[
+        topsep=0.10 cm,
+        parsep=0.10 cm,
+        partopsep=0pt,
+        itemsep=0pt,
+        leftmargin=10pt
+    ]
+}{
+    \end{itemize}
+} % new environment for highlights for bullet entries
+
+
+\newenvironment{onecolentry}{
+    \begin{adjustwidth}{
+        0.2 cm + 0.00001 cm
+    }{
+        0.2 cm + 0.00001 cm
+    }
+}{
+    \end{adjustwidth}
+} % new environment for one column entries
+
+\newenvironment{twocolentry}[2][]{
+    \onecolentry
+    \def\secondColumn{#2}
+    \setcolumnwidth{\fill, 4.5 cm}
+    \begin{paracol}{2}
+}{
+    \switchcolumn \raggedleft \secondColumn
+    \end{paracol}
+    \endonecolentry
+} % new environment for two column entries
+
+\newenvironment{header}{
+    \setlength{\topsep}{0pt}\par\kern\topsep\centering\linespread{1.5}
+}{
+    \par\kern\topsep
+} % new environment for the header
+
+\newcommand{\placelastupdatedtext}{% \placetextbox{<horizontal pos>}{<vertical pos>}{<stuff>}
+  \AddToShipoutPictureFG*{% Add <stuff> to current page foreground
+    \put(
+        \LenToUnit{\paperwidth-2 cm-0.2 cm+0.05cm},
+        \LenToUnit{\paperheight-1.0 cm}
+    ){\vtop{{\null}\makebox[0pt][c]{
+        \small\color{gray}\textit{Updated 27 Oct 2026}\hspace{\widthof{Updated 27 Oct 2026}}
+    }}}%
+  }%
+}%
+
+% save the original href command in a new command:
+\let\hrefWithoutArrow\href
+
+% new command for external links:
+\renewcommand{\href}[2]{\hrefWithoutArrow{#1}{\ifthenelse{\equal{#2}{}}{ }{#2\nobreakspace}\raisebox{.15ex}{\footnotesize \faExternalLink*}}}
+
+
+\begin{document}
+\newcommand{\AND}{\unskip\cleaders\copy\ANDbox\hskip\wd\ANDbox\ignorespaces}
+\newsavebox\ANDbox
+\sbox\ANDbox{}
+\placelastupdatedtext
+\begin{header}
+\textbf{\fontsize{24 pt}{24 pt}\selectfont Xu Han}
+\par
+\vspace{0.3 cm}
+\normalsize
+\mbox{{\color{black}\footnotesize\faMapMarker*}\hspace*{0.13cm}Munich, Germany}\kern 0.25 cm
+\mbox{\hrefWithoutArrow{mailto:xuhanphysik@gmail.com}{\color{black}{\footnotesize\faEnvelope[regular]}\hspace*{0.13cm}xuhanphysik@gmail.com}}\kern 0.25 cm
+\mbox{\hrefWithoutArrow{https://github.com/xhvoid}{\color{black}{\footnotesize\faGithub}\hspace*{0.13cm}xhvoid}}
+\end{header}
+\vspace{0.10 cm}
+\begin{onecolentry}
+\centering\hrefWithoutArrow{https://xhvoid.github.io/Xu-Han.github.io/}{\footnotesize\faLink\hspace*{0.13cm}xhvoid.github.io/Xu-Han.github.io}
+\end{onecolentry}
+
+\vspace{0.10 cm}
+\begin{onecolentry}
+Photonics M.Sc. student and LMU astrophysics graduate focused on astronomical instrumentation, wavefront sensing and optical-system performance, combining optical modelling, experimental apparatus development and astronomical data analysis.
+\end{onecolentry}
+\vspace{0.05 cm}
+\section{Education}
+\begin{twocolentry}{\textit{Mar 2026 - Present}}
+\textbf{M.Sc. Photonics} | Munich University of Applied Sciences
+\end{twocolentry}
+\begin{onecolentry}
+\textbf{Selected coursework:} Physical Optics and Modelling (\textbf{Zemax optical design}); Micro and Fiber Optics; Optical Measurement Technology; Semiconductor Optics and Components.
+\end{onecolentry}
+\vspace{0.08 cm}
+\begin{twocolentry}{\textit{Apr 2022 - Aug 2024}}
+\textbf{M.Sc. Astrophysics} | LMU Munich
+\end{twocolentry}
+\begin{onecolentry}
+Grade: 1.55 (German scale). \textbf{Selected coursework:} Essentials of Advanced Astrophysics; Cosmology and Structure Formation; Statistical Methods; Instrumental Laboratory Courses.
+\end{onecolentry}
+\vspace{0.08 cm}
+\begin{twocolentry}{\textit{Oct 2018 - Mar 2022}}
+\textbf{B.Sc. Physics} | University of Duisburg-Essen
+\end{twocolentry}
+\begin{onecolentry}
+Grade: 1.8 (German scale).
+\end{onecolentry}
+\vspace{0.08 cm}
+\begin{twocolentry}{\textit{Sep 2013 - Jul 2017}}
+\textbf{B.Eng. Electrical Engineering and Automation}
+
+Hubei University of Technology
+\end{twocolentry}
+\vspace{0.08 cm}
+\section{Selected Research and Engineering Projects}
+\begin{onecolentry}
+{\large\textbf{Shack-Hartmann Wavefront Sensing \& Adaptive Optics Simulation}}
+\end{onecolentry}
+\begin{twocolentry}{\textit{Mar 2026 - Present}}
+\textit{Independent project (ongoing development)}
+\end{twocolentry}
+\begin{onecolentry}
+\hrefWithoutArrow{https://xhvoid.github.io/Shack-Hartmann-AO-Simulation/}{Interactive explorer} | \hrefWithoutArrow{https://github.com/xhvoid/Shack-Hartmann-AO-Simulation}{Source code}
+\end{onecolentry}
+\begin{onecolentry}
+\begin{highlights}
+\item Developed a modular Python SCAO framework connecting atmospheric turbulence, detector-level Shack-Hartmann sensing, calibrated reconstruction, deformable-mirror correction and delayed feedback.
+\item Investigated detector-noise and gain/latency trade-offs using residual wavefront error, propagated-PSF Strehl and encircled energy.
+\item Diagnosed a reconstruction failure associated with measurement dropout in a 2.2 m NGS model; stronger TSVD regularisation kept reconstruction usable throughout the matched two-second run.
+\item Cross-checked selected optical components against HCIPy and analytic references; documented reproducible experiments, model limitations and an interactive explorer of recorded results.
+\end{highlights}
+\end{onecolentry}
+\vspace{0.08 cm}
+\begin{twocolentry}{\textit{Mar 2021 - Aug 2021}}
+{\large\textbf{\href{https://xhvoid.github.io/Xu-Han.github.io/projects/\#experimental-apparatus}{Experimental Collisional Charging Apparatus}}}
+
+\textit{Bachelor's thesis | University of Duisburg-Essen}
+\end{twocolentry}
+\begin{onecolentry}
+Supervisors: Prof. Gerhard Wurm and Dr. Felix Jungmann.
+\end{onecolentry}
+\begin{onecolentry}
+\begin{highlights}
+\item Designed the mechanical apparatus in CAD, fabricated components by 3D printing and assembled the setup; integrated and debugged electronic charge-measurement modules.
+\item Conducted measurements and analysed grain-size dependence of collisional charging, testing a dust-collision growth hypothesis relevant to early planet formation.
+\end{highlights}
+\end{onecolentry}
+\vspace{0.08 cm}
+\begin{twocolentry}{\textit{Mar 2023 - Aug 2024}}
+{\large\textbf{\href{https://xhvoid.github.io/Xu-Han.github.io/files/Watershed\_Voids\%EF\%BC\%88thesis\%EF\%BC\%89.pdf}{Weak Lensing Void Finder}}}
+
+\textit{Master's thesis | LMU Munich}
+\end{twocolentry}
+\begin{onecolentry}
+Supervisors: Prof. Joseph Mohr and Dr. Chris Davies.
+\end{onecolentry}
+\begin{onecolentry}
+\begin{highlights}
+\item Developed and parameter-tested a watershed finder for cosmic voids in 2D full-sky weak-lensing convergence maps.
+\item Applied the analysis to DES Y3 weak-lensing maps; characterised void abundance, effective radii, ellipticities and convergence profiles.
+\end{highlights}
+\end{onecolentry}
+\vspace{0.08 cm}
+\clearpage
+\section{Laboratory and Instrumentation Training}
+\begin{onecolentry}
+\begin{highlights}
+\item \textbf{Photonics laboratory:} Completed experiments: APD measurements, laser spectra, nonlinear optics, laser interferometry, fiber Bragg gratings and fiber coupling.
+\item \textbf{Astronomical instrumentation laboratory:} Completed experiments: CCD imaging and data reduction, optical interferometry, deformable-mirror AO tuning and radio measurements of Galactic rotation.
+\item \textbf{Observatory experience:} Participated in observing and image processing at Wendelstein Observatory using the 43 cm telescope.
+\end{highlights}
+\end{onecolentry}
+\section{Additional Independent Projects}
+\begin{onecolentry}
+{\large\textbf{\href{https://github.com/xhvoid/Astrophotonics}{Astrophotonics}}}
+\end{onecolentry}
+\begin{onecolentry}
+\begin{highlights}
+\item Modelled how AO wavefront error, injection jitter and photonic-lantern mode count affect fiber coupling, spectral SNR and radial-velocity precision.
+\end{highlights}
+\end{onecolentry}
+\vspace{0.08 cm}
+\begin{onecolentry}
+{\large\textbf{\href{https://github.com/xhvoid/AO-Fed-IFU-Spectrograph-Simulation}{AO-Fed IFU Spectrograph Simulation}}}
+\end{onecolentry}
+\begin{onecolentry}
+\begin{highlights}
+\item Modelled the optical-to-detector chain and datacube reconstruction; compared recovered flux, velocity and SNR with synthetic truth and examined calibration sensitivity.
+\end{highlights}
+\end{onecolentry}
+\vspace{0.08 cm}
+\begin{onecolentry}
+{\large\textbf{\href{https://github.com/xhvoid/Optoelectronic-Signal-Chain-Simulations}{Optoelectronic Signal Chain Simulations}}}
+\end{onecolentry}
+\begin{onecolentry}
+\begin{highlights}
+\item Studied photodetector/APD noise, laser thermal control, LiDAR detection, camera sensors and spectrometer calibration through parameter scans and uncertainty analysis.
+\end{highlights}
+\end{onecolentry}
+\vspace{0.08 cm}
+\section{Work Experience and Career Break}
+\begin{twocolentry}{\textit{Dec 2024 - Feb 2025}}
+{\large\textbf{Python Developer | BaryonBib}}
+
+\textit{MAX!mize start-up team, MPA, Garching}
+\end{twocolentry}
+\begin{onecolentry}
+\begin{highlights}
+\item Contributed to a centralised bibliography platform in Python; implemented and tested LLM-based functionality.
+\end{highlights}
+\end{onecolentry}
+\begin{twocolentry}{\textit{Jan 2025 - Dec 2025}}
+\textbf{Medical leave}
+\end{twocolentry}
+\begin{onecolentry}
+Recovery and rehabilitation following an accident and surgery.
+\end{onecolentry}
+\section{Talks, Workshops and Schools}
+\begin{twocolentry}{\textit{Sep 2026}}
+\textbf{MAVIS 2026 workshop | Participant}
+\end{twocolentry}
+\vspace{0.06 cm}
+\begin{twocolentry}{\textit{Dec 2024}}
+\textbf{Tonale Winter School on Cosmology | Participant}
+\end{twocolentry}
+\vspace{0.06 cm}
+\begin{twocolentry}{\textit{Nov 2024}}
+\textbf{ORIGINS Lensing Day}
+\end{twocolentry}
+\begin{onecolentry}
+\href{https://indico.ph.tum.de/event/7717/timetable/?view=standard\#12-watershed-on-the-curved-sky}{Contributed talk: Watershed on the curved sky}
+\end{onecolentry}
+\vspace{0.06 cm}
+\begin{twocolentry}{\textit{Dec 2023}}
+\textbf{Cambridge-LMU Cosmology Meeting | Participant}
+\end{twocolentry}
+\vspace{0.06 cm}
+\begin{twocolentry}{\textit{Nov 2022}}
+\textbf{Advanced Astrophysical Seminar | LMU Munich}
+\end{twocolentry}
+\begin{onecolentry}
+40-minute course presentation and literature study on large ground-based astronomical telescopes, telescope designs and adaptive optics.
+\end{onecolentry}
+\vspace{0.06 cm}
+\section{Technical Skills}
+\begin{onecolentry}
+\textbf{Optical modelling:} Wavefront sensing, Fourier PSFs, calibration, regularised reconstruction and closed-loop diagnostics; HCIPy and TIPTOP; Zemax through optical-design coursework.
+\end{onecolentry}
+\vspace{0.04 cm}
+\begin{onecolentry}
+\textbf{Scientific computing:} Python (NumPy, SciPy, Matplotlib, pandas, scikit-learn); MATLAB; Mathematica; statistical analysis and MCMC.
+\end{onecolentry}
+\vspace{0.04 cm}
+\begin{onecolentry}
+\textbf{Experimental methods:} CAD, 3D printing, mechanical assembly, electronic measurement integration, optical alignment and interferometry.
+\end{onecolentry}
+\vspace{0.04 cm}
+\begin{onecolentry}
+\textbf{Research tools:} Linux, Git, Jupyter and LaTeX.
+\end{onecolentry}
+\vspace{0.04 cm}
+\section{Languages and Interests}
+\begin{onecolentry}
+\textbf{Languages:} Chinese (native); English (fluent); German (fluent); French (beginner).
+\end{onecolentry}
+\begin{onecolentry}
+\textbf{Interests:} Astronomical photography and alpine mountaineering.
+\end{onecolentry}
+\end{document}

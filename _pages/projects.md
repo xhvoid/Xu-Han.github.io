@@ -19,9 +19,9 @@ Three projects bring together my work in optical modelling, experimental enginee
 <a id="adaptive-optics"></a>
 <a id="adaptive-optics--basics"></a>
 
-## Shack-Hartmann AO Simulation
+## Shack-Hartmann Wavefront Sensing & Adaptive Optics Simulation
 
-<p class="project-role">Independent optical modelling project</p>
+<p class="project-role">Independent project · March 2026–present · Ongoing development</p>
 
 I developed a modular Python model of single-conjugate adaptive optics (SCAO), following the measurement chain from atmospheric wavefront disturbances to detector images, calibrated reconstruction, mirror commands and astronomical image quality.
 
@@ -29,19 +29,54 @@ I developed a modular Python model of single-conjugate adaptive optics (SCAO), f
 - **Reconstruction and control:** Regularised inverse problems, gain and latency studies, deformable-mirror limits and explicit treatment of invalid measurements.
 - **Performance and verification:** Residual wavefront error, Strehl ratio, FWHM and encircled energy; analytic references, numerical convergence checks and comparisons with independently implemented HCIPy optics.
 
-Executed notebooks and recorded configurations make the experiments reviewable. The work connects optical assumptions to measurable quantities and shows how calibration, noise and control choices affect the resulting images.
+The interactive explorer presents **precomputed results and recorded AO experiments**; it performs no online simulation. Executed notebooks and saved configurations provide the methods and evidence behind the displays.
 
-[Repository](https://github.com/xhvoid/Shack-Hartmann-AO-Simulation) · [Executed tutorials](https://github.com/xhvoid/Shack-Hartmann-AO-Simulation/tree/main/notebooks/tutorials) · [Validation evidence](https://github.com/xhvoid/Shack-Hartmann-AO-Simulation#validation-evidence)
+<nav class="portfolio-jump" aria-label="AO project links">
+  <a href="https://xhvoid.github.io/Shack-Hartmann-AO-Simulation/">Interactive explorer</a>
+  <a href="https://github.com/xhvoid/Shack-Hartmann-AO-Simulation">Source code</a>
+  <a href="https://xhvoid.github.io/Shack-Hartmann-AO-Simulation/#ngs22">Loss-of-lock case study</a>
+</nav>
 
-<details class="project-evidence">
-  <summary>View a closed-loop demonstration</summary>
-  <figure>
-    <img src="https://raw.githubusercontent.com/xhvoid/Shack-Hartmann-AO-Simulation/main/figures/canonical_closed_loop_control.png" alt="Matched open-loop and corrected wavefront RMS in a simulated adaptive-optics control experiment" loading="lazy" decoding="async">
-    <figcaption>A short, noiseless 1 m SCAO example at 500 Hz: 12 simulated frames, gain 0.5 and zero frame delay. Open and corrected wavefronts follow the same atmospheric trajectory. The executed tutorial records the configuration and measurement definitions.</figcaption>
-  </figure>
-</details>
+### Selected case study — diagnosing a closed-loop reconstruction failure
 
-My related [Adaptive Optics — Basics](https://github.com/xhvoid/Adaptive-Optics---Basics) project provides seven fundamentals notebooks with analytic checks, including an exploratory Fourier-optics pyramid-sensor study.
+In a simulated 2.2 m natural-guide-star AO system, I investigated a reconstruction failure associated with measurement dropout and weakly constrained inverse modes. Stronger TSVD regularisation maintained usable reconstruction throughout a matched two-second atmospheric trajectory. The original and revised runs, diagnostic evidence and model limitations are available in the interactive explorer.
+
+<figure class="project-case-figure">
+  <a href="https://xhvoid.github.io/Shack-Hartmann-AO-Simulation/#ngs22">
+    <img src="{{ '/images/projects/ngs-22m-comparison.png' | relative_url }}" alt="Recorded synthetic AO results: the original 2.2 m run loses usable reconstruction near one second, while stronger TSVD regularisation maintains reconstruction through the matched two-second trajectory; H-band Strehl, usable measurement rows and DM limits are shown" width="1760" height="1520" loading="lazy" decoding="async">
+  </a>
+  <figcaption>Recorded simulation results, reproduced unchanged from the project analysis. The 2.2 m v1/v2 runs share the same atmosphere and calibration; the separate 2 m reference ends at one second and is not a paired comparison. Select the figure to inspect the case.</figcaption>
+</figure>
+
+This is a **synthetic model study**, not measured Robo-AO-2 performance. The paired result supports improvement for this input and time window. The added recovery safeguard did not activate, so the demonstrated improvement supports the stronger regularisation rather than automatic recovery; the initial noise trigger was not uniquely identified.
+
+[Methods and validation evidence](https://github.com/xhvoid/Shack-Hartmann-AO-Simulation#validation-evidence) · [Case configurations, diagnosis and limitations](https://github.com/xhvoid/Shack-Hartmann-AO-Simulation/tree/main/web/ao-explorer/derived/ngs-22m-53663e0742d1d106)
+
+<section class="project-evidence" aria-labelledby="ao-explorer-preview">
+  <h3 id="ao-explorer-preview">AO correction in motion</h3>
+  <div class="ao-preview-layout">
+    <figure class="ao-preview-media">
+      <input type="checkbox" id="ao-preview-still" class="ao-preview-toggle">
+      <label for="ao-preview-still">Show still image</label>
+      <div class="ao-preview-images">
+        <picture class="ao-preview-animation">
+          <source media="(prefers-reduced-motion: reduce)" srcset="{{ '/images/projects/ao-galaxy-comparison-poster.png' | relative_url }}">
+          <img src="{{ '/images/projects/ao-galaxy-comparison.gif' | relative_url }}" alt="Animated comparison of NGC 1705 with uncorrected and AO-corrected simulated PSFs, with synchronized instantaneous PSF Strehl values at 1.65 micrometres, original frame numbers and simulated time" width="600" height="480" loading="lazy" decoding="async">
+        </picture>
+        <img class="ao-preview-poster" src="{{ '/images/projects/ao-galaxy-comparison-poster.png' | relative_url }}" alt="Still comparison at simulated time 0.200 seconds, with the corresponding uncorrected and AO-corrected PSF Strehl values" width="600" height="480" loading="lazy" decoding="async">
+      </div>
+      <figcaption>A recorded 2 m model: the same HST/F814W template through uncorrected and AO-corrected simulated PSFs, on one fixed brightness scale. Strehl readouts describe the corresponding 1.65 μm PSFs. One simulated second is replayed over 20 seconds; the loop repeats the same 126 recorded samples.</figcaption>
+    </figure>
+    <div class="ao-preview-more">
+      <h4>Explore the full experiment</h4>
+      <p>Replay the wavefronts and images, compare recorded cases, and inspect performance curves, methods and model limitations in the interactive explorer.</p>
+      <div class="portfolio-actions">
+        <a class="btn btn--primary" href="https://xhvoid.github.io/Shack-Hartmann-AO-Simulation/#galaxy-panel">Open AO Explorer</a>
+      </div>
+      <p class="ao-preview-credit">Template: HST/WFC3 F814W, LEGUS (GO-13364), via MAST. This mock observation retains the template’s resolution and residual noise; no additional image noise is added.</p>
+    </div>
+  </div>
+</section>
 
 <a id="experimental-apparatus"></a>
 

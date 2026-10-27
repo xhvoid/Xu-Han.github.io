@@ -1,0 +1,176 @@
+{
+  "summary": "Photonics M.Sc. student and LMU astrophysics graduate focused on astronomical instrumentation, wavefront sensing and optical-system performance, combining optical modelling, experimental apparatus development and astronomical data analysis.",
+  "education": [
+    {
+      "degree": "M.Sc. Photonics",
+      "institution": "Munich University of Applied Sciences",
+      "date": "Mar 2026 - Present",
+      "details": [
+        "Selected coursework: Physical Optics and Modelling (Zemax optical design); Micro and Fiber Optics; Optical Measurement Technology; Semiconductor Optics and Components."
+      ]
+    },
+    {
+      "degree": "M.Sc. Astrophysics",
+      "institution": "LMU Munich",
+      "date": "Apr 2022 - Aug 2024",
+      "details": [
+        "Grade: 1.55 (German scale). Selected coursework: Essentials of Advanced Astrophysics; Cosmology and Structure Formation; Statistical Methods; Instrumental Laboratory Courses."
+      ]
+    },
+    {
+      "degree": "B.Sc. Physics",
+      "institution": "University of Duisburg-Essen",
+      "date": "Oct 2018 - Mar 2022",
+      "details": [
+        "Grade: 1.8 (German scale)."
+      ]
+    },
+    {
+      "degree": "B.Eng. Electrical Engineering and Automation",
+      "institution": "Hubei University of Technology",
+      "date": "Sep 2013 - Jul 2017",
+      "details": []
+    }
+  ],
+  "core": [
+    {
+      "title": "Shack-Hartmann Wavefront Sensing & Adaptive Optics Simulation",
+      "url": "https://github.com/xhvoid/Shack-Hartmann-AO-Simulation",
+      "role": "Independent project (ongoing development)",
+      "date": "Mar 2026 - Present",
+      "bullets": [
+        "Developed a modular Python SCAO framework connecting atmospheric turbulence, detector-level Shack-Hartmann sensing, calibrated reconstruction, deformable-mirror correction and delayed feedback.",
+        "Investigated detector-noise and gain/latency trade-offs using residual wavefront error, propagated-PSF Strehl and encircled energy.",
+        "Diagnosed a reconstruction failure associated with measurement dropout in a 2.2 m NGS model; stronger TSVD regularisation kept reconstruction usable throughout the matched two-second run.",
+        "Cross-checked selected optical components against HCIPy and analytic references; documented reproducible experiments, model limitations and an interactive explorer of recorded results."
+      ],
+      "links": [
+        [
+          "Interactive explorer",
+          "https://xhvoid.github.io/Shack-Hartmann-AO-Simulation/"
+        ],
+        [
+          "Source code",
+          "https://github.com/xhvoid/Shack-Hartmann-AO-Simulation"
+        ]
+      ]
+    },
+    {
+      "title": "Experimental Collisional Charging Apparatus",
+      "url": "https://xhvoid.github.io/Xu-Han.github.io/projects/#experimental-apparatus",
+      "role": "Bachelor's thesis | University of Duisburg-Essen",
+      "date": "Mar 2021 - Aug 2021",
+      "supervisors": "Prof. Gerhard Wurm and Dr. Felix Jungmann",
+      "bullets": [
+        "Designed the mechanical apparatus in CAD, fabricated components by 3D printing and assembled the setup; integrated and debugged electronic charge-measurement modules.",
+        "Conducted measurements and analysed grain-size dependence of collisional charging, testing a dust-collision growth hypothesis relevant to early planet formation."
+      ]
+    },
+    {
+      "title": "Weak Lensing Void Finder",
+      "url": "https://xhvoid.github.io/Xu-Han.github.io/files/Watershed_Voids%EF%BC%88thesis%EF%BC%89.pdf",
+      "role": "Master's thesis | LMU Munich",
+      "date": "Mar 2023 - Aug 2024",
+      "supervisors": "Prof. Joseph Mohr and Dr. Chris Davies",
+      "bullets": [
+        "Developed and parameter-tested a watershed finder for cosmic voids in 2D full-sky weak-lensing convergence maps.",
+        "Applied the analysis to DES Y3 weak-lensing maps; characterised void abundance, effective radii, ellipticities and convergence profiles."
+      ]
+    }
+  ],
+  "labs": [
+    [
+      "Photonics laboratory",
+      "Completed experiments: APD measurements, laser spectra, nonlinear optics, laser interferometry, fiber Bragg gratings and fiber coupling."
+    ],
+    [
+      "Astronomical instrumentation laboratory",
+      "Completed experiments: CCD imaging and data reduction, optical interferometry, deformable-mirror AO tuning and radio measurements of Galactic rotation."
+    ],
+    [
+      "Observatory experience",
+      "Participated in observing and image processing at Wendelstein Observatory using the 43 cm telescope."
+    ]
+  ],
+  "additional": [
+    {
+      "title": "Astrophotonics",
+      "url": "https://github.com/xhvoid/Astrophotonics",
+      "bullets": [
+        "Modelled how AO wavefront error, injection jitter and photonic-lantern mode count affect fiber coupling, spectral SNR and radial-velocity precision."
+      ]
+    },
+    {
+      "title": "AO-Fed IFU Spectrograph Simulation",
+      "url": "https://github.com/xhvoid/AO-Fed-IFU-Spectrograph-Simulation",
+      "bullets": [
+        "Modelled the optical-to-detector chain and datacube reconstruction; compared recovered flux, velocity and SNR with synthetic truth and examined calibration sensitivity."
+      ]
+    },
+    {
+      "title": "Optoelectronic Signal Chain Simulations",
+      "url": "https://github.com/xhvoid/Optoelectronic-Signal-Chain-Simulations",
+      "bullets": [
+        "Studied photodetector/APD noise, laser thermal control, LiDAR detection, camera sensors and spectrometer calibration through parameter scans and uncertainty analysis."
+      ]
+    }
+  ],
+  "work": {
+    "title": "Python Developer | BaryonBib",
+    "date": "Dec 2024 - Feb 2025",
+    "role": "MAX!mize start-up team, MPA, Garching",
+    "bullets": [
+      "Contributed to a centralised bibliography platform in Python; implemented and tested LLM-based functionality."
+    ]
+  },
+  "career_break": {
+    "title": "Medical leave",
+    "date": "Jan 2025 - Dec 2025",
+    "text": "Recovery and rehabilitation following an accident and surgery."
+  },
+  "activities": [
+    {
+      "title": "MAVIS 2026 workshop | Participant",
+      "date": "Sep 2026"
+    },
+    {
+      "title": "Tonale Winter School on Cosmology | Participant",
+      "date": "Dec 2024"
+    },
+    {
+      "title": "ORIGINS Lensing Day",
+      "date": "Nov 2024",
+      "text": "Contributed talk: Watershed on the curved sky",
+      "url": "https://indico.ph.tum.de/event/7717/timetable/?view=standard#12-watershed-on-the-curved-sky"
+    },
+    {
+      "title": "Cambridge-LMU Cosmology Meeting | Participant",
+      "date": "Dec 2023"
+    },
+    {
+      "title": "Advanced Astrophysical Seminar | LMU Munich",
+      "date": "Nov 2022",
+      "text": "40-minute course presentation and literature study on large ground-based astronomical telescopes, telescope designs and adaptive optics."
+    }
+  ],
+  "skills": [
+    [
+      "Optical modelling",
+      "Wavefront sensing, Fourier PSFs, calibration, regularised reconstruction and closed-loop diagnostics; HCIPy and TIPTOP; Zemax through optical-design coursework."
+    ],
+    [
+      "Scientific computing",
+      "Python (NumPy, SciPy, Matplotlib, pandas, scikit-learn); MATLAB; Mathematica; statistical analysis and MCMC."
+    ],
+    [
+      "Experimental methods",
+      "CAD, 3D printing, mechanical assembly, electronic measurement integration, optical alignment and interferometry."
+    ],
+    [
+      "Research tools",
+      "Linux, Git, Jupyter and LaTeX."
+    ]
+  ],
+  "languages": "Chinese (native); English (fluent); German (fluent); French (beginner).",
+  "hobbies": "Astronomical photography and alpine mountaineering."
+}

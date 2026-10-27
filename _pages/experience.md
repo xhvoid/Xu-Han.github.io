@@ -47,9 +47,11 @@ Foundation in electronics, signals and systems, control systems and embedded sys
 
 ### Photonics laboratory
 
-Laboratory experiments in APD measurements, laser spectra, nonlinear optics, laser interferometry, fibre Bragg gratings and fibre coupling.
+Completed laboratory experiments in APD measurements, laser spectra, nonlinear optics, laser interferometry, fibre Bragg gratings and fibre coupling.
 
 ### Astronomical instrumentation laboratory
+
+Completed experiments included:
 
 - **Scientific CCD imaging:** Imaging principles, image acquisition and subsequent data reduction.
 - **Optical interferometry:** Interferometric measurements.
@@ -70,15 +72,15 @@ Contributed to a centralised bibliography platform in Python, including implemen
 
 ## Talks, workshops and schools
 
-- **MAVIS 2026 workshop** — September 2026.
-- **Tonale Winter School on Cosmology** — December 2024.
-- **ORIGINS Lensing Day** — November 2024; [*Watershed on the curved sky*](https://indico.ph.tum.de/event/7717/timetable/?view=nicecompact).
-- **Cambridge-LMU Cosmology Meeting** — December 2023.
+- **MAVIS 2026 workshop** — Participant; September 2026.
+- **Tonale Winter School on Cosmology** — Participant; December 2024.
+- **ORIGINS Lensing Day** — November 2024; contributed talk: [*Watershed on the curved sky*](https://indico.ph.tum.de/event/7717/timetable/?view=standard#12-watershed-on-the-curved-sky).
+- **Cambridge-LMU Cosmology Meeting** — Participant; December 2023.
 - **Advanced Astrophysical Seminar, LMU Munich** — November 2022; a **40-minute course presentation and literature study** on large ground-based astronomical telescopes, telescope designs and adaptive optics.
 
 ## Tools and methods
 
-- **Optical modelling:** Wavefronts, Fourier PSFs, detector noise, calibration and inverse problems; HCIPy, TIPTOP and Zemax optical-design coursework.
+- **Optical modelling:** Wavefront sensing, Fourier PSFs, detector noise, calibration, regularised reconstruction and closed-loop diagnostics; HCIPy and TIPTOP; Zemax through optical-design coursework.
 - **Scientific computing:** Python, NumPy, SciPy, Matplotlib, pandas, MATLAB, Mathematica, statistics and MCMC.
 - **Experimental methods:** CAD, 3D printing, mechanical assembly, electronic measurement integration, optical alignment and interferometry.
 - **Research tools:** Linux, Git, Jupyter and LaTeX.

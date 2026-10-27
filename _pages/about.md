@@ -1,30 +1,35 @@
 ---
 permalink: /
 title: "Xu Han"
-excerpt: "Photonics, experimental instrumentation and astrophysics: from physical measurements to optical systems."
+excerpt: "Astronomical instrumentation, wavefront sensing and control, optical modelling and experimental research."
 author_profile: true
 redirect_from:
   - /about/
   - /about.html
 ---
 
-**Astrophysics · Photonics · Astronomical instrumentation · Alpinist**
+**Astronomical instrumentation · Wavefront sensing & control · Optical modelling**
 
-I am a photonics master's student at Hochschule München and an astrophysics graduate of LMU Munich, with earlier degrees in Physics and Electrical Engineering and Automation.
+I am a Photonics M.Sc. student at Hochschule München and an Astrophysics graduate of LMU Munich, focusing on astronomical instrumentation, wavefront sensing and optical-system performance.
 
-My work connects **optical modelling, experimental apparatus development and astronomical data analysis**. I am interested in wavefront sensing and control, optical design, instrument characterisation and AO-fed spectroscopy.
-
-[View my CV]({{ '/cv/' | relative_url }}) · [Education and experience]({{ '/experience/' | relative_url }}) · [GitHub](https://github.com/xhvoid)
-
-## Selected research and engineering work
+My work combines Python-based optical modelling with experimental apparatus development and astronomical data analysis. My current independent project investigates how detector measurements, wavefront reconstruction and feedback control affect AO image quality.
 
 {% include portfolio-styles.html %}
 
+<div class="portfolio-actions" aria-label="Main links">
+  <a class="btn btn--primary" href="https://xhvoid.github.io/Shack-Hartmann-AO-Simulation/">Explore AO simulations</a>
+  <a class="btn" href="{{ '/cv/' | relative_url }}">View CV</a>
+  <a class="btn" href="mailto:xuhanphysik@gmail.com">Email</a>
+</div>
+
+## Selected research and engineering work
+
 <div class="portfolio-highlights">
-  <article class="portfolio-highlight">
-    <span class="portfolio-kicker">Independent project</span>
+  <article class="portfolio-highlight portfolio-highlight--featured">
+    <span class="portfolio-kicker">Featured · Current independent project</span>
     <h3><a href="{{ '/projects/#adaptive-optics' | relative_url }}">Wavefront sensing &amp; AO</a></h3>
-    <p>Shack-Hartmann measurements, calibrated reconstruction, feedback control and image-quality diagnostics.</p>
+    <p>Detector-level sensing, calibrated reconstruction and closed-loop diagnostics, including a recorded 2.2 m NGS reconstruction-failure case.</p>
+    <a class="btn btn--primary" href="https://xhvoid.github.io/Shack-Hartmann-AO-Simulation/">Open interactive explorer</a>
   </article>
   <article class="portfolio-highlight">
     <span class="portfolio-kicker">Physics bachelor's thesis</span>
