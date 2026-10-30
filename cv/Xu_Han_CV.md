@@ -71,10 +71,6 @@ Supervisors: Prof. Joseph Mohr and Dr. Chris Davies.
 
 - Modelled how AO wavefront error, injection jitter and photonic-lantern mode count affect fiber coupling, spectral SNR and radial-velocity precision.
 
-### [AO-Fed IFU Spectrograph Simulation](https://github.com/xhvoid/AO-Fed-IFU-Spectrograph-Simulation)
-
-- Modelled the optical-to-detector chain and datacube reconstruction; compared recovered flux, velocity and SNR with synthetic truth and examined calibration sensitivity.
-
 ### [Optoelectronic Signal Chain Simulations](https://github.com/xhvoid/Optoelectronic-Signal-Chain-Simulations)
 
 - Studied photodetector/APD noise, laser thermal control, LiDAR detection, camera sensors and spectrometer calibration through parameter scans and uncertainty analysis.

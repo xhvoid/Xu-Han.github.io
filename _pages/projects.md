@@ -119,7 +119,7 @@ This research developed my experience with scientific computing, statistical rea
 
 ## Additional independent projects
 
-These studies extend my interests into fibre-fed spectroscopy, IFU measurements and optoelectronic signal chains.
+These studies extend my interests into fibre-fed spectroscopy and optoelectronic signal chains.
 
 <a id="astrophotonics"></a>
 
@@ -130,16 +130,6 @@ A conceptual Python study linking residual AO wavefront error, injection jitter 
 **Methods:** Wave optics, coherent modal coupling, noise budgets and parameter studies.
 
 [Repository](https://github.com/xhvoid/Astrophotonics) · [Executed notebook](https://github.com/xhvoid/Astrophotonics/blob/main/notebooks/eso_astrophotonics_showcase.ipynb)
-
-<a id="ifu-spectrograph"></a>
-
-### AO-Fed IFU Spectrograph Simulation
-
-An end-to-end numerical study carrying a synthetic datacube through AO PSF coupling, an image-slicer IFU, a spectrograph, detector response, calibration and cube reconstruction. Recovered flux, velocity and signal-to-noise are compared with the known input, making measurement biases and calibration sensitivity visible.
-
-**Methods:** Fourier PSFs, spatial and spectral sampling, detector noise, reconstruction and comparison with synthetic truth.
-
-[Repository](https://github.com/xhvoid/AO-Fed-IFU-Spectrograph-Simulation)
 
 <a id="optoelectronics"></a>
 

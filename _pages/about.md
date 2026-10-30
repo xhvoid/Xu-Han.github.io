@@ -49,7 +49,7 @@ My work combines Python-based optical modelling with experimental apparatus deve
 
 My physics thesis took a measurement from CAD and 3D-printed parts to an assembled apparatus, electronic readout and data analysis. My astrophysics thesis developed a cosmic-void finder for weak-lensing maps. I now study **optical design with Zemax** and model the wavefront-to-image chain in adaptive optics.
 
-Further independent projects explore [astrophotonic fibre coupling]({{ '/projects/#astrophotonics' | relative_url }}), [AO-fed IFU spectroscopy]({{ '/projects/#ifu-spectrograph' | relative_url }}) and [optoelectronic measurement chains]({{ '/projects/#optoelectronics' | relative_url }}).
+Further independent projects explore [astrophotonic fibre coupling]({{ '/projects/#astrophotonics' | relative_url }}) and [optoelectronic measurement chains]({{ '/projects/#optoelectronics' | relative_url }}).
 
 ## Hobbies
 

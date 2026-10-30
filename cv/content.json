@@ -101,13 +101,6 @@
       ]
     },
     {
-      "title": "AO-Fed IFU Spectrograph Simulation",
-      "url": "https://github.com/xhvoid/AO-Fed-IFU-Spectrograph-Simulation",
-      "bullets": [
-        "Modelled the optical-to-detector chain and datacube reconstruction; compared recovered flux, velocity and SNR with synthetic truth and examined calibration sensitivity."
-      ]
-    },
-    {
       "title": "Optoelectronic Signal Chain Simulations",
       "url": "https://github.com/xhvoid/Optoelectronic-Signal-Chain-Simulations",
       "bullets": [
