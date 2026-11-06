@@ -18,11 +18,15 @@ Apr 2022 - Aug 2024
 
 Grade: 1.55 (German scale). Selected coursework: Essentials of Advanced Astrophysics; Cosmology and Structure Formation; Statistical Methods; Instrumental Laboratory Courses.
 
+[Degree certificate](https://drive.google.com/file/d/1NQSRpt_x9CCdSJrJznqkt5ncOElWJPhy/view?usp=drivesdk) | [Transcript](https://drive.google.com/file/d/1BNefQ53rnjAXdEbOdBdHYjqefAdzN0wr/view?usp=drivesdk) | [Thesis assessment (Gutachten)](https://drive.google.com/file/d/1zO8LuT7EIP9tKCkgb7b1ZzuCjxhmHrls/view?usp=drivesdk)
+
 ### B.Sc. Physics | University of Duisburg-Essen
 
 Oct 2018 - Mar 2022
 
 Grade: 1.8 (German scale).
+
+[Degree certificate](https://drive.google.com/file/d/1m3RH47N80jSDokQ6q0vlu0j9GsGqVNYK/view?usp=drivesdk) | [Transcript](https://drive.google.com/file/d/1FZ7MeLV6mYkR--lfgMOGlVL-ERYklwXW/view?usp=drivesdk)
 
 ### B.Eng. Electrical Engineering and Automation | Hubei University of Technology
 

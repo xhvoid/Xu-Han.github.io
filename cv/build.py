@@ -26,11 +26,17 @@ def bullets(items):
 def section(title):
     return r"\section{" + esc(title) + "}\n"
 
+def tex_links(links):
+    return " | ".join(r"\hrefWithoutArrow{" + esc(url) + "}{" + esc(label) + "}" for label, url in links)
+
+def md_links(links):
+    return " | ".join("[" + label + "](" + url + ")" for label, url in links)
+
 def project(item):
     if item.get("links"):
         result = one(r"{\large\textbf{" + esc(item["title"]) + "}}")
         result += two(r"\textit{" + esc(item["role"]) + "}", item["date"])
-        result += one(" | ".join(r"\hrefWithoutArrow{" + esc(url) + "}{" + esc(label) + "}" for label, url in item["links"]))
+        result += one(tex_links(item["links"]))
     else:
         title = r"{\large\textbf{" + href(item["url"], item["title"]) + "}}"
         if item.get("role"):
@@ -50,6 +56,8 @@ for item in data["education"]:
         text = esc(text).replace("Selected coursework:", r"\textbf{Selected coursework:}")
         text = text.replace("Zemax optical design", r"\textbf{Zemax optical design}")
         parts.append(one(text))
+    if item.get("links"):
+        parts.append(one(tex_links(item["links"])))
     parts.append("\\vspace{0.08 cm}\n")
 
 parts.append(section("Selected Research and Engineering Projects"))
@@ -79,13 +87,15 @@ parts += [section("Academic Reference"), one(esc(data["academic_reference"])), "
 md = ["# Xu Han", "Munich, Germany | [xuhanphysik@gmail.com](mailto:xuhanphysik@gmail.com) | [GitHub](https://github.com/xhvoid) | [Website](https://xhvoid.github.io/Xu-Han.github.io/)", data["summary"], "## Education"]
 for item in data["education"]:
     md += ["### " + item["degree"] + " | " + item["institution"], item["date"], *item["details"]]
+    if item.get("links"):
+        md.append(md_links(item["links"]))
 md.append("## Selected Research and Engineering Projects")
 def md_project(item):
     text = ["### [" + item["title"] + "](" + item["url"] + ")"]
     if item.get("role"):
         text += [item["role"] + (" | " + item["date"] if item.get("date") else "")]
     if item.get("links"):
-        text += [" | ".join("[" + label + "](" + url + ")" for label, url in item["links"])]
+        text += [md_links(item["links"])]
     if item.get("supervisors"):
         text += ["Supervisors: " + item["supervisors"] + "."]
     text += ["\n".join("- " + x for x in item["bullets"])]
