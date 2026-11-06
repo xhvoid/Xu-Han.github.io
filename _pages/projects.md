@@ -89,7 +89,6 @@ I wanted to know how far off-axis a larger mirror still gives a tighter star ima
 
 <nav class="portfolio-jump" aria-label="Telescope optics report">
   <a href="{{ '/projects/elt-owl/' | relative_url }}">Read the engineering report</a>
-  <a href="{{ '/projects/elt-owl/' | relative_url }}#zh" lang="zh-CN" hreflang="zh-CN">中文版</a>
 </nav>
 
 <a id="experimental-apparatus"></a>
