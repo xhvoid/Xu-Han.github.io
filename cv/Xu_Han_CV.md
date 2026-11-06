@@ -119,3 +119,7 @@ Recovery and rehabilitation following an accident and surgery.
 Chinese (native); English (fluent); German (fluent); French (beginner).
 
 Astronomical photography and alpine mountaineering.
+
+## Academic Reference
+
+Prof. Joseph Mohr, M.Sc. thesis supervisor

@@ -72,7 +72,8 @@ for item in data["activities"]:
 parts.append(section("Technical Skills"))
 for k, v in data["skills"]:
     parts += [one(r"\textbf{" + esc(k) + ":} " + esc(v)), "\\vspace{0.04 cm}\n"]
-parts += [section("Languages and Interests"), one(r"\textbf{Languages:} " + esc(data["languages"])), one(r"\textbf{Interests:} " + esc(data["hobbies"])), "\\end{document}\n"]
+parts += [section("Languages and Interests"), one(r"\textbf{Languages:} " + esc(data["languages"])), one(r"\textbf{Interests:} " + esc(data["hobbies"]))]
+parts += [section("Academic Reference"), one(esc(data["academic_reference"])), "\\end{document}\n"]
 (out / "Xu_Han_CV.tex").write_text("".join(parts))
 
 md = ["# Xu Han", "Munich, Germany | [xuhanphysik@gmail.com](mailto:xuhanphysik@gmail.com) | [GitHub](https://github.com/xhvoid) | [Website](https://xhvoid.github.io/Xu-Han.github.io/)", data["summary"], "## Education"]
@@ -100,5 +101,6 @@ for item in data["activities"]:
     if item.get("text"):
         md += ["[" + item["text"] + "](" + item["url"] + ")" if item.get("url") else item["text"]]
 md += ["## Technical Skills", "\n".join("- **" + k + ":** " + v for k, v in data["skills"]), "## Languages and Interests", data["languages"], data["hobbies"]]
+md += ["## Academic Reference", data["academic_reference"]]
 (out / "Xu_Han_CV.md").write_text("\n\n".join(md) + "\n")
 print("Wrote CV source and matching editable text.")

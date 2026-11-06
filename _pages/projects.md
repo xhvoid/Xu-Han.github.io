@@ -14,7 +14,7 @@ My projects range from telescope optics and adaptive optics simulations to an ex
   <a href="#elt-owl">ELT and OWL telescope optics</a>
   <a href="#experimental-apparatus">Experimental apparatus</a>
   <a href="#weak-lensing">Weak lensing</a>
-  <a href="#additional-independent-projects">Further projects</a>
+  <a href="#astrophotonics">Astrophotonics</a>
 </nav>
 
 <a id="adaptive-optics"></a>
@@ -130,28 +130,14 @@ This research developed my experience with scientific computing, statistical rea
 
 [Thesis (PDF)]({{ '/files/Watershed_Voids%EF%BC%88thesis%EF%BC%89.pdf' | relative_url }}) · [2D-Voids repository](https://github.com/xhvoid/2D-Voids)
 
-## Additional independent projects
+<a id="additional-independent-projects"></a>
 
-These studies extend my interests into fibre-fed spectroscopy and optoelectronic signal chains.
-
-<a id="astrophotonics"></a>
-
-### Astrophotonics
+## Astrophotonics
 
 A conceptual Python study linking residual AO wavefront error, injection jitter and photonic-lantern mode count to fibre coupling, spectral signal-to-noise ratio and radial-velocity precision. It connects complex-field propagation and modal overlap to a synthetic spectroscopic measurement.
 
 **Methods:** Wave optics, coherent modal coupling, noise budgets and parameter studies.
 
 [Repository](https://github.com/xhvoid/Astrophotonics) · [Executed notebook](https://github.com/xhvoid/Astrophotonics/blob/main/notebooks/eso_astrophotonics_showcase.ipynb)
-
-<a id="optoelectronics"></a>
-
-### Optoelectronic Signal Chain Simulations
-
-Python case studies of photodetector/APD noise, laser thermal control, LiDAR detection, camera sensors and spectrometer calibration. Parameter scans examine how component behaviour, noise and uncertainty affect a measurement.
-
-**Methods:** Noise analysis, feedback control, calibration and engineering trade-offs.
-
-[Repository](https://github.com/xhvoid/Optoelectronic-Signal-Chain-Simulations)
 
 [Education and laboratory experience]({{ '/experience/' | relative_url }}) · [CV]({{ '/cv/' | relative_url }})
