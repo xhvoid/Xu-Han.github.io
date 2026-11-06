@@ -1,16 +1,17 @@
 ---
 permalink: /projects/
 title: "Research & engineering projects"
-excerpt: "Adaptive optics, experimental apparatus development and weak-lensing research, with supporting optical simulation studies."
+excerpt: "Adaptive optics, ELT and OWL telescope optics, experimental apparatus development and weak-lensing research."
 author_profile: true
 ---
 
-Three projects bring together my work in optical modelling, experimental engineering and astronomical research. They span numerical validation, the development of a physical measurement apparatus and quantitative analysis of astronomical data.
+My projects range from telescope optics and adaptive optics simulations to an experimental charge-measurement apparatus and weak-lensing data analysis.
 
 {% include portfolio-styles.html %}
 
 <nav class="portfolio-jump" aria-label="Project sections">
   <a href="#adaptive-optics">Adaptive optics</a>
+  <a href="#elt-owl">ELT and OWL telescope optics</a>
   <a href="#experimental-apparatus">Experimental apparatus</a>
   <a href="#weak-lensing">Weak lensing</a>
   <a href="#additional-independent-projects">Further projects</a>
@@ -77,6 +78,19 @@ This is a **synthetic model study**, not measured Robo-AO-2 performance. The pai
     </div>
   </div>
 </section>
+
+<a id="elt-owl"></a>
+
+## ELT and OWL Telescope Optics
+
+<p class="project-role">Personal project extending the hands-on Zemax lab in <em>Physical Optics and Modeling</em></p>
+
+I wanted to know how far off-axis a larger mirror still gives a tighter star image. I reconstructed the 39 m ELT and the proposed 100 m OWL from published prescriptions. At 550 nm, OWL enclosed half the light in a smaller angular radius at 1′, but the ELT did so at 1.5′. In the infrared, OWL kept its advantage at the same science-field edge. The report also follows what happened when I changed OWL’s focal surface from a hyperboloid to a sphere or a flat plane.
+
+<nav class="portfolio-jump" aria-label="Telescope optics report">
+  <a href="{{ '/projects/elt-owl/' | relative_url }}">Read the engineering report</a>
+  <a href="{{ '/projects/elt-owl/' | relative_url }}#zh" lang="zh-CN" hreflang="zh-CN">中文版</a>
+</nav>
 
 <a id="experimental-apparatus"></a>
 

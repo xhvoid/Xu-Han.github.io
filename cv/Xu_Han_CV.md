@@ -71,9 +71,11 @@ Supervisors: Prof. Joseph Mohr and Dr. Chris Davies.
 
 - Modelled how AO wavefront error, injection jitter and photonic-lantern mode count affect fiber coupling, spectral SNR and radial-velocity precision.
 
-### [Optoelectronic Signal Chain Simulations](https://github.com/xhvoid/Optoelectronic-Signal-Chain-Simulations)
+### [ELT and OWL Telescope Optics](https://xhvoid.github.io/Xu-Han.github.io/projects/elt-owl/)
 
-- Studied photodetector/APD noise, laser thermal control, LiDAR detection, camera sensors and spectrometer calibration through parameter scans and uncertainty analysis.
+Personal project extending a hands-on Zemax lab in Physical Optics and Modeling
+
+- Reconstructed the two telescope designs in Zemax and compared how aperture, off-axis aberrations and focal-surface shape affect the concentration of starlight.
 
 ## Work Experience and Career Break
 

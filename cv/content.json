@@ -101,10 +101,11 @@
       ]
     },
     {
-      "title": "Optoelectronic Signal Chain Simulations",
-      "url": "https://github.com/xhvoid/Optoelectronic-Signal-Chain-Simulations",
+      "title": "ELT and OWL Telescope Optics",
+      "url": "https://xhvoid.github.io/Xu-Han.github.io/projects/elt-owl/",
+      "role": "Personal project extending a hands-on Zemax lab in Physical Optics and Modeling",
       "bullets": [
-        "Studied photodetector/APD noise, laser thermal control, LiDAR detection, camera sensors and spectrometer calibration through parameter scans and uncertainty analysis."
+        "Reconstructed the two telescope designs in Zemax and compared how aperture, off-axis aberrations and focal-surface shape affect the concentration of starlight."
       ]
     }
   ],
