@@ -81,7 +81,7 @@ parts.append(section("Technical Skills"))
 for k, v in data["skills"]:
     parts += [one(r"\textbf{" + esc(k) + ":} " + esc(v)), "\\vspace{0.04 cm}\n"]
 parts += [section("Languages and Interests"), one(r"\textbf{Languages:} " + esc(data["languages"])), one(r"\textbf{Interests:} " + esc(data["hobbies"]))]
-parts += [section("Academic Reference"), one(esc(data["academic_reference"])), "\\end{document}\n"]
+parts += [r"\renewcommand{\cvsectionreserve}{2\baselineskip}" + "\n", section("Academic Reference"), one(esc(data["academic_reference"])), "\\end{document}\n"]
 (out / "Xu_Han_CV.tex").write_text("".join(parts))
 
 md = ["# Xu Han", "Munich, Germany | [xuhanphysik@gmail.com](mailto:xuhanphysik@gmail.com) | [GitHub](https://github.com/xhvoid) | [Website](https://xhvoid.github.io/Xu-Han.github.io/)", data["summary"], "## Education"]

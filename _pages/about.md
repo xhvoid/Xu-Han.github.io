@@ -12,15 +12,15 @@ redirect_from:
 
 I am a Photonics M.Sc. student at Hochschule München and an Astrophysics graduate of LMU Munich, focusing on astronomical instrumentation, wavefront sensing and optical-system performance.
 
-My work combines Python-based optical modelling with experimental apparatus development and astronomical data analysis. My current independent project investigates how detector measurements, wavefront reconstruction and feedback control affect AO image quality.
-
 {% include portfolio-styles.html %}
 
 <div class="portfolio-actions" aria-label="Main links">
-  <a class="btn btn--primary" href="https://xhvoid.github.io/Shack-Hartmann-AO-Simulation/">Explore AO simulations</a>
+  <a class="btn btn--primary" href="{{ '/projects/elt-owl/' | relative_url }}">ELT–OWL optical modelling report</a>
   <a class="btn" href="{{ '/cv/' | relative_url }}">View CV</a>
   <a class="btn" href="mailto:xuhanphysik@gmail.com">Email</a>
 </div>
+
+My work combines Python-based optical modelling with experimental apparatus development and astronomical data analysis. My current independent project investigates how detector measurements, wavefront reconstruction and feedback control affect AO image quality.
 
 ## Selected research and engineering work
 
@@ -47,7 +47,7 @@ My work combines Python-based optical modelling with experimental apparatus deve
 
 ## From measurements to astronomical instruments
 
-My physics thesis took a measurement from CAD and 3D-printed parts to an assembled apparatus, electronic readout and data analysis. My astrophysics thesis developed a cosmic-void finder for weak-lensing maps. I now study **optical design with Zemax** and model the wavefront-to-image chain in adaptive optics.
+My physics thesis took a measurement from CAD and 3D-printed parts to an assembled apparatus, electronic readout and data analysis. My astrophysics thesis developed a cosmic-void finder for weak-lensing maps. In Zemax OpticStudio, I reconstructed ESO’s 39 m ELT design and its proposed 100 m OWL to see how tightly each telescope focuses starlight away from the field centre.
 
 My other optical modelling work includes [fibre coupling for astronomical spectroscopy]({{ '/projects/#astrophotonics' | relative_url }}).
 

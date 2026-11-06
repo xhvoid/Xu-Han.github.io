@@ -113,7 +113,8 @@ Recovery and rehabilitation following an accident and surgery.
 
 ## Technical Skills
 
-- **Optical modelling:** Wavefront sensing, Fourier PSFs, calibration, regularised reconstruction and closed-loop diagnostics; HCIPy and TIPTOP; Zemax through optical-design coursework.
+- **Optical modelling:** Wavefront sensing, Fourier PSFs, calibration, regularised reconstruction and closed-loop diagnostics; HCIPy and TIPTOP.
+- **Zemax OpticStudio:** telescope prescription reconstruction, PSF and encircled-energy analysis
 - **Scientific computing:** Python (NumPy, SciPy, Matplotlib, pandas, scikit-learn); MATLAB; Mathematica; statistical analysis and MCMC.
 - **Experimental methods:** CAD, 3D printing, mechanical assembly, electronic measurement integration, optical alignment and interferometry.
 - **Research tools:** Linux, Git, Jupyter and LaTeX.

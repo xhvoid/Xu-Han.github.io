@@ -174,7 +174,11 @@
   "skills": [
     [
       "Optical modelling",
-      "Wavefront sensing, Fourier PSFs, calibration, regularised reconstruction and closed-loop diagnostics; HCIPy and TIPTOP; Zemax through optical-design coursework."
+      "Wavefront sensing, Fourier PSFs, calibration, regularised reconstruction and closed-loop diagnostics; HCIPy and TIPTOP."
+    ],
+    [
+      "Zemax OpticStudio",
+      "telescope prescription reconstruction, PSF and encircled-energy analysis"
     ],
     [
       "Scientific computing",

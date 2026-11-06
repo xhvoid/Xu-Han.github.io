@@ -62,7 +62,9 @@
 \makeatother
 \pagestyle{customFooterStyle}
 
-\titleformat{\section}{\needspace{4\baselineskip}\bfseries\large}{}{0pt}{}[\vspace{1pt}\titlerule]
+% Keep a normal section with its following content; the last one-line reference needs less room.
+\newcommand{\cvsectionreserve}{4\baselineskip}
+\titleformat{\section}{\needspace{\cvsectionreserve}\bfseries\large}{}{0pt}{}[\vspace{1pt}\titlerule]
 
 \titlespacing{\section}{
     % left space:
@@ -329,7 +331,11 @@ Recovery and rehabilitation following an accident and surgery.
 \vspace{0.06 cm}
 \section{Technical Skills}
 \begin{onecolentry}
-\textbf{Optical modelling:} Wavefront sensing, Fourier PSFs, calibration, regularised reconstruction and closed-loop diagnostics; HCIPy and TIPTOP; Zemax through optical-design coursework.
+\textbf{Optical modelling:} Wavefront sensing, Fourier PSFs, calibration, regularised reconstruction and closed-loop diagnostics; HCIPy and TIPTOP.
+\end{onecolentry}
+\vspace{0.04 cm}
+\begin{onecolentry}
+\textbf{Zemax OpticStudio:} telescope prescription reconstruction, PSF and encircled-energy analysis
 \end{onecolentry}
 \vspace{0.04 cm}
 \begin{onecolentry}
@@ -351,6 +357,7 @@ Recovery and rehabilitation following an accident and surgery.
 \begin{onecolentry}
 \textbf{Interests:} Astronomical photography and alpine mountaineering.
 \end{onecolentry}
+\renewcommand{\cvsectionreserve}{2\baselineskip}
 \section{Academic Reference}
 \begin{onecolentry}
 Prof. Joseph Mohr, M.Sc. thesis supervisor

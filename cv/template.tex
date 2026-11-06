@@ -62,7 +62,9 @@
 \makeatother
 \pagestyle{customFooterStyle}
 
-\titleformat{\section}{\needspace{4\baselineskip}\bfseries\large}{}{0pt}{}[\vspace{1pt}\titlerule]
+% Keep a normal section with its following content; the last one-line reference needs less room.
+\newcommand{\cvsectionreserve}{4\baselineskip}
+\titleformat{\section}{\needspace{\cvsectionreserve}\bfseries\large}{}{0pt}{}[\vspace{1pt}\titlerule]
 
 \titlespacing{\section}{
     % left space:
