@@ -40,18 +40,18 @@ The interactive explorer presents **precomputed results and recorded AO experime
 
 ### Selected case study — diagnosing a closed-loop reconstruction failure
 
-In a simulated 2.2 m natural-guide-star AO system, I investigated a reconstruction failure associated with measurement dropout and weakly constrained inverse modes. Stronger TSVD regularisation maintained usable reconstruction throughout a matched two-second atmospheric trajectory. The original and revised runs, diagnostic evidence and model limitations are available in the interactive explorer.
+I traced a loss of lock in a 2.2 m natural-guide-star AO simulation to a feedback loop: as measurements dropped out, weakly constrained modes amplified mirror commands and more spots failed the quality cuts.
+
+The traces come from a synthetic model based on published Robo-AO-2 parameters. With the same atmosphere and calibration, stronger TSVD regularisation kept reconstruction usable for the full two seconds while the recovery safeguard stayed inactive.
 
 <figure class="project-case-figure">
   <a href="https://xhvoid.github.io/Shack-Hartmann-AO-Simulation/#ngs22">
     <img src="{{ '/images/projects/ngs-22m-comparison.png' | relative_url }}" alt="Recorded synthetic AO results: the original 2.2 m run loses usable reconstruction near one second, while stronger TSVD regularisation maintains reconstruction through the matched two-second trajectory; H-band Strehl, usable measurement rows and DM limits are shown" width="1760" height="1520" loading="lazy" decoding="async">
   </a>
-  <figcaption>Recorded simulation results, reproduced unchanged from the project analysis. The 2.2 m v1/v2 runs share the same atmosphere and calibration; the separate 2 m reference ends at one second and is not a paired comparison. Select the figure to inspect the case.</figcaption>
+  <figcaption>The two 2.2 m traces show the original and revised runs. The 2 m trace is a separate one-second reference.</figcaption>
 </figure>
 
-This is a **synthetic model study**, not measured Robo-AO-2 performance. The paired result supports improvement for this input and time window. The added recovery safeguard did not activate, so the demonstrated improvement supports the stronger regularisation rather than automatic recovery; the initial noise trigger was not uniquely identified.
-
-[Methods and validation evidence](https://github.com/xhvoid/Shack-Hartmann-AO-Simulation#validation-evidence) · [Case configurations, diagnosis and limitations](https://github.com/xhvoid/Shack-Hartmann-AO-Simulation/tree/main/web/ao-explorer/derived/ngs-22m-53663e0742d1d106)
+[Methods and numerical checks](https://github.com/xhvoid/Shack-Hartmann-AO-Simulation#scope-and-evidence) · [Case configurations, diagnosis and limitations](https://github.com/xhvoid/Shack-Hartmann-AO-Simulation/tree/website/site/derived/ngs-22m-53663e0742d1d106)
 
 <section class="project-evidence" aria-labelledby="ao-explorer-preview">
   <h3 id="ao-explorer-preview">AO correction in motion</h3>
@@ -85,7 +85,7 @@ This is a **synthetic model study**, not measured Robo-AO-2 performance. The pai
 
 <p class="project-role">Personal project extending the hands-on Zemax lab in <em>Physical Optics and Modeling</em></p>
 
-I wanted to know how far off-axis a larger mirror still gives a tighter star image. I reconstructed the 39 m ELT and the proposed 100 m OWL from published prescriptions. At 550 nm, OWL enclosed half the light in a smaller angular radius at 1′, but the ELT did so at 1.5′. In the infrared, OWL kept its advantage at the same science-field edge. The report also follows what happened when I changed OWL’s focal surface from a hyperboloid to a sphere or a flat plane.
+I wanted to know how far off-axis a larger mirror still gives a tighter star image. I reconstructed the 39 m ELT and the proposed 100 m OWL from published prescriptions. At 550 nm, OWL’s half-light radius grew from 0.80 to 1.94 milliarcseconds between 1 and 1.5 arcminutes off axis. The ELT stayed near 1.73 milliarcseconds at both positions, giving it the tighter image at 1.5 arcminutes. At the same field position, OWL had the smaller half-light radius at all three infrared wavelengths tested. The report also compares hyperboloidal, spherical and flat focal surfaces for OWL.
 
 <nav class="portfolio-jump" aria-label="Telescope optics report">
   <a href="{{ '/projects/elt-owl/' | relative_url }}">Read the engineering report</a>
@@ -122,13 +122,10 @@ I developed a watershed algorithm for detecting cosmic voids in full-sky converg
 
 - Implemented void detection and studied the influence of algorithm parameters on the recovered populations.
 - Characterised void abundance, effective radii, ellipticities and convergence profiles.
-- Connected map-based algorithm development with the quantitative interpretation of astronomical measurements.
-
-This research developed my experience with scientific computing, statistical reasoning and the relation between analysis choices and physical conclusions.
 
 **Supervisors:** Prof. Joseph Mohr and Dr. Chris Davies.
 
-[Thesis (PDF)]({{ '/files/Watershed_Voids%EF%BC%88thesis%EF%BC%89.pdf' | relative_url }}) · [2D-Voids repository](https://github.com/xhvoid/2D-Voids)
+[Thesis (PDF)]({{ '/files/watershed-voids-thesis.pdf' | relative_url }}) · [2D-Voids repository](https://github.com/xhvoid/2D-Voids)
 
 <a id="additional-independent-projects"></a>
 

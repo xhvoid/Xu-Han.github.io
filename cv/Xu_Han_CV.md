@@ -54,7 +54,7 @@ Supervisors: Prof. Gerhard Wurm and Dr. Felix Jungmann.
 - Designed the mechanical apparatus in CAD, fabricated components by 3D printing and assembled the setup; integrated and debugged electronic charge-measurement modules.
 - Conducted measurements and analysed grain-size dependence of collisional charging, testing a dust-collision growth hypothesis relevant to early planet formation.
 
-### [Weak Lensing Void Finder](https://xhvoid.github.io/Xu-Han.github.io/files/Watershed_Voids%EF%BC%88thesis%EF%BC%89.pdf)
+### [Weak Lensing Void Finder](https://xhvoid.github.io/Xu-Han.github.io/files/watershed-voids-thesis.pdf)
 
 Master's thesis | LMU Munich | Mar 2023 - Aug 2024
 

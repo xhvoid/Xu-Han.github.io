@@ -15,12 +15,10 @@ I am a Photonics M.Sc. student at Hochschule München and an Astrophysics gradua
 {% include portfolio-styles.html %}
 
 <div class="portfolio-actions" aria-label="Main links">
-  <a class="btn btn--primary" href="{{ '/projects/elt-owl/' | relative_url }}">ELT–OWL optical modelling report</a>
+  <a class="btn btn--primary" href="https://xhvoid.github.io/Shack-Hartmann-AO-Simulation/">Explore AO simulations</a>
   <a class="btn" href="{{ '/cv/' | relative_url }}">View CV</a>
   <a class="btn" href="mailto:xuhanphysik@gmail.com">Email</a>
 </div>
-
-My work combines Python-based optical modelling with experimental apparatus development and astronomical data analysis. My current independent project investigates how detector measurements, wavefront reconstruction and feedback control affect AO image quality.
 
 ## Selected research and engineering work
 
@@ -29,7 +27,7 @@ My work combines Python-based optical modelling with experimental apparatus deve
     <span class="portfolio-kicker">Featured · Current independent project</span>
     <h3><a href="{{ '/projects/#adaptive-optics' | relative_url }}">Wavefront sensing &amp; AO</a></h3>
     <p>Detector-level sensing, calibrated reconstruction and closed-loop diagnostics, including a recorded 2.2 m NGS reconstruction-failure case.</p>
-    <a class="btn btn--primary" href="https://xhvoid.github.io/Shack-Hartmann-AO-Simulation/">Open interactive explorer</a>
+    <a class="btn" href="https://xhvoid.github.io/Shack-Hartmann-AO-Simulation/#ngs22">Explore the loss-of-lock case</a>
   </article>
   <article class="portfolio-highlight">
     <span class="portfolio-kicker">Physics bachelor's thesis</span>
@@ -47,9 +45,7 @@ My work combines Python-based optical modelling with experimental apparatus deve
 
 ## From measurements to astronomical instruments
 
-My physics thesis took a measurement from CAD and 3D-printed parts to an assembled apparatus, electronic readout and data analysis. My astrophysics thesis developed a cosmic-void finder for weak-lensing maps. In Zemax OpticStudio, I reconstructed ESO’s 39 m ELT design and its proposed 100 m OWL to see how tightly each telescope focuses starlight away from the field centre.
-
-My other optical modelling work includes [fibre coupling for astronomical spectroscopy]({{ '/projects/#astrophotonics' | relative_url }}).
+My physics thesis took a measurement from CAD drawings and 3D-printed parts to an assembled apparatus, electronic readout and analysis. My astrophysics thesis went the other way: I developed a void finder for DES Y3 convergence maps and followed the full chain from simulation to posterior. That chain taught me where the limits now sit. Beyond a certain precision, what decides a result is no longer photon statistics but the instrument behind the data — its point-spread function, its wavefront control, its calibration stability, and how well each is understood. Those properties are fixed long before any likelihood is written. I want to work on the side where they are fixed: wavefront sensing and control, optical system performance, and the modelling that connects a design to what it will actually measure. I am looking for work on ELT-generation instrumentation, from wavefront control and optical system performance to calibration, where an instrument’s measurement capability is decided.
 
 ## Hobbies
 
