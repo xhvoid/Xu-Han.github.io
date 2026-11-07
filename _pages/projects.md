@@ -11,10 +11,11 @@ My projects range from telescope optics and adaptive optics simulations to an ex
 
 <nav class="portfolio-jump" aria-label="Project sections">
   <a href="#adaptive-optics">Adaptive optics</a>
-  <a href="#elt-owl">ELT and OWL telescope optics</a>
+  <a href="#elt-owl">OWL optical reconstruction</a>
   <a href="#experimental-apparatus">Experimental apparatus</a>
   <a href="#weak-lensing">Weak lensing</a>
   <a href="#astrophotonics">Astrophotonics</a>
+  <a href="#ao-fed-ifu">AO-fed IFU</a>
 </nav>
 
 <a id="adaptive-optics"></a>
@@ -24,25 +25,22 @@ My projects range from telescope optics and adaptive optics simulations to an ex
 
 <p class="project-role">Independent project · March 2026–present · Ongoing development</p>
 
-I developed a modular Python model of single-conjugate adaptive optics (SCAO), following the measurement chain from atmospheric wavefront disturbances to detector images, calibrated reconstruction, mirror commands and astronomical image quality.
+In an astronomical instrumentation lab, I tuned a deformable mirror and observed how its shape changed the wavefront error. In my Python model I can follow the same correction one frame at a time. I propagate the light through a Shack–Hartmann lenslet array, measure the spot positions on a noisy detector, and use a calibrated interaction matrix to calculate the next mirror command.
 
-- **Sensing and calibration:** Shack-Hartmann propagation, detector sampling, photon/read noise, reference centroids and interaction matrices.
-- **Reconstruction and control:** Regularised inverse problems, gain and latency studies, deformable-mirror limits and explicit treatment of invalid measurements.
-- **Performance and verification:** Residual wavefront error, Strehl ratio, FWHM and encircled energy; analytic references, numerical convergence checks and comparisons with independently implemented HCIPy optics.
-
-The interactive explorer presents **precomputed results and recorded AO experiments**; it performs no online simulation. Executed notebooks and saved configurations provide the methods and evidence behind the displays.
+I varied gain, delay and detector noise, then measured the residual wavefront, Strehl and encircled energy. The Explorer replays the recorded wavefronts and science images. I also compared selected optical calculations with analytic solutions and HCIPy.
 
 <nav class="portfolio-jump" aria-label="AO project links">
   <a href="https://xhvoid.github.io/Shack-Hartmann-AO-Simulation/">Interactive explorer</a>
   <a href="https://github.com/xhvoid/Shack-Hartmann-AO-Simulation">Source code</a>
+  <a href="https://github.com/xhvoid/Shack-Hartmann-AO-Simulation/blob/main/docs/design-decisions.md">Design decisions</a>
   <a href="https://xhvoid.github.io/Shack-Hartmann-AO-Simulation/#ngs22">Loss-of-lock case study</a>
 </nav>
 
 ### Selected case study — diagnosing a closed-loop reconstruction failure
 
-I traced a loss of lock in a 2.2 m natural-guide-star AO simulation to a feedback loop: as measurements dropped out, weakly constrained modes amplified mirror commands and more spots failed the quality cuts.
+In the 2.2 m natural-guide-star model, reconstruction stopped at 0.981 s. As spots dropped out, weakly sensed modes produced large mirror commands and pushed more spots past the rejection threshold.
 
-The traces come from a synthetic model based on published Robo-AO-2 parameters. With the same atmosphere and calibration, stronger TSVD regularisation kept reconstruction usable for the full two seconds while the recovery safeguard stayed inactive.
+I raised the TSVD cutoff from 0.001 to 0.05 and repeated the run with the same atmosphere and calibration. All 1,500 frames reconstructed, the mirror stayed within its stroke limits, and the recovery safeguard stayed inactive. The two traces below come from a simulated Robo-AO-2-like configuration.
 
 <figure class="project-case-figure">
   <a href="https://xhvoid.github.io/Shack-Hartmann-AO-Simulation/#ngs22">
@@ -81,11 +79,11 @@ The traces come from a synthetic model based on published Robo-AO-2 parameters. 
 
 <a id="elt-owl"></a>
 
-## ELT and OWL Telescope Optics
+## Reconstructing OWL and tracing an ensquared-energy discrepancy
 
-<p class="project-role">Personal project extending the hands-on Zemax lab in <em>Physical Optics and Modeling</em></p>
+I rebuilt OWL in Zemax from the prescription in ESO’s Blue Book. At 5 arcmin off axis, I obtained 1.472 µm total RMS wavefront error. ESO gives 1.476 µm. At 3 arcmin, however, my model put 77.1% of the light inside a square of half-width 50 µm at 2.2 µm. I read about 49.9% from ESO’s curve.
 
-I wanted to know how far off-axis a larger mirror still gives a tighter star image. I reconstructed the 39 m ELT and the proposed 100 m OWL from published prescriptions. At 550 nm, OWL’s half-light radius grew from 0.80 to 1.94 milliarcseconds between 1 and 1.5 arcminutes off axis. The ELT stayed near 1.73 milliarcseconds at both positions, giving it the tighter image at 1.5 arcminutes. At the same field position, OWL had the smaller half-light radius at all three infrared wavelengths tested. The report also compares hyperboloidal, spherical and flat focal surfaces for OWL.
+I kept the radius fixed and changed only the focal-surface conic from −1.295298 to zero. The result fell to 50.0%. Across the 101 sampled half-widths, the spherical-surface curve agreed with my readings of the ESO figure to about 0.4 percentage points. ESO does not specify the focal surface used for that figure.
 
 <nav class="portfolio-jump" aria-label="Telescope optics report">
   <a href="{{ '/projects/elt-owl/' | relative_url }}">Read the engineering report</a>
@@ -105,7 +103,14 @@ I designed and built an apparatus to investigate charging in granular materials.
 - Assembled the apparatus and integrated and debugged its electronic charge-measurement modules.
 - Conducted experiments, analysed the grain-size dependence of charging and interpreted the measurements in relation to the physical hypothesis.
 
-This work covered the complete experimental process: defining a measurement, developing and assembling an apparatus, obtaining data and testing a physical model.
+<figure class="project-case-figure">
+  <img src="{{ '/images/projects/granulate-apparatus-cad.png' | relative_url }}" width="780" height="693" alt="CAD cutaway showing the grain reservoir, lid, voice coil and copper collecting cup" loading="lazy">
+  <figcaption>The voice coil shakes the reservoir. A grain leaving through the lid falls into the copper cup, where I measure its charge. From Fig. 6 of my physics thesis.</figcaption>
+</figure>
+<figure class="project-case-figure">
+  <img src="{{ '/images/projects/granulate-apparatus.jpg' | relative_url }}" width="1200" height="900" alt="Assembled shaker and charge-measurement electronics inside a metal shielding cylinder" loading="lazy">
+  <figcaption>The assembled apparatus. I put the shaker and charge readout inside a metal cylinder to reduce electrical interference. From Fig. 8 of my physics thesis.</figcaption>
+</figure>
 
 **Supervisors:** Prof. Gerhard Wurm and Dr. Felix Jungmann.
 
@@ -136,5 +141,13 @@ A conceptual Python study linking residual AO wavefront error, injection jitter 
 **Methods:** Wave optics, coherent modal coupling, noise budgets and parameter studies.
 
 [Repository](https://github.com/xhvoid/Astrophotonics) · [Executed notebook](https://github.com/xhvoid/Astrophotonics/blob/main/notebooks/eso_astrophotonics_showcase.ipynb)
+
+<a id="ao-fed-ifu"></a>
+
+## AO-fed integral-field spectrograph
+
+I passed a synthetic source cube through an AO point-spread function, an image slicer, a spectrograph and a detector. Comparing the reconstructed cube with the input lets me measure what spatial and spectral information the instrument recovered.
+
+[AO-fed IFU project and source code](https://github.com/xhvoid/AO-Fed-IFU-Spectrograph-Simulation)
 
 [Education and laboratory experience]({{ '/experience/' | relative_url }}) · [CV]({{ '/cv/' | relative_url }})

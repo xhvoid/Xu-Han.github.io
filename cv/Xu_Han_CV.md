@@ -12,13 +12,11 @@ Mar 2026 - Present
 
 Selected coursework: Physical Optics and Modelling (Zemax optical design); Micro and Fiber Optics; Optical Measurement Technology; Semiconductor Optics and Components.
 
-### M.Sc. Astrophysics | LMU Munich
+### B.Eng. Electrical Engineering and Automation | Hubei University of Technology
 
-Apr 2022 - Aug 2024
+Sep 2013 - Jul 2017
 
-Grade: 1.55 (German scale). Selected coursework: Essentials of Advanced Astrophysics; Cosmology and Structure Formation; Statistical Methods; Instrumental Laboratory Courses.
-
-[Degree certificate](https://drive.google.com/file/d/1NQSRpt_x9CCdSJrJznqkt5ncOElWJPhy/view?usp=drivesdk) | [Transcript](https://drive.google.com/file/d/1BNefQ53rnjAXdEbOdBdHYjqefAdzN0wr/view?usp=drivesdk) | [Thesis assessment (Gutachten)](https://drive.google.com/file/d/1zO8LuT7EIP9tKCkgb7b1ZzuCjxhmHrls/view?usp=drivesdk)
+Electronics, control systems and embedded systems.
 
 ### B.Sc. Physics | University of Duisburg-Essen
 
@@ -26,11 +24,15 @@ Oct 2018 - Mar 2022
 
 Grade: 1.8 (German scale).
 
-[Degree certificate](https://drive.google.com/file/d/1m3RH47N80jSDokQ6q0vlu0j9GsGqVNYK/view?usp=drivesdk) | [Transcript](https://drive.google.com/file/d/1FZ7MeLV6mYkR--lfgMOGlVL-ERYklwXW/view?usp=drivesdk)
+[Degree certificate](https://drive.google.com/file/d/1m3RH47N80jSDokQ6q0vlu0j9GsGqVNYK/view?usp=drivesdk)
 
-### B.Eng. Electrical Engineering and Automation | Hubei University of Technology
+### M.Sc. Astrophysics | LMU Munich
 
-Sep 2013 - Jul 2017
+Apr 2022 - Aug 2024
+
+Grade: 1.55 (German scale). Selected coursework: Essentials of Advanced Astrophysics; Cosmology and Structure Formation; Statistical Methods; Instrumental Laboratory Courses.
+
+[Degree certificate](https://drive.google.com/file/d/1NQSRpt_x9CCdSJrJznqkt5ncOElWJPhy/view?usp=drivesdk)
 
 ## Selected Research and Engineering Projects
 
@@ -75,11 +77,11 @@ Supervisors: Prof. Joseph Mohr and Dr. Chris Davies.
 
 - Modelled how AO wavefront error, injection jitter and photonic-lantern mode count affect fiber coupling, spectral SNR and radial-velocity precision.
 
-### [ELT and OWL Telescope Optics](https://xhvoid.github.io/Xu-Han.github.io/projects/elt-owl/)
+### [OWL Optical Reconstruction](https://xhvoid.github.io/Xu-Han.github.io/projects/elt-owl/)
 
 Personal project extending a hands-on Zemax lab in Physical Optics and Modeling
 
-- Reconstructed the two telescope designs in Zemax and compared how aperture, off-axis aberrations and focal-surface shape affect the concentration of starlight.
+- Reproduced the 5 arcmin RMS wavefront error to 0.3% and traced a 27 percentage-point ensquared-energy discrepancy to the choice of focal surface.
 
 ## Work Experience and Career Break
 

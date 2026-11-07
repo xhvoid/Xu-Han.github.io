@@ -17,15 +17,11 @@ My studies develop my optical-engineering background, including **optical design
 
 **Selected coursework:** Physical Optics and Modelling; Micro and Fiber Optics; Optical Measurement Technology; Laser Physics — Non-linear Optics — Ultrafast Optics; Semiconductor Optics and Components.
 
-### M.Sc. Astrophysics — LMU Munich
+### B.Eng. Electrical Engineering and Automation — Hubei University of Technology
 
-**April 2022–August 2024 · Grade: 1.55 (German scale)**
+**September 2013–July 2017 · China**
 
-Research training in cosmology, quantitative data analysis and astronomical instrumentation. My thesis developed a watershed void finder for weak-lensing convergence maps, with work on DES Y3 data.
-
-**Selected coursework:** Essentials of Advanced Astrophysics; Cosmology and Structure Formation; Statistical Methods; Advanced Astrophysical Seminar; Instrumental Laboratory Courses.
-
-[Master's thesis project]({{ '/projects/#weak-lensing' | relative_url }})
+Foundation in electronics, signals and systems, control systems and embedded systems.
 
 ### B.Sc. Physics — University of Duisburg-Essen
 
@@ -37,11 +33,15 @@ My experimental thesis involved CAD design, 3D-printed fabrication, assembly, el
 
 [Experimental apparatus project]({{ '/projects/#experimental-apparatus' | relative_url }})
 
-### B.Eng. Electrical Engineering and Automation — Hubei University of Technology
+### M.Sc. Astrophysics — LMU Munich
 
-**September 2013–July 2017 · China**
+**April 2022–August 2024 · Grade: 1.55 (German scale)**
 
-Foundation in electronics, signals and systems, control systems and embedded systems.
+Research training in cosmology, quantitative data analysis and astronomical instrumentation. My thesis developed a watershed void finder for weak-lensing convergence maps, with work on DES Y3 data.
+
+**Selected coursework:** Essentials of Advanced Astrophysics; Cosmology and Structure Formation; Statistical Methods; Advanced Astrophysical Seminar; Instrumental Laboratory Courses.
+
+[Master's thesis project]({{ '/projects/#weak-lensing' | relative_url }})
 
 ## Laboratory and observatory experience
 

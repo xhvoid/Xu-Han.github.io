@@ -10,25 +10,11 @@
       ]
     },
     {
-      "degree": "M.Sc. Astrophysics",
-      "institution": "LMU Munich",
-      "date": "Apr 2022 - Aug 2024",
+      "degree": "B.Eng. Electrical Engineering and Automation",
+      "institution": "Hubei University of Technology",
+      "date": "Sep 2013 - Jul 2017",
       "details": [
-        "Grade: 1.55 (German scale). Selected coursework: Essentials of Advanced Astrophysics; Cosmology and Structure Formation; Statistical Methods; Instrumental Laboratory Courses."
-      ],
-      "links": [
-        [
-          "Degree certificate",
-          "https://drive.google.com/file/d/1NQSRpt_x9CCdSJrJznqkt5ncOElWJPhy/view?usp=drivesdk"
-        ],
-        [
-          "Transcript",
-          "https://drive.google.com/file/d/1BNefQ53rnjAXdEbOdBdHYjqefAdzN0wr/view?usp=drivesdk"
-        ],
-        [
-          "Thesis assessment (Gutachten)",
-          "https://drive.google.com/file/d/1zO8LuT7EIP9tKCkgb7b1ZzuCjxhmHrls/view?usp=drivesdk"
-        ]
+        "Electronics, control systems and embedded systems."
       ]
     },
     {
@@ -42,18 +28,22 @@
         [
           "Degree certificate",
           "https://drive.google.com/file/d/1m3RH47N80jSDokQ6q0vlu0j9GsGqVNYK/view?usp=drivesdk"
-        ],
-        [
-          "Transcript",
-          "https://drive.google.com/file/d/1FZ7MeLV6mYkR--lfgMOGlVL-ERYklwXW/view?usp=drivesdk"
         ]
       ]
     },
     {
-      "degree": "B.Eng. Electrical Engineering and Automation",
-      "institution": "Hubei University of Technology",
-      "date": "Sep 2013 - Jul 2017",
-      "details": []
+      "degree": "M.Sc. Astrophysics",
+      "institution": "LMU Munich",
+      "date": "Apr 2022 - Aug 2024",
+      "details": [
+        "Grade: 1.55 (German scale). Selected coursework: Essentials of Advanced Astrophysics; Cosmology and Structure Formation; Statistical Methods; Instrumental Laboratory Courses."
+      ],
+      "links": [
+        [
+          "Degree certificate",
+          "https://drive.google.com/file/d/1NQSRpt_x9CCdSJrJznqkt5ncOElWJPhy/view?usp=drivesdk"
+        ]
+      ]
     }
   ],
   "core": [
@@ -125,11 +115,11 @@
       ]
     },
     {
-      "title": "ELT and OWL Telescope Optics",
+      "title": "OWL Optical Reconstruction",
       "url": "https://xhvoid.github.io/Xu-Han.github.io/projects/elt-owl/",
       "role": "Personal project extending a hands-on Zemax lab in Physical Optics and Modeling",
       "bullets": [
-        "Reconstructed the two telescope designs in Zemax and compared how aperture, off-axis aberrations and focal-surface shape affect the concentration of starlight."
+        "Reproduced the 5 arcmin RMS wavefront error to 0.3% and traced a 27 percentage-point ensquared-energy discrepancy to the choice of focal surface."
       ]
     }
   ],

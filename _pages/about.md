@@ -16,9 +16,12 @@ I am a Photonics M.Sc. student at Hochschule München and an Astrophysics gradua
 
 <div class="portfolio-actions" aria-label="Main links">
   <a class="btn btn--primary" href="https://xhvoid.github.io/Shack-Hartmann-AO-Simulation/">Explore AO simulations</a>
+  <a class="btn" href="{{ '/projects/elt-owl/' | relative_url }}">OWL optical reconstruction</a>
   <a class="btn" href="{{ '/cv/' | relative_url }}">View CV</a>
   <a class="btn" href="mailto:xuhanphysik@gmail.com">Email</a>
 </div>
+
+In my OWL reconstruction, the 5′ wavefront error matched the ESO value to 0.3%. At 3′, changing the focal surface from a hyperboloid to a sphere brought the ensquared-energy curve within 0.4 percentage points of the published curve.
 
 ## Selected research and engineering work
 
@@ -26,7 +29,7 @@ I am a Photonics M.Sc. student at Hochschule München and an Astrophysics gradua
   <article class="portfolio-highlight portfolio-highlight--featured">
     <span class="portfolio-kicker">Featured · Current independent project</span>
     <h3><a href="{{ '/projects/#adaptive-optics' | relative_url }}">Wavefront sensing &amp; AO</a></h3>
-    <p>Detector-level sensing, calibrated reconstruction and closed-loop diagnostics, including a recorded 2.2 m NGS reconstruction-failure case.</p>
+    <p>In a 2.2 m model, the loop lost lock at 0.981 s. I changed the reconstructor and repeated the same two-second atmosphere.</p>
     <a class="btn" href="https://xhvoid.github.io/Shack-Hartmann-AO-Simulation/#ngs22">Explore the loss-of-lock case</a>
   </article>
   <article class="portfolio-highlight">
@@ -45,7 +48,7 @@ I am a Photonics M.Sc. student at Hochschule München and an Astrophysics gradua
 
 ## From measurements to astronomical instruments
 
-My physics thesis took a measurement from CAD drawings and 3D-printed parts to an assembled apparatus, electronic readout and analysis. My astrophysics thesis went the other way: I developed a void finder for DES Y3 convergence maps and followed the full chain from simulation to posterior. That chain taught me where the limits now sit. Beyond a certain precision, what decides a result is no longer photon statistics but the instrument behind the data — its point-spread function, its wavefront control, its calibration stability, and how well each is understood. Those properties are fixed long before any likelihood is written. I want to work on the side where they are fixed: wavefront sensing and control, optical system performance, and the modelling that connects a design to what it will actually measure. I am looking for work on ELT-generation instrumentation, from wavefront control and optical system performance to calibration, where an instrument’s measurement capability is decided.
+I started in electrical engineering and automation, studied physics and astrophysics, and returned to building instruments through photonics. My physics thesis took a measurement from CAD drawings and 3D-printed parts to an assembled apparatus, electronic readout and analysis. My astrophysics thesis went the other way: I developed a void finder for DES Y3 convergence maps and followed the full chain from simulation to posterior. That chain taught me where the limits now sit. Beyond a certain precision, what decides a result is no longer photon statistics but the instrument behind the data — its point-spread function, its wavefront control, its calibration stability, and how well each is understood. Those properties are fixed long before any likelihood is written. I want to work on the side where they are fixed: wavefront sensing and control, optical system performance, and the modelling that connects a design to what it will actually measure. I am looking for work on ELT-generation instrumentation, from wavefront control and optical system performance to calibration, where an instrument’s measurement capability is decided.
 
 ## Hobbies
 
