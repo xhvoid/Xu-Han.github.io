@@ -53,6 +53,12 @@ In a separate 2 m test, I used the same on-axis telescope geometry, atmosphere a
 
 [Methods and numerical checks](https://github.com/xhvoid/Shack-Hartmann-AO-Simulation#scope-and-evidence) · [Case configurations, diagnosis and limitations](https://github.com/xhvoid/Shack-Hartmann-AO-Simulation/tree/website/site/derived/ngs-22m-53663e0742d1d106)
 
+### Comparing loop gains in the historical 42 m AO model
+
+With three frames of delay, gain 0.2 applied a smaller fraction of each correction and softened the late rise in residual wavefront error in one run, while gain 0.3 left less error early on and gave a sharper image over the full 0.8 s exposure (peak Strehl 0.722 versus 0.674).
+
+[Explore the 42 m gain comparison](https://xhvoid.github.io/Shack-Hartmann-AO-Simulation/#gain42)
+
 <section class="project-evidence" aria-labelledby="ao-explorer-preview">
   <h3 id="ao-explorer-preview">AO correction in motion</h3>
   <div class="ao-preview-layout">
