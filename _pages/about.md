@@ -29,7 +29,7 @@ Rebuilding ESO's 100 m OWL design in Zemax from its published prescription, I ma
   <article class="portfolio-highlight portfolio-highlight--featured">
     <span class="portfolio-kicker">Featured · Current independent project</span>
     <h3><a href="{{ '/projects/#adaptive-optics' | relative_url }}">Wavefront sensing &amp; AO</a></h3>
-    <p>In a 2.2 m model, the loop lost lock at 0.981 s. I changed the reconstructor and repeated the same two-second atmosphere.</p>
+    <p>In a 2.2 m model, the loop lost lock at 0.981 s. I changed the reconstructor, repeated the same two-second atmosphere, and the revised loop held lock for all 1,500 frames.</p>
     <a class="btn" href="https://xhvoid.github.io/Shack-Hartmann-AO-Simulation/#ngs22">Explore the loss-of-lock case</a>
   </article>
   <article class="portfolio-highlight">
