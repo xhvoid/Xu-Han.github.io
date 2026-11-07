@@ -49,6 +49,8 @@ I raised the TSVD cutoff from 0.001 to 0.05 and repeated the run with the same a
   <figcaption>The two 2.2 m traces show the original and revised runs. The 2 m trace is a separate one-second reference.</figcaption>
 </figure>
 
+In a separate 2 m test, I used the same on-axis telescope geometry, atmosphere and loop gain in my model and in TIPTOP. At 1.65 µm the peak Strehl was 0.257–0.419 across three time-domain exposures. TIPTOP gave 0.710. In the first exposure, residual tilt accounted for 69% of the wavefront variance. [Comparison plot and settings](https://github.com/xhvoid/Shack-Hartmann-AO-Simulation/tree/main/docs/scao-comparison)
+
 [Methods and numerical checks](https://github.com/xhvoid/Shack-Hartmann-AO-Simulation#scope-and-evidence) · [Case configurations, diagnosis and limitations](https://github.com/xhvoid/Shack-Hartmann-AO-Simulation/tree/website/site/derived/ngs-22m-53663e0742d1d106)
 
 <section class="project-evidence" aria-labelledby="ao-explorer-preview">
@@ -105,7 +107,7 @@ I designed and built an apparatus to investigate charging in granular materials.
 
 <figure class="project-case-figure">
   <img src="{{ '/images/projects/granulate-apparatus-cad.png' | relative_url }}" width="780" height="693" alt="CAD cutaway showing the grain reservoir, lid, voice coil and copper collecting cup" loading="lazy">
-  <figcaption>The voice coil shakes the reservoir. A grain leaving through the lid falls into the copper cup, where I measure its charge. From Fig. 6 of my physics thesis.</figcaption>
+  <figcaption>The voice coil shakes the reservoir. A grain falls through the opening in the bottom of the reservoir into the copper cup, where I measure its charge. From Fig. 6 of my physics thesis.</figcaption>
 </figure>
 <figure class="project-case-figure">
   <img src="{{ '/images/projects/granulate-apparatus.jpg' | relative_url }}" width="1200" height="900" alt="Assembled shaker and charge-measurement electronics inside a metal shielding cylinder" loading="lazy">
