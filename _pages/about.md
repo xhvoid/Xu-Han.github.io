@@ -48,7 +48,11 @@ Rebuilding ESO's 100 m OWL design in Zemax from its published prescription, I ma
 
 ## From measurements to astronomical instruments
 
-I started in electrical engineering and automation, studied physics and astrophysics, and returned to building instruments through photonics. My physics thesis took a measurement from CAD drawings and 3D-printed parts to an assembled apparatus, electronic readout and analysis. My astrophysics thesis went the other way: I developed a void finder for DES Y3 convergence maps and followed the full chain from simulation to posterior. That chain taught me where the limits now sit. Beyond a certain precision, what decides a result is no longer photon statistics but the instrument behind the data — its point-spread function, its wavefront control, its calibration stability, and how well each is understood. Those properties are fixed long before any likelihood is written. I want to work on the side where they are fixed: wavefront sensing and control, optical system performance, and the modelling that connects a design to what it will actually measure. I am looking for work on ELT-generation instrumentation, from wavefront control and optical system performance to calibration, where an instrument’s measurement capability is decided.
+I started in electrical engineering and automation, studied physics and astrophysics, and returned to building instruments through photonics. My physics thesis took a measurement from CAD drawings and 3D-printed parts to an assembled apparatus, electronic readout and analysis. My astrophysics thesis went the other way: I developed a void finder for DES Y3 convergence maps and followed the full chain from simulation to posterior.
+
+That chain taught me where the limits now sit. Beyond a certain precision, what decides a result is no longer photon statistics but the instrument behind the data — its point-spread function, its wavefront control, its calibration stability, and how well each is understood. Those properties are fixed long before any likelihood is written. I want to work on the side where they are fixed: wavefront sensing and control, optical system performance, and the modelling that connects a design to what it will actually measure.
+
+**I am looking for work on ELT-generation instrumentation, from wavefront control and optical system performance to calibration, where an instrument’s measurement capability is decided.**
 
 ## Hobbies
 
