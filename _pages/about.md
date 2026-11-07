@@ -21,7 +21,7 @@ I am a Photonics M.Sc. student at Hochschule München and an Astrophysics gradua
   <a class="btn" href="mailto:xuhanphysik@gmail.com">Email</a>
 </div>
 
-In my OWL reconstruction, the 5′ wavefront error matched the ESO value to 0.3%. At 3′, changing the focal surface from a hyperboloid to a sphere brought the ensquared-energy curve within 0.4 percentage points of the published curve.
+Rebuilding ESO's 100 m OWL design in Zemax from its published prescription, I matched the 5′ wavefront error to the ESO value to 0.3%. At 3′, changing the focal surface from a hyperboloid to a sphere brought the ensquared-energy curve within 0.4 percentage points of the published curve.
 
 ## Selected research and engineering work
 
