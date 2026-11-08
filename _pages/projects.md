@@ -87,7 +87,7 @@ I now remove a family of 96 weakly sensed checkerboard modes after every solve, 
   <figcaption>Mean images on a logarithmic scale. The circles mark (±λ/2d, ±λ/2d), and the lower row enlarges the upper-right corner with a narrower intensity range. The corner / halo values under the enlargements are means over all four corners.</figcaption>
 </figure>
 
-[Design decision](https://github.com/xhvoid/Shack-Hartmann-AO-Simulation/blob/main/docs/design-decisions.md#remove-weakly-sensed-checkerboards-after-each-solve) · [Filter source](https://github.com/xhvoid/Shack-Hartmann-AO-Simulation/blob/main/src/shwfs_ao/calibration/sparse.py) · [Case data, exporter and limitations](https://github.com/xhvoid/Shack-Hartmann-AO-Simulation/tree/website/site/derived/waffle42-3652c2193396e931)
+[Design decision](https://github.com/xhvoid/Shack-Hartmann-AO-Simulation/blob/main/docs/design-decisions.md#remove-weakly-sensed-checkerboards-after-each-solve) · [Filter source](https://github.com/xhvoid/Shack-Hartmann-AO-Simulation/blob/main/src/shwfs_ao/calibration/sparse.py) · [Case data, exporter and limitations](https://github.com/xhvoid/Shack-Hartmann-AO-Simulation/tree/website/site/derived/waffle42-ee6f0f2b4825ab1c)
 
 ### Comparing loop gains in the historical 42 m AO model
 
