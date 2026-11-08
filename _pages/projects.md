@@ -20,7 +20,7 @@ My projects range from telescope optics and adaptive optics simulations to an ex
 ### Laboratory Adaptive Optics — LMU Munich, 2022
 {: #lmu-ao-lab}
 
-In July 2022, our group worked with an ALPAO bench in the Instrumental Astrophysics Laboratory at LMU Munich. We applied individual Zernike modes with the deformable mirror and measured the wavefront with a Shack–Hartmann sensor. We studied static correction, then introduced an artificial turbulence screen to investigate dynamic correction. We followed the wavefront error and Strehl ratio and examined the point-spread function (PSF) on the science camera.
+In July 2022, I worked with an ALPAO bench in the Instrumental Astrophysics Laboratory at LMU Munich. We applied individual Zernike modes with the deformable mirror and measured the wavefront with a Shack–Hartmann sensor. We studied static correction, then introduced an artificial turbulence screen to investigate dynamic correction. We followed the wavefront error and Strehl ratio and examined the point-spread function (PSF) on the science camera.
 
 <p class="project-role">Laboratory supervisor · Dr. Frank Grupp, USM / LMU Munich</p>
 

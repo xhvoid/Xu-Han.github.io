@@ -12,11 +12,13 @@ Mar 2026 - Present
 
 Selected coursework: Physical Optics and Modelling (Zemax optical design); Micro and Fiber Optics; Optical Measurement Technology; Semiconductor Optics and Components.
 
-### B.Eng. Electrical Engineering and Automation | Hubei University of Technology
+### M.Sc. Astrophysics | LMU Munich
 
-Sep 2013 - Jul 2017
+Apr 2022 - Aug 2024
 
-Electronics, control systems and embedded systems.
+Grade: 1.55 (German scale). Selected coursework: Essentials of Advanced Astrophysics; Cosmology and Structure Formation; Statistical Methods; Instrumental Laboratory Courses.
+
+[Degree certificate](https://drive.google.com/file/d/1NQSRpt_x9CCdSJrJznqkt5ncOElWJPhy/view?usp=drivesdk)
 
 ### B.Sc. Physics | University of Duisburg-Essen
 
@@ -26,13 +28,11 @@ Grade: 1.8 (German scale).
 
 [Degree certificate](https://drive.google.com/file/d/1m3RH47N80jSDokQ6q0vlu0j9GsGqVNYK/view?usp=drivesdk)
 
-### M.Sc. Astrophysics | LMU Munich
+### B.Eng. Electrical Engineering and Automation | Hubei University of Technology
 
-Apr 2022 - Aug 2024
+Sep 2013 - Jul 2017
 
-Grade: 1.55 (German scale). Selected coursework: Essentials of Advanced Astrophysics; Cosmology and Structure Formation; Statistical Methods; Instrumental Laboratory Courses.
-
-[Degree certificate](https://drive.google.com/file/d/1NQSRpt_x9CCdSJrJznqkt5ncOElWJPhy/view?usp=drivesdk)
+Electronics, control systems and embedded systems.
 
 ## Selected Research and Engineering Projects
 
@@ -47,15 +47,6 @@ Independent project (ongoing development) | Mar 2026 - Present
 - Diagnosed a reconstruction failure associated with measurement dropout in a 2.2 m NGS model; stronger TSVD regularisation kept reconstruction usable throughout the matched two-second run.
 - Cross-checked selected optical components against HCIPy and analytic references; documented reproducible experiments, model limitations and an interactive explorer of recorded results.
 
-### [Experimental Collisional Charging Apparatus](https://xhvoid.github.io/Xu-Han.github.io/projects/#experimental-apparatus)
-
-Bachelor's thesis | University of Duisburg-Essen | Mar 2021 - Aug 2021
-
-Supervisors: Prof. Gerhard Wurm and Dr. Felix Jungmann.
-
-- Designed the mechanical apparatus in CAD, fabricated components by 3D printing and assembled the setup; integrated and debugged electronic charge-measurement modules.
-- Conducted measurements and analysed grain-size dependence of collisional charging, testing a dust-collision growth hypothesis relevant to early planet formation.
-
 ### [Weak Lensing Void Finder](https://xhvoid.github.io/Xu-Han.github.io/files/watershed-voids-thesis.pdf)
 
 Master's thesis | LMU Munich | Mar 2023 - Aug 2024
@@ -65,11 +56,20 @@ Supervisors: Prof. Joseph Mohr and Dr. Chris Davies.
 - Developed and parameter-tested a watershed finder for cosmic voids in 2D full-sky weak-lensing convergence maps.
 - Applied the analysis to DES Y3 weak-lensing maps; characterised void abundance, effective radii, ellipticities and convergence profiles.
 
+### [Experimental Collisional Charging Apparatus](https://xhvoid.github.io/Xu-Han.github.io/projects/#experimental-apparatus)
+
+Bachelor's thesis | University of Duisburg-Essen | Mar 2021 - Aug 2021
+
+Supervisors: Prof. Gerhard Wurm and Dr. Felix Jungmann.
+
+- Designed the mechanical apparatus in CAD, fabricated components by 3D printing and assembled the setup; integrated and debugged electronic charge-measurement modules.
+- Conducted measurements and analysed grain-size dependence of collisional charging, testing a dust-collision growth hypothesis relevant to early planet formation.
+
 ## Laboratory and Instrumentation Training
 
-- **Astronomical instrumentation laboratory:** Our group tested static and dynamic correction on LMU's ALPAO bench in July 2022 using a Shack-Hartmann sensor and deformable mirror. Other labs covered CCD imaging and reduction, optical interferometry and radio measurements of Galactic rotation.
+- **Astronomical instrumentation laboratory:** Tested static and dynamic correction on LMU's ALPAO bench in July 2022 using a Shack-Hartmann sensor and deformable mirror. Other labs covered CCD imaging and reduction, optical interferometry and radio measurements of Galactic rotation.
 - **Photonics laboratory:** Measured laser beam quality (M²), shaped ultrashort pulses and characterised them by autocorrelation. Fibre experiments covered OTDR, polarisation, Bragg gratings and coupling. Also worked on APD measurements, laser spectra, laser interferometry and nonlinear optics.
-- **Observatory experience:** Group observations and image processing with the Wendelstein 43 cm telescope.
+- **Observatory experience:** Took and processed images with my supervisor at Wendelstein (43 cm).
 
 ## Additional Independent Projects
 

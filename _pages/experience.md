@@ -65,7 +65,7 @@ Completed experiments included:
 - **Adaptive optics:** [Wavefront measurements and correction on the ALPAO bench]({{ '/projects/#lmu-ao-lab' | relative_url }}) with a deformable mirror and a Shack–Hartmann sensor.
 - **Radio astronomy:** Measurements of Galactic rotation.
 
-At **Wendelstein Observatory**, I participated in observing and image processing using the **43 cm telescope**.
+My supervisor and I observed with the **43 cm telescope** at **Wendelstein Observatory** and processed the images.
 
 [Astronomical photography gallery]({{ '/hobbies/astronomical-photography/' | relative_url }})
 
