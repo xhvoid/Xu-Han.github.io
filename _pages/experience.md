@@ -46,13 +46,15 @@ My experimental thesis involved CAD design, 3D-printed fabrication, assembly, el
 
 **September 2013–July 2017 · China**
 
-Foundation in electronics, signals and systems, control systems and embedded systems. In my AO model, I varied gain, delay and detector noise, then measured the residual wavefront, Strehl and encircled energy.
+Foundation in electronics, signals and systems, control systems and embedded systems.
 
 ## Laboratory and observatory experience
 
 ### Photonics laboratory
 
-Completed laboratory experiments in APD measurements, laser spectra, nonlinear optics, laser interferometry, fibre Bragg gratings and fibre coupling.
+I worked with avalanche photodiodes (APDs), measured laser spectra and carried out experiments in nonlinear optics and laser interferometry. The fibre experiments covered coupling, fibre Bragg gratings, polarisation and optical time-domain reflectometry (OTDR).
+
+In the ultrashort-pulse lab I studied pulse shaping and the Fourier limit on pulse duration, using autocorrelation to characterise the pulses. In a separate experiment I measured the beam quality factor M² to compare laser beam propagation with the diffraction limit.
 
 ### Astronomical instrumentation laboratory
 

@@ -67,9 +67,9 @@ Supervisors: Prof. Joseph Mohr and Dr. Chris Davies.
 
 ## Laboratory and Instrumentation Training
 
-- **Photonics laboratory:** Completed experiments: APD measurements, laser spectra, nonlinear optics, laser interferometry, fiber Bragg gratings and fiber coupling.
-- **Astronomical instrumentation laboratory:** Completed experiments: CCD imaging and data reduction, optical interferometry, deformable-mirror AO tuning and radio measurements of Galactic rotation.
-- **Observatory experience:** Participated in observing and image processing at Wendelstein Observatory using the 43 cm telescope.
+- **Astronomical instrumentation laboratory:** Our group tested static and dynamic correction on LMU's ALPAO bench in July 2022 using a Shack-Hartmann sensor and deformable mirror. Other labs covered CCD imaging and reduction, optical interferometry and radio measurements of Galactic rotation.
+- **Photonics laboratory:** Measured laser beam quality (M²), shaped ultrashort pulses and characterised them by autocorrelation. Fibre experiments covered OTDR, polarisation, Bragg gratings and coupling. Also worked on APD measurements, laser spectra, laser interferometry and nonlinear optics.
+- **Observatory experience:** Group observations and image processing with the Wendelstein 43 cm telescope.
 
 ## Additional Independent Projects
 
@@ -89,7 +89,7 @@ Personal project extending a hands-on Zemax lab in Physical Optics and Modeling
 
 Dec 2024 - Feb 2025 | MAX!mize start-up team, MPA, Garching
 
-- Contributed to a centralised bibliography platform in Python; implemented and tested LLM-based functionality.
+- Implemented and tested LLM features for the team's centralised Python bibliography platform.
 
 ### Medical leave
 
@@ -111,7 +111,7 @@ Recovery and rehabilitation following an accident and surgery.
 
 ### Advanced Astrophysical Seminar | LMU Munich | Nov 2022
 
-40-minute course presentation and literature study on large ground-based astronomical telescopes, telescope designs and adaptive optics.
+Exploring Telescope Optics: How Do the Largest Optical Systems Work? 40-minute course presentation supervised by Dr. Frank Grupp.
 
 ## Technical Skills
 

@@ -15,7 +15,6 @@ My projects range from telescope optics and adaptive optics simulations to an ex
   <a href="#experimental-apparatus">Experimental apparatus</a>
   <a href="#weak-lensing">Weak lensing</a>
   <a href="#astrophotonics">Astrophotonics</a>
-  <a href="#ao-fed-ifu">AO-fed IFU</a>
 </nav>
 
 ### Laboratory Adaptive Optics — LMU Munich, 2022
@@ -170,13 +169,5 @@ A conceptual Python study linking residual AO wavefront error, injection jitter 
 **Methods:** Wave optics, coherent modal coupling, noise budgets and parameter studies.
 
 [Repository](https://github.com/xhvoid/Astrophotonics) · [Executed notebook](https://github.com/xhvoid/Astrophotonics/blob/main/notebooks/eso_astrophotonics_showcase.ipynb)
-
-<a id="ao-fed-ifu"></a>
-
-## AO-fed integral-field spectrograph
-
-I passed a synthetic source cube through an AO point-spread function, an image slicer, a spectrograph and a detector. Comparing the reconstructed cube with the input lets me measure what spatial and spectral information the instrument recovered.
-
-[AO-fed IFU project and source code](https://github.com/xhvoid/AO-Fed-IFU-Spectrograph-Simulation)
 
 [Education and laboratory experience]({{ '/experience/' | relative_url }}) · [CV]({{ '/cv/' | relative_url }})
