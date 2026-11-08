@@ -48,11 +48,11 @@ Rebuilding ESO's 100 m OWL design in Zemax from its published prescription, I ma
 
 ## From measurements to astronomical instruments
 
-I started in electrical engineering and automation, studied physics and astrophysics, and returned to building instruments through photonics. My physics thesis took a measurement from CAD drawings and 3D-printed parts to an assembled apparatus, electronic readout and analysis. My astrophysics thesis went the other way: I developed a void finder for DES Y3 convergence maps and followed the full chain from simulation to posterior.
+I was interested in observing the night sky long before my Astrophysics Master's. After studying electrical engineering and automation, I built a charge-measurement apparatus for my physics thesis, from CAD drawings and 3D-printed parts to the electronic readout. At LMU my research focused on weak-lensing cosmology. I developed a void finder for DES Y3 convergence maps and followed the analysis from simulation to posterior.
 
-That chain taught me where the limits now sit. Beyond a certain precision, what decides a result is no longer photon statistics but the instrument behind the data — its point-spread function, its wavefront control, its calibration stability, and how well each is understood. Those properties are fixed long before any likelihood is written. I want to work on the side where they are fixed: wavefront sensing and control, optical system performance, and the modelling that connects a design to what it will actually measure.
+During the same degree, I worked with an [adaptive optics bench]({{ '/projects/#lmu-ao-lab' | relative_url }}) and studied telescope optics in an [advanced seminar]({{ '/experience/#telescope-optics-seminar' | relative_url }}). Working with the lensing maps made me think about how the instrument's point-spread function and calibration shape what we can infer from its data. After graduating from LMU, I decided to pursue astronomical instrumentation professionally. I chose the Photonics MSc at Hochschule München to study optical design and laser physics and spend more time making optical measurements in the lab.
 
-**I am looking for work on ELT-generation instrumentation, from wavefront control and optical system performance to calibration, where an instrument’s measurement capability is decided.**
+**I am looking for work on ELT-generation instruments, particularly wavefront sensing and control, optical performance, and the integration and testing of optical systems.**
 
 ## Hobbies
 

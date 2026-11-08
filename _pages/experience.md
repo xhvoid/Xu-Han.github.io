@@ -27,6 +27,11 @@ Research training in cosmology, quantitative data analysis and astronomical inst
 
 [Master's thesis project]({{ '/projects/#weak-lensing' | relative_url }})
 
+#### Advanced seminar · November 2022
+{: #telescope-optics-seminar}
+
+Dr. Frank Grupp (USM / LMU Munich) supervised my 40-minute course presentation, *Exploring Telescope Optics: How Do the Largest Optical Systems Work?* I spent a month studying telescope layouts, from Cassegrain designs to three-mirror systems, with the VLT and Keck among my examples. I also covered how aberrations and diffraction shape the image, and how laser guide stars are used for wavefront sensing.
+
 ### B.Sc. Physics — University of Duisburg-Essen
 
 **October 2018–March 2022 · Grade: 1.8 (German scale)**
@@ -55,7 +60,7 @@ Completed experiments included:
 
 - **Scientific CCD imaging:** Imaging principles, image acquisition and subsequent data reduction.
 - **Optical interferometry:** Interferometric measurements.
-- **Adaptive optics:** Tuning experiments with a deformable mirror to observe correction of wavefront error.
+- **Adaptive optics:** [Wavefront measurements and correction on the ALPAO bench]({{ '/projects/#lmu-ao-lab' | relative_url }}) with a deformable mirror and a Shack–Hartmann sensor.
 - **Radio astronomy:** Measurements of Galactic rotation.
 
 At **Wendelstein Observatory**, I participated in observing and image processing using the **43 cm telescope**.
@@ -76,7 +81,6 @@ Contributed to a centralised bibliography platform in Python, including implemen
 - **Tonale Winter School on Cosmology** — Participant; December 2024.
 - **ORIGINS Lensing Day** — November 2024; contributed talk: [*Watershed on the curved sky*](https://indico.ph.tum.de/event/7717/timetable/?view=standard#12-watershed-on-the-curved-sky).
 - **Cambridge-LMU Cosmology Meeting** — Participant; December 2023.
-- **Advanced Astrophysical Seminar, LMU Munich** — November 2022; a **40-minute course presentation and literature study** on large ground-based astronomical telescopes, telescope designs and adaptive optics.
 
 ## Tools and methods
 

@@ -18,6 +18,25 @@ My projects range from telescope optics and adaptive optics simulations to an ex
   <a href="#ao-fed-ifu">AO-fed IFU</a>
 </nav>
 
+### Laboratory Adaptive Optics — LMU Munich, 2022
+{: #lmu-ao-lab}
+
+In July 2022, our group worked with an ALPAO bench in the Instrumental Astrophysics Laboratory at LMU Munich. We applied individual Zernike modes with the deformable mirror and measured the wavefront with a Shack–Hartmann sensor. We studied static correction, then introduced an artificial turbulence screen to investigate dynamic correction. We followed the wavefront error and Strehl ratio and examined the point-spread function (PSF) on the science camera.
+
+<p class="project-role">Laboratory supervisor · Dr. Frank Grupp, USM / LMU Munich</p>
+
+<details class="project-evidence">
+  <summary>View laboratory images</summary>
+  <figure>
+    <img src="{{ '/images/projects/ao_bench_software.png' | relative_url }}" alt="ALPAO software showing the deformable mirror controls, measured wavefront, correction history and science-camera view" width="1173" height="605" loading="lazy">
+    <figcaption>The ALPAO controls let us follow the measured wavefront and correction history alongside the science-camera image.</figcaption>
+  </figure>
+  <figure>
+    <img src="{{ '/images/projects/ao_bench_turbulence.jpg' | relative_url }}" alt="Open-loop PSF with several bright lobes on the left and closed-loop PSF with a more concentrated core on the right" width="1056" height="576" loading="lazy">
+    <figcaption>Science-camera PSFs with artificial turbulence. The loop is open on the left and closed on the right. Both panels use the same intensity mapping.</figcaption>
+  </figure>
+</details>
+
 <a id="adaptive-optics"></a>
 <a id="adaptive-optics--basics"></a>
 
@@ -25,9 +44,9 @@ My projects range from telescope optics and adaptive optics simulations to an ex
 
 <p class="project-role">Independent project · March 2026–present · Ongoing development</p>
 
-In an astronomical instrumentation lab, I tuned a deformable mirror and observed how its shape changed the wavefront error. In my Python model I can follow the same correction one frame at a time. I propagate the light through a Shack–Hartmann lenslet array, measure the spot positions on a noisy detector, and use a calibrated interaction matrix to calculate the next mirror command.
+The LMU bench was my first hands-on experience with adaptive optics. In 2026 I started a Python model so I could follow the correction from a shift in a detector spot to the next mirror command. I propagate light through a Shack–Hartmann lenslet array, measure spot centroids in the presence of photon noise and detector read noise, and reconstruct the correction using a truncated singular value decomposition (TSVD) of the calibrated interaction matrix.
 
-I varied gain, delay and detector noise, then measured the residual wavefront, Strehl and encircled energy. The Explorer replays the recorded wavefronts and science images. I also compared selected optical calculations with analytic solutions and HCIPy.
+I varied gain, delay and detector noise, then measured the residual wavefront error, Strehl and encircled energy. In a layered atmosphere I also examined how well the on-axis correction worked for a science target farther from the guide star. The Explorer replays the recorded wavefronts and science images. I compared selected optical calculations with analytic solutions and HCIPy.
 
 <nav class="portfolio-jump" aria-label="AO project links">
   <a href="https://xhvoid.github.io/Shack-Hartmann-AO-Simulation/">Interactive explorer</a>
@@ -50,6 +69,8 @@ I raised the TSVD cutoff from 0.001 to 0.05 and repeated the run with the same a
 </figure>
 
 A side-by-side run against TIPTOP on the 2 m model is recorded as an open item in the design-decisions log; the end-to-end Strehl is lower than the analytic estimate and the attribution is not yet complete. [Comparison plot and settings](https://github.com/xhvoid/Shack-Hartmann-AO-Simulation/tree/main/docs/scao-comparison)
+
+For the separate multi-conjugate AO study, I used a frequency-domain model. I added a high-frequency fitting term to the TIPTOP/P3 residual spectrum and calculated the long-exposure PSF with MASTSEL.
 
 [Methods and numerical checks](https://github.com/xhvoid/Shack-Hartmann-AO-Simulation#scope-and-evidence) · [Case configurations, diagnosis and limitations](https://github.com/xhvoid/Shack-Hartmann-AO-Simulation/tree/website/site/derived/ngs-22m-53663e0742d1d106)
 
