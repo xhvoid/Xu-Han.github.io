@@ -76,18 +76,18 @@ For the separate multi-conjugate AO study, I used a frequency-domain model. I ad
 
 ### Selected case study — tracing four spots in the 42 m image
 
-The corrected 2.2 µm image of my 42 m replay showed four faint spots on its diagonals, 0.45″ from the core along each axis. That is λ/2d for the 0.5 m actuator pitch, where a checkerboard on the mirror sends its light. In the Fried geometry a lenslet cannot see the checkerboard of its four corner actuators, so noise and aliased turbulence built those commands up on the mirror.
+The corrected 2.2 µm image of my 42 m replay showed four faint spots on its diagonals, 0.45″ from the core along each axis. That is λ/2d for the 0.5 m actuator pitch, where a checkerboard on the mirror sends its light. An ideal Fried-geometry lenslet cannot see the checkerboard of its four corner actuators. The simulated sensor saw the least sensed checkerboards only weakly, at about 2% of a typical mirror mode, and the weak damping left such commands almost unchecked on the mirror. Noise and aliased turbulence are the likely drivers, but I did not separate them.
 
-Damping a hundred times stronger only halved the spots and cost six points of Strehl. Instead, I now remove a family of 96 weakly sensed checkerboard modes after every solve and change nothing else. On the same atmosphere the corner light fell from 10.8 to 0.91 times the surrounding halo, and peak Strehl rose from 0.754 to 0.767. I fixed the cutoff before testing three new atmospheres, and all three met the criteria I had written down in advance.
+I now remove a family of 96 weakly sensed checkerboard modes after every solve, with no other physical setting changed. In 150-frame test runs, a control with damping a hundred times stronger only halved the spots and cost six points of Strehl. Over the full 500-frame replay of the same atmosphere, rerun with a later build of the code, the filter brought the corner light from 10.8 to 0.91 times the surrounding halo and raised peak Strehl from 0.754 to 0.767. I fixed the cutoff before testing three new atmospheres, and all three met the criteria I had written down in advance.
 
 <figure class="project-case-figure">
   <a href="https://xhvoid.github.io/Shack-Hartmann-AO-Simulation/#waffle42">
     <img src="{{ '/images/projects/waffle-42m-corner-spots.png' | relative_url }}" alt="Mean 2.2 µm images of the same simulated 42 m replay before and after the filter: before, four faint spots sit inside dashed circles at the image corners; after, the circles hold only the halo. Enlarged views of the upper-right corner show a bright compact spot before and only speckled halo after" width="1400" height="1490" loading="lazy" decoding="async">
   </a>
-  <figcaption>Mean images on a logarithmic scale. The circles mark (±λ/2d, ±λ/2d), and the lower row enlarges the upper-right corner with a narrower intensity range.</figcaption>
+  <figcaption>Mean images on a logarithmic scale. The circles mark (±λ/2d, ±λ/2d), and the lower row enlarges the upper-right corner with a narrower intensity range. The corner / halo values under the enlargements are means over all four corners.</figcaption>
 </figure>
 
-[Design decision](https://github.com/xhvoid/Shack-Hartmann-AO-Simulation/blob/main/docs/design-decisions.md#remove-weakly-sensed-checkerboards-after-each-solve) · [Filter source](https://github.com/xhvoid/Shack-Hartmann-AO-Simulation/blob/main/src/shwfs_ao/calibration/sparse.py) · [Case data, exporter and limitations](https://github.com/xhvoid/Shack-Hartmann-AO-Simulation/tree/website/site/derived/waffle42-a8bf7a432d51a862)
+[Design decision](https://github.com/xhvoid/Shack-Hartmann-AO-Simulation/blob/main/docs/design-decisions.md#remove-weakly-sensed-checkerboards-after-each-solve) · [Filter source](https://github.com/xhvoid/Shack-Hartmann-AO-Simulation/blob/main/src/shwfs_ao/calibration/sparse.py) · [Case data, exporter and limitations](https://github.com/xhvoid/Shack-Hartmann-AO-Simulation/tree/website/site/derived/waffle42-3652c2193396e931)
 
 ### Comparing loop gains in the historical 42 m AO model
 
