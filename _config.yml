@@ -200,6 +200,7 @@ exclude:
   - package.json*
   - Rakefile
   - README
+  - talkmap.ipynb
   - tmp
   - vendor
 keep_files:
