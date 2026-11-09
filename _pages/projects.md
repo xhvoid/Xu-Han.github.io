@@ -52,48 +52,33 @@ I varied gain, delay and detector noise, then measured the residual wavefront er
   <a href="https://github.com/xhvoid/Shack-Hartmann-AO-Simulation">Source code</a>
   <a href="https://github.com/xhvoid/Shack-Hartmann-AO-Simulation/blob/main/docs/design-decisions.md">Design decisions</a>
   <a href="https://xhvoid.github.io/Shack-Hartmann-AO-Simulation/#ngs22">Loss-of-lock case study</a>
-  <a href="https://xhvoid.github.io/Shack-Hartmann-AO-Simulation/#waffle42">Corner-spot case study</a>
 </nav>
 
-### Selected case study — diagnosing a closed-loop reconstruction failure
+### Where did the four spots in the 42 m image come from?
 
-In the 2.2 m natural-guide-star model, reconstruction stopped at 0.981 s. As spots dropped out, weakly sensed modes produced large mirror commands and pushed more spots past the rejection threshold.
+Four faint spots in my simulated 42 m telescope image lay 0.45 arcseconds from the star along each axis. At 2.2 µm, a checkerboard pattern on a mirror with actuators spaced 0.5 m apart would send light to those positions. The simulated wavefront sensor registered this *waffle* pattern only weakly.
 
-I raised the TSVD cutoff from 0.001 to 0.05 and repeated the run with the same atmosphere and calibration. All 1,500 frames reconstructed, the mirror stayed within its stroke limits, and the recovery safeguard stayed inactive. The two traces below come from a simulated Robo-AO-2-like configuration.
+I filtered 96 checkerboard modes out of the mirror updates. On a replay of the same atmosphere, the average light at the four positions fell from 10.8 to 0.91 times the surrounding halo. I fixed the cutoff before testing three more realizations of the same system. All three met the image-quality and loop-operation criteria I had set in advance.
 
 <figure class="project-case-figure">
-  <a href="https://xhvoid.github.io/Shack-Hartmann-AO-Simulation/#ngs22">
-    <img src="{{ '/images/projects/ngs-22m-comparison.png' | relative_url }}" alt="Recorded synthetic AO results: the original 2.2 m run loses usable reconstruction near one second, while stronger TSVD regularisation maintains reconstruction through the matched two-second trajectory; H-band Strehl, usable measurement rows and DM limits are shown" width="1760" height="1520" loading="lazy" decoding="async">
-  </a>
-  <figcaption>The two 2.2 m traces show the original and revised runs. The 2 m trace is a separate one-second reference.</figcaption>
+  <img src="{{ '/images/projects/waffle-42m-fields.png' | relative_url }}"
+       width="1400" height="650" loading="lazy" decoding="async"
+       alt="Four circled diagonal spots are visible around the simulated star on the left. At the same positions on the right, no distinct spots stand out.">
+  <figcaption>Before filtering (left) and after filtering (right). Both mean images show the same simulated atmosphere at 2.2 µm on a shared logarithmic scale. Peak Strehl rose from 0.754 to 0.767.
+    <a href="{{ '/images/projects/waffle-42m-corner-spots.png' | relative_url }}">Enlarge the figure with upper-right corner views.</a>
+    The zooms share a narrower intensity range. The ratios beneath them give the average light in all four marked regions relative to the halo at the same distance from the star.
+  </figcaption>
 </figure>
 
-A side-by-side run against TIPTOP on the 2 m model is recorded as an open item in the design-decisions log; the end-to-end Strehl is lower than the analytic estimate and the attribution is not yet complete. [Comparison plot and settings](https://github.com/xhvoid/Shack-Hartmann-AO-Simulation/tree/main/docs/scao-comparison)
+[See the spot positions, filter comparison and held-out results in AO Explorer →](https://xhvoid.github.io/Shack-Hartmann-AO-Simulation/#waffle42)
+
+### Keeping the 2.2 m loop locked
+
+In a 2.2 m simulation, rejected spot measurements drove the mirror to larger commands until reconstruction stopped at 0.981 s. I raised the reconstruction cutoff and replayed the same atmosphere. The revised loop reconstructed all 1,500 frames, and the mirror stayed within its stroke limits. [See the two loop traces.](https://xhvoid.github.io/Shack-Hartmann-AO-Simulation/#ngs22)
+
+In a separate [42 m gain comparison](https://xhvoid.github.io/Shack-Hartmann-AO-Simulation/#gain42), lower gain softened a late residual excursion, while higher gain gave the sharper image over the full exposure.
 
 For the separate multi-conjugate AO study, I used a frequency-domain model. I added a high-frequency fitting term to the TIPTOP/P3 residual spectrum and calculated the long-exposure PSF with MASTSEL.
-
-[Methods and numerical checks](https://github.com/xhvoid/Shack-Hartmann-AO-Simulation#scope-and-evidence) · [Case configurations, diagnosis and limitations](https://github.com/xhvoid/Shack-Hartmann-AO-Simulation/tree/website/site/derived/ngs-22m-53663e0742d1d106)
-
-### Selected case study — tracing four spots in the 42 m image
-
-The corrected 2.2 µm image of my 42 m replay showed four faint spots on its diagonals, 0.45″ from the core along each axis. That is λ/2d for the 0.5 m actuator pitch, where a checkerboard on the mirror sends its light. An ideal Fried-geometry lenslet cannot see the checkerboard of its four corner actuators. The simulated sensor saw the least sensed checkerboards only weakly, at about 2% of a typical mirror mode, and the weak damping left such commands almost unchecked on the mirror. Noise and aliased turbulence are the likely drivers, but I did not separate them.
-
-I now remove a family of 96 weakly sensed checkerboard modes after every solve, with no other physical setting changed. In 150-frame test runs, a control with damping a hundred times stronger only halved the spots and cost six points of Strehl. Over the full 500-frame replay of the same atmosphere, rerun with a later build of the code, the filter brought the corner light from 10.8 to 0.91 times the surrounding halo and raised peak Strehl from 0.754 to 0.767. I fixed the cutoff before testing three new atmospheres, and all three met the criteria I had written down in advance.
-
-<figure class="project-case-figure">
-  <a href="https://xhvoid.github.io/Shack-Hartmann-AO-Simulation/#waffle42">
-    <img src="{{ '/images/projects/waffle-42m-corner-spots.png' | relative_url }}" alt="Mean 2.2 µm images of the same simulated 42 m replay before and after the filter: before, four faint spots sit inside dashed circles at the image corners; after, the circles hold only the halo. Enlarged views of the upper-right corner show a bright compact spot before and only speckled halo after" width="1400" height="1490" loading="lazy" decoding="async">
-  </a>
-  <figcaption>Mean images on a logarithmic scale. The circles mark (±λ/2d, ±λ/2d), and the lower row enlarges the upper-right corner with a narrower intensity range. The corner / halo values under the enlargements are means over all four corners.</figcaption>
-</figure>
-
-[Design decision](https://github.com/xhvoid/Shack-Hartmann-AO-Simulation/blob/main/docs/design-decisions.md#remove-weakly-sensed-checkerboards-after-each-solve) · [Filter source](https://github.com/xhvoid/Shack-Hartmann-AO-Simulation/blob/main/src/shwfs_ao/calibration/sparse.py) · [Case data, exporter and limitations](https://github.com/xhvoid/Shack-Hartmann-AO-Simulation/tree/website/site/derived/waffle42-ee6f0f2b4825ab1c)
-
-### Comparing loop gains in the historical 42 m AO model
-
-With three frames of delay, gain 0.2 applied a smaller fraction of each correction and softened the late rise in residual wavefront error in one run, while gain 0.3 left less error early on and gave a sharper image over the full 0.8 s exposure (peak Strehl 0.722 versus 0.674).
-
-[Explore the 42 m gain comparison](https://xhvoid.github.io/Shack-Hartmann-AO-Simulation/#gain42)
 
 <section class="project-evidence" aria-labelledby="ao-explorer-preview">
   <h3 id="ao-explorer-preview">AO correction in motion</h3>
