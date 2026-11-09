@@ -43,7 +43,7 @@ In July 2022, I worked with an ALPAO bench in the Instrumental Astrophysics Labo
 
 <p class="project-role">Independent project · March 2026–present · Ongoing development</p>
 
-The LMU bench was my first hands-on experience with adaptive optics. In 2026 I started a Python model so I could follow the correction from a shift in a detector spot to the next mirror command. I propagate light through a Shack–Hartmann lenslet array, measure spot centroids in the presence of photon noise and detector read noise, and reconstruct the correction using a truncated singular value decomposition (TSVD) of the calibrated interaction matrix.
+The LMU bench was my first hands-on experience with adaptive optics. In 2026 I started a Python model so I could follow the correction from a shift in a detector spot to the next mirror command. I propagate light through a Shack–Hartmann lenslet array and measure spot centroids in the presence of photon noise and detector read noise. In the 2.2 m case, I reconstruct the correction using a truncated singular value decomposition (TSVD) of the calibrated interaction matrix. The 42 m replay uses damped least squares.
 
 I varied gain, delay and detector noise, then measured the residual wavefront error, Strehl and encircled energy. In a layered atmosphere I also examined how well the on-axis correction worked for a science target farther from the guide star. The Explorer replays the recorded wavefronts and science images. I compared selected optical calculations with analytic solutions and HCIPy.
 
