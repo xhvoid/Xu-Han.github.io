@@ -30,7 +30,7 @@ Research training in cosmology, quantitative data analysis and astronomical inst
 #### Advanced seminar · November 2022
 {: #telescope-optics-seminar}
 
-Dr. Frank Grupp (USM / LMU Munich) supervised my 40-minute course presentation, *Exploring Telescope Optics: How Do the Largest Optical Systems Work?* I spent a month studying telescope layouts, from Cassegrain designs to three-mirror systems, with the VLT and Keck among my examples. I also covered how aberrations and diffraction shape the image, and how laser guide stars are used for wavefront sensing.
+Dr. Frank Grupp (USM / LMU Munich) supervised my 45-minute course presentation, *Exploring Telescope Optics: How Do the Largest Optical Systems Work?* The talk was followed by 15 minutes of questions. I spent a month studying telescope layouts, from Cassegrain designs to three-mirror systems, with the VLT and Keck among my examples. I also covered how aberrations and diffraction shape the image, and how laser guide stars are used for wavefront sensing.
 
 ### B.Sc. Physics — University of Duisburg-Essen
 
@@ -73,7 +73,7 @@ My supervisor and I observed with the **43 cm telescope** at **Wendelstein Obser
 
 ### Python Developer — BaryonBib
 
-**December 2024–February 2025 · MAX!mize start-up team, MPA, Garching**
+**December 2024–January 2025 · MAX!mize start-up team, MPA, Garching**
 
 Contributed to a centralised bibliography platform in Python, including implementation and testing of LLM-based functionality.
 

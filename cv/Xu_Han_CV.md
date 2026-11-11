@@ -2,13 +2,15 @@
 
 Munich, Germany | [xuhanphysik@gmail.com](mailto:xuhanphysik@gmail.com) | [GitHub](https://github.com/xhvoid) | [Website](https://xhvoid.github.io/Xu-Han.github.io/)
 
-Photonics M.Sc. student and LMU astrophysics graduate focused on astronomical instrumentation, wavefront sensing and optical-system performance, combining optical modelling, experimental apparatus development and astronomical data analysis.
+Photonics M.Sc. student and LMU astrophysics graduate working on wavefront sensing, optical modelling and experimental instrumentation.
 
 ## Education
 
-### M.Sc. Photonics | Munich University of Applied Sciences
+### M.Sc. Photonics | Hochschule München (Munich University of Applied Sciences)
 
 Mar 2026 - Present
+
+Remaining requirements are the project study and master's thesis. Expected completion in 2027.
 
 Selected coursework: Physical Optics and Modelling (Zemax optical design); Micro and Fiber Optics; Optical Measurement Technology; Semiconductor Optics and Components.
 
@@ -38,7 +40,7 @@ Electronics, control systems and embedded systems.
 
 ### [Shack-Hartmann Wavefront Sensing & Adaptive Optics Simulation](https://github.com/xhvoid/Shack-Hartmann-AO-Simulation)
 
-Independent project (ongoing development) | Mar 2026 - Present
+Independent project | Mar 2026 - Present
 
 [Interactive explorer](https://xhvoid.github.io/Shack-Hartmann-AO-Simulation/) | [Source code](https://github.com/xhvoid/Shack-Hartmann-AO-Simulation)
 
@@ -47,14 +49,21 @@ Independent project (ongoing development) | Mar 2026 - Present
 - Diagnosed a reconstruction failure associated with measurement dropout in a 2.2 m NGS model; stronger TSVD regularisation kept reconstruction usable throughout the matched two-second run.
 - Cross-checked selected optical components against HCIPy and analytic references; documented reproducible experiments, model limitations and an interactive explorer of recorded results.
 
+### [Optical Reconstruction of ESO’s 100 m OWL Telescope](https://xhvoid.github.io/Xu-Han.github.io/projects/elt-owl/)
+
+Independent extension of a Zemax laboratory project | 2026
+
+- Rebuilt the proposed OverWhelmingly Large Telescope from ESO’s Blue Book prescription. At 5 arcmin off axis, the RMS wavefront error was 1.472 µm, within 0.3% of ESO’s 1.476 µm.
+- At 3 arcmin, traced a 27-percentage-point discrepancy in ensquared energy to the focal surface. A spherical surface brought the model within 0.4 percentage points of ESO’s sampled curve.
+
 ### [Weak Lensing Void Finder](https://xhvoid.github.io/Xu-Han.github.io/files/watershed-voids-thesis.pdf)
 
 Master's thesis | LMU Munich | Mar 2023 - Aug 2024
 
 Supervisors: Prof. Joseph Mohr and Dr. Chris Davies.
 
-- Developed and parameter-tested a watershed finder for cosmic voids in 2D full-sky weak-lensing convergence maps.
-- Applied the analysis to DES Y3 weak-lensing maps; characterised void abundance, effective radii, ellipticities and convergence profiles.
+- Developed a watershed void finder for 2D full-sky weak-lensing maps and tested its parameter sensitivity. Measured void abundance, effective radii, ellipticities and convergence profiles in DES Y3 data.
+- Trained Gaussian-process emulators (scikit-learn) on simulations of 2,500 cosmologies and used them with MCMC for parameter inference.
 
 ### [Experimental Collisional Charging Apparatus](https://xhvoid.github.io/Xu-Han.github.io/projects/#experimental-apparatus)
 
@@ -75,19 +84,13 @@ Supervisors: Prof. Gerhard Wurm and Dr. Felix Jungmann.
 
 ### [Astrophotonics](https://github.com/xhvoid/Astrophotonics)
 
-- Modelled how AO wavefront error, injection jitter and photonic-lantern mode count affect fiber coupling, spectral SNR and radial-velocity precision.
-
-### [OWL Optical Reconstruction](https://xhvoid.github.io/Xu-Han.github.io/projects/elt-owl/)
-
-Personal project extending a hands-on Zemax lab in Physical Optics and Modeling
-
-- Reproduced the 5 arcmin RMS wavefront error to 0.3% and traced a 27 percentage-point ensquared-energy discrepancy to the choice of focal surface.
+- Modelled how AO wavefront error, injection jitter and photonic-lantern mode count affect fibre coupling, spectral SNR and radial-velocity precision.
 
 ## Work Experience and Career Break
 
 ### Python Developer | BaryonBib
 
-Dec 2024 - Feb 2025 | MAX!mize start-up team, MPA, Garching
+Dec 2024 - Jan 2025 | MAX!mize start-up team, MPA, Garching
 
 - Implemented and tested LLM features for the team's centralised Python bibliography platform.
 
@@ -111,12 +114,12 @@ Recovery and rehabilitation following an accident and surgery.
 
 ### Advanced Astrophysical Seminar | LMU Munich | Nov 2022
 
-Exploring Telescope Optics: How Do the Largest Optical Systems Work? 40-minute course presentation supervised by Dr. Frank Grupp.
+Exploring Telescope Optics: How Do the Largest Optical Systems Work? A 45-minute presentation followed by 15 minutes of questions. Supervisor: Dr. Frank Grupp.
 
 ## Technical Skills
 
 - **Optical modelling:** Wavefront sensing, Fourier PSFs, calibration, regularised reconstruction and closed-loop diagnostics; HCIPy and TIPTOP.
-- **Zemax OpticStudio:** telescope prescription reconstruction, PSF and encircled-energy analysis
+- **Zemax OpticStudio:** telescope prescription reconstruction, PSF and ensquared-energy analysis
 - **Scientific computing:** Python (NumPy, SciPy, Matplotlib, pandas, scikit-learn); MATLAB; Mathematica; statistical analysis and MCMC.
 - **Experimental methods:** CAD, 3D printing, mechanical assembly, electronic measurement integration, optical alignment and interferometry.
 - **Research tools:** Linux, Git, Jupyter and LaTeX.

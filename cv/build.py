@@ -35,28 +35,34 @@ def md_links(links):
 def project(item):
     if item.get("links"):
         result = one(r"{\large\textbf{" + esc(item["title"]) + "}}")
-        result += two(r"\textit{" + esc(item["role"]) + "}", item["date"])
-        result += one(tex_links(item["links"]))
+        result += two(r"\textit{" + esc(item["role"]) + r"}\quad " + tex_links(item["links"]), item["date"])
     else:
         title = r"{\large\textbf{" + href(item["url"], item["title"]) + "}}"
-        if item.get("role"):
-            title += "\n\n" + r"\textit{" + esc(item["role"]) + "}"
         result = two(title, item["date"]) if item.get("date") else one(title)
-    if item.get("supervisors"):
-        result += one("Supervisors: " + esc(item["supervisors"]) + ".")
+        if item.get("role"):
+            role = r"\textit{" + esc(item["role"]) + "}"
+            if item.get("supervisors"):
+                role += r"\enspace Supervisors: " + esc(item["supervisors"]) + "."
+            result += one(role)
     return result + bullets(item["bullets"]) + "\\vspace{0.08 cm}\n"
 
 parts = [header, one(esc(data["summary"])), "\\vspace{0.05 cm}\n", section("Education")]
 for item in data["education"]:
-    separator = "\n\n" if item["degree"].startswith("B.Eng.") else " | "
-    main = r"\textbf{" + esc(item["degree"]) + "}" + separator + esc(item["institution"])
-    parts.append(two(main, item["date"]))
+    degree = r"\textbf{" + esc(item["degree"]) + "}"
+    institution = esc(item["institution"])
+    if item["degree"] in ("M.Sc. Photonics", "B.Eng. Electrical Engineering and Automation"):
+        parts.append(two(degree, item["date"]))
+        parts.append(one(institution))
+    else:
+        parts.append(two(degree + " | " + institution, item["date"]))
     if item["details"]:
         text = " ".join(item["details"])
         text = esc(text).replace("Selected coursework:", r"\textbf{Selected coursework:}")
         text = text.replace("Zemax optical design", r"\textbf{Zemax optical design}")
+        if item.get("links"):
+            text += r"\enspace " + tex_links(item["links"])
         parts.append(one(text))
-    if item.get("links"):
+    elif item.get("links"):
         parts.append(one(tex_links(item["links"])))
     parts.append("\\vspace{0.08 cm}\n")
 

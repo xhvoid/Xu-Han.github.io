@@ -1,11 +1,12 @@
 {
-  "summary": "Photonics M.Sc. student and LMU astrophysics graduate focused on astronomical instrumentation, wavefront sensing and optical-system performance, combining optical modelling, experimental apparatus development and astronomical data analysis.",
+  "summary": "Photonics M.Sc. student and LMU astrophysics graduate working on wavefront sensing, optical modelling and experimental instrumentation.",
   "education": [
     {
       "degree": "M.Sc. Photonics",
-      "institution": "Munich University of Applied Sciences",
+      "institution": "Hochschule München (Munich University of Applied Sciences)",
       "date": "Mar 2026 - Present",
       "details": [
+        "Remaining requirements are the project study and master's thesis. Expected completion in 2027.",
         "Selected coursework: Physical Optics and Modelling (Zemax optical design); Micro and Fiber Optics; Optical Measurement Technology; Semiconductor Optics and Components."
       ]
     },
@@ -50,7 +51,7 @@
     {
       "title": "Shack-Hartmann Wavefront Sensing & Adaptive Optics Simulation",
       "url": "https://github.com/xhvoid/Shack-Hartmann-AO-Simulation",
-      "role": "Independent project (ongoing development)",
+      "role": "Independent project",
       "date": "Mar 2026 - Present",
       "bullets": [
         "Developed a modular Python SCAO framework connecting atmospheric turbulence, detector-level Shack-Hartmann sensing, calibrated reconstruction, deformable-mirror correction and delayed feedback.",
@@ -70,14 +71,24 @@
       ]
     },
     {
+      "title": "Optical Reconstruction of ESO’s 100 m OWL Telescope",
+      "url": "https://xhvoid.github.io/Xu-Han.github.io/projects/elt-owl/",
+      "role": "Independent extension of a Zemax laboratory project",
+      "bullets": [
+        "Rebuilt the proposed OverWhelmingly Large Telescope from ESO’s Blue Book prescription. At 5 arcmin off axis, the RMS wavefront error was 1.472 µm, within 0.3% of ESO’s 1.476 µm.",
+        "At 3 arcmin, traced a 27-percentage-point discrepancy in ensquared energy to the focal surface. A spherical surface brought the model within 0.4 percentage points of ESO’s sampled curve."
+      ],
+      "date": "2026"
+    },
+    {
       "title": "Weak Lensing Void Finder",
       "url": "https://xhvoid.github.io/Xu-Han.github.io/files/watershed-voids-thesis.pdf",
       "role": "Master's thesis | LMU Munich",
       "date": "Mar 2023 - Aug 2024",
       "supervisors": "Prof. Joseph Mohr and Dr. Chris Davies",
       "bullets": [
-        "Developed and parameter-tested a watershed finder for cosmic voids in 2D full-sky weak-lensing convergence maps.",
-        "Applied the analysis to DES Y3 weak-lensing maps; characterised void abundance, effective radii, ellipticities and convergence profiles."
+        "Developed a watershed void finder for 2D full-sky weak-lensing maps and tested its parameter sensitivity. Measured void abundance, effective radii, ellipticities and convergence profiles in DES Y3 data.",
+        "Trained Gaussian-process emulators (scikit-learn) on simulations of 2,500 cosmologies and used them with MCMC for parameter inference."
       ]
     },
     {
@@ -111,21 +122,13 @@
       "title": "Astrophotonics",
       "url": "https://github.com/xhvoid/Astrophotonics",
       "bullets": [
-        "Modelled how AO wavefront error, injection jitter and photonic-lantern mode count affect fiber coupling, spectral SNR and radial-velocity precision."
-      ]
-    },
-    {
-      "title": "OWL Optical Reconstruction",
-      "url": "https://xhvoid.github.io/Xu-Han.github.io/projects/elt-owl/",
-      "role": "Personal project extending a hands-on Zemax lab in Physical Optics and Modeling",
-      "bullets": [
-        "Reproduced the 5 arcmin RMS wavefront error to 0.3% and traced a 27 percentage-point ensquared-energy discrepancy to the choice of focal surface."
+        "Modelled how AO wavefront error, injection jitter and photonic-lantern mode count affect fibre coupling, spectral SNR and radial-velocity precision."
       ]
     }
   ],
   "work": {
     "title": "Python Developer | BaryonBib",
-    "date": "Dec 2024 - Feb 2025",
+    "date": "Dec 2024 - Jan 2025",
     "role": "MAX!mize start-up team, MPA, Garching",
     "bullets": [
       "Implemented and tested LLM features for the team's centralised Python bibliography platform."
@@ -158,7 +161,7 @@
     {
       "title": "Advanced Astrophysical Seminar | LMU Munich",
       "date": "Nov 2022",
-      "text": "Exploring Telescope Optics: How Do the Largest Optical Systems Work? 40-minute course presentation supervised by Dr. Frank Grupp."
+      "text": "Exploring Telescope Optics: How Do the Largest Optical Systems Work? A 45-minute presentation followed by 15 minutes of questions. Supervisor: Dr. Frank Grupp."
     }
   ],
   "skills": [
@@ -168,7 +171,7 @@
     ],
     [
       "Zemax OpticStudio",
-      "telescope prescription reconstruction, PSF and encircled-energy analysis"
+      "telescope prescription reconstruction, PSF and ensquared-energy analysis"
     ],
     [
       "Scientific computing",
