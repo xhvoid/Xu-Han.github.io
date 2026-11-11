@@ -9,7 +9,7 @@ header = old.split(r"\section{Education}", 1)[0]
 
 def esc(value):
     table = {"&": r"\&", "%": r"\%", "$": r"\$", "#": r"\#", "_": r"\_", "{": r"\{", "}": r"\}"}
-    return "".join(table.get(c, c) for c in value)
+    return "".join(table.get(c, c) for c in value).replace("ALPAO", r"\mbox{ALPAO}")
 
 def href(url, title):
     return r"\href{" + esc(url) + "}{" + esc(title) + "}"
@@ -35,7 +35,7 @@ def md_links(links):
 def project(item):
     if item.get("links"):
         result = one(r"{\large\textbf{" + esc(item["title"]) + "}}")
-        result += two(r"\textit{" + esc(item["role"]) + r"}\quad " + tex_links(item["links"]), item["date"])
+        result += two(r"\textit{" + esc(item["role"]) + "} | " + tex_links(item["links"]), item["date"])
     else:
         title = r"{\large\textbf{" + href(item["url"], item["title"]) + "}}"
         result = two(title, item["date"]) if item.get("date") else one(title)
@@ -87,7 +87,9 @@ parts.append(section("Technical Skills"))
 for k, v in data["skills"]:
     parts += [one(r"\textbf{" + esc(k) + ":} " + esc(v)), "\\vspace{0.04 cm}\n"]
 parts += [section("Languages and Interests"), one(r"\textbf{Languages:} " + esc(data["languages"])), one(r"\textbf{Interests:} " + esc(data["hobbies"]))]
-parts += [r"\renewcommand{\cvsectionreserve}{2\baselineskip}" + "\n", section("Academic Reference"), one(esc(data["academic_reference"])), "\\end{document}\n"]
+parts.append(section("Academic References"))
+parts.extend(one(esc(reference)) for reference in data["academic_references"])
+parts.append("\\end{document}\n")
 (out / "Xu_Han_CV.tex").write_text("".join(parts))
 
 md = ["# Xu Han", "Munich, Germany | [xuhanphysik@gmail.com](mailto:xuhanphysik@gmail.com) | [GitHub](https://github.com/xhvoid) | [Website](https://xhvoid.github.io/Xu-Han.github.io/)", data["summary"], "## Education"]
@@ -117,6 +119,6 @@ for item in data["activities"]:
     if item.get("text"):
         md += ["[" + item["text"] + "](" + item["url"] + ")" if item.get("url") else item["text"]]
 md += ["## Technical Skills", "\n".join("- **" + k + ":** " + v for k, v in data["skills"]), "## Languages and Interests", data["languages"], data["hobbies"]]
-md += ["## Academic Reference", data["academic_reference"]]
+md += ["## Academic References", *data["academic_references"]]
 (out / "Xu_Han_CV.md").write_text("\n\n".join(md) + "\n")
 print("Wrote CV source and matching editable text.")

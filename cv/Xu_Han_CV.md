@@ -12,13 +12,13 @@ Mar 2026 - Present
 
 Remaining requirements are the project study and master's thesis. Expected completion in 2027.
 
-Selected coursework: Physical Optics and Modelling (Zemax optical design); Micro and Fiber Optics; Optical Measurement Technology; Semiconductor Optics and Components.
+Selected coursework: Physical Optics and Modelling (Zemax optical design); Micro and Fiber Optics; Optical Measurement Technology; Laser Physics — Non-linear Optics — Ultrafast Optics; Semiconductor Optics and Components.
 
 ### M.Sc. Astrophysics | LMU Munich
 
 Apr 2022 - Aug 2024
 
-Grade: 1.55 (German scale). Selected coursework: Essentials of Advanced Astrophysics; Cosmology and Structure Formation; Statistical Methods; Instrumental Laboratory Courses.
+Grade: 1.55 (German scale). Selected coursework: Essentials of Advanced Astrophysics (1.3); Cosmology and Structure Formation (1.0); Statistical Methods; Instrumental Laboratory Courses.
 
 [Degree certificate](https://drive.google.com/file/d/1NQSRpt_x9CCdSJrJznqkt5ncOElWJPhy/view?usp=drivesdk)
 
@@ -45,7 +45,7 @@ Independent project | Mar 2026 - Present
 [Interactive explorer](https://xhvoid.github.io/Shack-Hartmann-AO-Simulation/) | [Source code](https://github.com/xhvoid/Shack-Hartmann-AO-Simulation)
 
 - Developed a modular Python SCAO framework connecting atmospheric turbulence, detector-level Shack-Hartmann sensing, calibrated reconstruction, deformable-mirror correction and delayed feedback.
-- Investigated detector-noise and gain/latency trade-offs using residual wavefront error, propagated-PSF Strehl and encircled energy.
+- Traced four faint spots in a simulated 42 m telescope image to waffle modes the sensor barely detects. Filtering those modes reduced their mean brightness from 10.8 to 0.91 times the local halo level.
 - Diagnosed a reconstruction failure associated with measurement dropout in a 2.2 m NGS model; stronger TSVD regularisation kept reconstruction usable throughout the matched two-second run.
 - Cross-checked selected optical components against HCIPy and analytic references; documented reproducible experiments, model limitations and an interactive explorer of recorded results.
 
@@ -60,7 +60,7 @@ Independent extension of a Zemax laboratory project | 2026
 
 Master's thesis | LMU Munich | Mar 2023 - Aug 2024
 
-Supervisors: Prof. Joseph Mohr and Dr. Chris Davies.
+Supervisors: Dr. Chris Davies and Prof. Joseph Mohr.
 
 - Developed a watershed void finder for 2D full-sky weak-lensing maps and tested its parameter sensitivity. Measured void abundance, effective radii, ellipticities and convergence profiles in DES Y3 data.
 - Trained Gaussian-process emulators (scikit-learn) on simulations of 2,500 cosmologies and used them with MCMC for parameter inference.
@@ -76,7 +76,7 @@ Supervisors: Prof. Gerhard Wurm and Dr. Felix Jungmann.
 
 ## Laboratory and Instrumentation Training
 
-- **Astronomical instrumentation laboratory:** Tested static and dynamic correction on LMU's ALPAO bench in July 2022 using a Shack-Hartmann sensor and deformable mirror. Other labs covered CCD imaging and reduction, optical interferometry and radio measurements of Galactic rotation.
+- **Astronomical instrumentation laboratory:** Closed the Shack–Hartmann loop on LMU’s ALPAO bench in July 2022, first correcting static aberrations with the deformable mirror, then correcting turbulence introduced by a screen. Other labs covered CCD imaging and reduction, optical interferometry and radio measurements of Galactic rotation.
 - **Photonics laboratory:** Measured laser beam quality (M²), shaped ultrashort pulses and characterised them by autocorrelation. Fibre experiments covered OTDR, polarisation, Bragg gratings and coupling. Also worked on APD measurements, laser spectra, laser interferometry and nonlinear optics.
 - **Observatory experience:** Took and processed images with my supervisor at Wendelstein (43 cm).
 
@@ -130,6 +130,8 @@ Chinese (native); English (fluent); German (fluent); French (beginner).
 
 Astronomical photography and alpine mountaineering.
 
-## Academic Reference
+## Academic References
 
-Prof. Joseph Mohr, M.Sc. thesis supervisor
+Dr. Chris Davies — direct supervisor for my M.Sc. thesis.
+
+Prof. Joseph Mohr — M.Sc. thesis supervisor. Taught Cosmology and Structure Formation and co-taught Essentials of Advanced Astrophysics.
