@@ -2,7 +2,7 @@
 
 Munich, Germany | [xuhanphysik@gmail.com](mailto:xuhanphysik@gmail.com) | [GitHub](https://github.com/xhvoid) | [Website](https://xhvoid.github.io/Xu-Han.github.io/)
 
-Photonics M.Sc. student and LMU astrophysics graduate working on wavefront sensing, optical modelling and experimental instrumentation.
+Photonics M.Sc. student and LMU astrophysics graduate pursuing a career in astronomical instrumentation. My coursework and labs cover physical optics, lasers and fibre optics. My independent projects include Shack–Hartmann AO simulation and reconstructing ESO’s OWL telescope design in Zemax.
 
 ## Education
 
