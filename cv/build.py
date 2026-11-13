@@ -66,12 +66,11 @@ for item in data["education"]:
         parts.append(one(tex_links(item["links"])))
     parts.append("\\vspace{0.08 cm}\n")
 
-parts.append(section("Selected Research and Engineering Projects"))
-parts.extend(project(item) for item in data["core"])
+for title, items in data["project_sections"].items():
+    parts.append(section(title))
+    parts.extend(project(item) for item in items)
 parts += ["\\clearpage\n", section("Laboratory and Instrumentation Training")]
 parts.append(one("\\begin{highlights}\n" + "\n".join(r"\item \textbf{" + esc(k) + ":} " + esc(v) for k, v in data["labs"]) + "\n\\end{highlights}"))
-parts.append(section("Additional Independent Projects"))
-parts.extend(project(item) for item in data["additional"])
 parts.append(section("Work Experience and Career Break"))
 w = data["work"]
 parts += [two(r"{\large\textbf{" + esc(w["title"]) + "}}\n\n" + r"\textit{" + esc(w["role"]) + "}", w["date"]), bullets(w["bullets"])]
@@ -97,7 +96,6 @@ for item in data["education"]:
     md += ["### " + item["degree"] + " | " + item["institution"], item["date"], *item["details"]]
     if item.get("links"):
         md.append(md_links(item["links"]))
-md.append("## Selected Research and Engineering Projects")
 def md_project(item):
     text = ["### [" + item["title"] + "](" + item["url"] + ")"]
     if item.get("role"):
@@ -108,11 +106,11 @@ def md_project(item):
         text += ["Supervisors: " + item["supervisors"] + "."]
     text += ["\n".join("- " + x for x in item["bullets"])]
     return text
-for item in data["core"]:
-    md += md_project(item)
-md += ["## Laboratory and Instrumentation Training", "\n".join("- **" + k + ":** " + v for k, v in data["labs"]), "## Additional Independent Projects"]
-for item in data["additional"]:
-    md += md_project(item)
+for title, items in data["project_sections"].items():
+    md.append("## " + title)
+    for item in items:
+        md += md_project(item)
+md += ["## Laboratory and Instrumentation Training", "\n".join("- **" + k + ":** " + v for k, v in data["labs"])]
 md += ["## Work Experience and Career Break", "### " + w["title"], w["date"] + " | " + w["role"], "\n".join("- " + x for x in w["bullets"]), "### " + break_item["title"], break_item["date"], break_item["text"], "## Talks, Workshops and Schools"]
 for item in data["activities"]:
     md += ["### " + item["title"] + " | " + item["date"]]

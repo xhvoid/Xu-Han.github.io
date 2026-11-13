@@ -36,7 +36,7 @@ Sep 2013 - Jul 2017
 
 Electronics, control systems and embedded systems.
 
-## Selected Research and Engineering Projects
+## Independent Projects
 
 ### [Shack-Hartmann Wavefront Sensing & Adaptive Optics Simulation](https://github.com/xhvoid/Shack-Hartmann-AO-Simulation)
 
@@ -55,6 +55,8 @@ Independent extension of a Zemax laboratory project | 2026
 
 - Rebuilt the proposed OverWhelmingly Large Telescope from ESO’s Blue Book prescription. At 5 arcmin off axis, the RMS wavefront error was 1.472 µm, within 0.3% of ESO’s 1.476 µm.
 - At 3 arcmin, traced a 27-percentage-point discrepancy in ensquared energy to the focal surface. A spherical surface brought the model within 0.4 percentage points of ESO’s sampled curve.
+
+## Degree Theses
 
 ### [Weak Lensing Void Finder](https://xhvoid.github.io/Xu-Han.github.io/files/watershed-voids-thesis.pdf)
 
@@ -79,12 +81,6 @@ Supervisors: Prof. Gerhard Wurm and Dr. Felix Jungmann.
 - **Astronomical instrumentation laboratory:** Closed the Shack–Hartmann loop on LMU’s ALPAO bench in July 2022, first correcting static aberrations with the deformable mirror, then correcting turbulence introduced by a screen. Other labs covered CCD imaging and reduction, optical interferometry and radio measurements of Galactic rotation.
 - **Photonics laboratory:** Measured laser beam quality (M²), shaped ultrashort pulses and characterised them by autocorrelation. Fibre experiments covered OTDR, polarisation, Bragg gratings and coupling. Also worked on APD measurements, laser spectra, laser interferometry and nonlinear optics.
 - **Observatory experience:** Took and processed images with my supervisor at Wendelstein (43 cm).
-
-## Additional Independent Projects
-
-### [Astrophotonics](https://github.com/xhvoid/Astrophotonics)
-
-- Modelled how AO wavefront error, injection jitter and photonic-lantern mode count affect fibre coupling, spectral SNR and radial-velocity precision.
 
 ## Work Experience and Career Break
 

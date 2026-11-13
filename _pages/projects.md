@@ -14,10 +14,9 @@ My projects range from telescope optics and adaptive optics simulations to an ex
   <a href="#elt-owl">OWL optical reconstruction</a>
   <a href="#experimental-apparatus">Experimental apparatus</a>
   <a href="#weak-lensing">Weak lensing</a>
-  <a href="#astrophotonics">Astrophotonics</a>
 </nav>
 
-### Laboratory Adaptive Optics — LMU Munich, 2022
+## Laboratory Adaptive Optics — LMU Munich, 2022
 {: #lmu-ao-lab}
 
 In July 2022, I worked with an ALPAO bench in the Instrumental Astrophysics Laboratory at LMU Munich. We applied individual Zernike modes with the deformable mirror and measured the wavefront with a Shack–Hartmann sensor. We studied static correction, then introduced an artificial turbulence screen to investigate dynamic correction. We followed the wavefront error and Strehl ratio and examined the point-spread function (PSF) on the science camera.
@@ -36,10 +35,12 @@ In July 2022, I worked with an ALPAO bench in the Instrumental Astrophysics Labo
   </figure>
 </details>
 
+## Independent Projects
+
 <a id="adaptive-optics"></a>
 <a id="adaptive-optics--basics"></a>
 
-## Shack-Hartmann Wavefront Sensing & Adaptive Optics Simulation
+### Shack-Hartmann Wavefront Sensing & Adaptive Optics Simulation
 
 <p class="project-role">Independent project · March 2026–present · Ongoing development</p>
 
@@ -54,7 +55,7 @@ I varied gain, delay and detector noise, then measured the residual wavefront er
   <a href="https://xhvoid.github.io/Shack-Hartmann-AO-Simulation/#ngs22">Loss-of-lock case study</a>
 </nav>
 
-### Where did the four spots in the 42 m image come from?
+#### Where did the four spots in the 42 m image come from?
 
 Four faint spots in my simulated 42 m telescope image lay 0.45 arcseconds from the star along each axis. At 2.2 µm, a checkerboard pattern on a mirror with actuators spaced 0.5 m apart would send light to those positions. The simulated wavefront sensor registered this *waffle* pattern only weakly.
 
@@ -72,7 +73,7 @@ I filtered 96 checkerboard modes out of the mirror updates. On a replay of the s
 
 [See the spot positions, filter comparison and held-out results in AO Explorer →](https://xhvoid.github.io/Shack-Hartmann-AO-Simulation/#waffle42)
 
-### Keeping the 2.2 m loop locked
+#### Keeping the 2.2 m loop locked
 
 In a 2.2 m simulation, rejected spot measurements drove the mirror to larger commands until reconstruction stopped at 0.981 s. I raised the reconstruction cutoff and replayed the same atmosphere. The revised loop reconstructed all 1,500 frames, and the mirror stayed within its stroke limits. [See the two loop traces.](https://xhvoid.github.io/Shack-Hartmann-AO-Simulation/#ngs22)
 
@@ -81,7 +82,7 @@ In a separate [42 m gain comparison](https://xhvoid.github.io/Shack-Hartmann-AO-
 For the separate multi-conjugate AO study, I used a frequency-domain model. I added a high-frequency fitting term to the TIPTOP/P3 residual spectrum and calculated the long-exposure PSF with MASTSEL.
 
 <section class="project-evidence" aria-labelledby="ao-explorer-preview">
-  <h3 id="ao-explorer-preview">AO correction in motion</h3>
+  <h4 id="ao-explorer-preview">AO correction in motion</h4>
   <div class="ao-preview-layout">
     <figure class="ao-preview-media">
       <input type="checkbox" id="ao-preview-still" class="ao-preview-toggle">
@@ -96,7 +97,7 @@ For the separate multi-conjugate AO study, I used a frequency-domain model. I ad
       <figcaption>A recorded 2 m model: the same HST/F814W template through uncorrected and AO-corrected simulated PSFs, on one fixed brightness scale. Strehl readouts describe the corresponding 1.65 μm PSFs. One simulated second is replayed over 20 seconds; the loop repeats the same 126 recorded samples.</figcaption>
     </figure>
     <div class="ao-preview-more">
-      <h4>Explore the full experiment</h4>
+      <h5>Explore the full experiment</h5>
       <p>Replay the wavefronts and images, compare recorded cases, and inspect performance curves, methods and model limitations in the interactive explorer.</p>
       <div class="portfolio-actions">
         <a class="btn btn--primary" href="https://xhvoid.github.io/Shack-Hartmann-AO-Simulation/#galaxy-panel">Open AO Explorer</a>
@@ -108,7 +109,7 @@ For the separate multi-conjugate AO study, I used a frequency-domain model. I ad
 
 <a id="elt-owl"></a>
 
-## Reconstructing OWL and tracing an ensquared-energy discrepancy
+### Reconstructing OWL and tracing an ensquared-energy discrepancy
 
 I rebuilt OWL in Zemax from the prescription in ESO’s Blue Book. At 5 arcmin off axis, I obtained 1.472 µm total RMS wavefront error. ESO gives 1.476 µm. At 3 arcmin, however, my model put 77.1% of the light inside a square of half-width 50 µm at 2.2 µm. I read about 49.9% from ESO’s curve.
 
@@ -118,9 +119,11 @@ I kept the radius fixed and changed only the focal-surface conic from −1.29529
   <a href="{{ '/projects/elt-owl/' | relative_url }}">Read the engineering report</a>
 </nav>
 
+## Degree Theses
+
 <a id="experimental-apparatus"></a>
 
-## Experimental Collisional Charging Apparatus
+### Experimental Collisional Charging Apparatus
 
 <p class="project-role">B.Sc. Physics thesis · University of Duisburg-Essen · March–August 2021</p>
 
@@ -146,7 +149,7 @@ I designed and built an apparatus to investigate charging in granular materials.
 <a id="weak-lensing"></a>
 <a id="2d-voids"></a>
 
-## Weak Lensing Void Finder
+### Weak Lensing Void Finder
 
 <p class="project-role">M.Sc. Astrophysics thesis · LMU Munich · March 2023–August 2024</p>
 
@@ -160,15 +163,5 @@ I developed a watershed algorithm for detecting cosmic voids in full-sky converg
 **Supervisors:** Prof. Joseph Mohr and Dr. Chris Davies.
 
 [Thesis (PDF)]({{ '/files/watershed-voids-thesis.pdf' | relative_url }}) · [2D-Voids repository](https://github.com/xhvoid/2D-Voids)
-
-<a id="additional-independent-projects"></a>
-
-## Astrophotonics
-
-A conceptual Python study linking residual AO wavefront error, injection jitter and photonic-lantern mode count to fibre coupling, spectral signal-to-noise ratio and radial-velocity precision. It connects complex-field propagation and modal overlap to a synthetic spectroscopic measurement.
-
-**Methods:** Wave optics, coherent modal coupling, noise budgets and parameter studies.
-
-[Repository](https://github.com/xhvoid/Astrophotonics) · [Executed notebook](https://github.com/xhvoid/Astrophotonics/blob/main/notebooks/eso_astrophotonics_showcase.ipynb)
 
 [Education and laboratory experience]({{ '/experience/' | relative_url }}) · [CV]({{ '/cv/' | relative_url }})

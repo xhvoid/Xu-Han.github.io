@@ -47,62 +47,66 @@
       ]
     }
   ],
-  "core": [
-    {
-      "title": "Shack-Hartmann Wavefront Sensing & Adaptive Optics Simulation",
-      "url": "https://github.com/xhvoid/Shack-Hartmann-AO-Simulation",
-      "role": "Independent project",
-      "date": "Mar 2026 - Present",
-      "bullets": [
-        "Developed a modular Python SCAO framework connecting atmospheric turbulence, detector-level Shack-Hartmann sensing, calibrated reconstruction, deformable-mirror correction and delayed feedback.",
-        "Traced four faint spots in a simulated 42 m telescope image to waffle modes the sensor barely detects. Filtering those modes reduced their mean brightness from 10.8 to 0.91 times the local halo level.",
-        "Diagnosed a reconstruction failure associated with measurement dropout in a 2.2 m NGS model; stronger TSVD regularisation kept reconstruction usable throughout the matched two-second run.",
-        "Cross-checked selected optical components against HCIPy and analytic references; documented reproducible experiments, model limitations and an interactive explorer of recorded results."
-      ],
-      "links": [
-        [
-          "Interactive explorer",
-          "https://xhvoid.github.io/Shack-Hartmann-AO-Simulation/"
+  "project_sections": {
+    "Independent Projects": [
+      {
+        "title": "Shack-Hartmann Wavefront Sensing & Adaptive Optics Simulation",
+        "url": "https://github.com/xhvoid/Shack-Hartmann-AO-Simulation",
+        "role": "Independent project",
+        "date": "Mar 2026 - Present",
+        "bullets": [
+          "Developed a modular Python SCAO framework connecting atmospheric turbulence, detector-level Shack-Hartmann sensing, calibrated reconstruction, deformable-mirror correction and delayed feedback.",
+          "Traced four faint spots in a simulated 42 m telescope image to waffle modes the sensor barely detects. Filtering those modes reduced their mean brightness from 10.8 to 0.91 times the local halo level.",
+          "Diagnosed a reconstruction failure associated with measurement dropout in a 2.2 m NGS model; stronger TSVD regularisation kept reconstruction usable throughout the matched two-second run.",
+          "Cross-checked selected optical components against HCIPy and analytic references; documented reproducible experiments, model limitations and an interactive explorer of recorded results."
         ],
-        [
-          "Source code",
-          "https://github.com/xhvoid/Shack-Hartmann-AO-Simulation"
+        "links": [
+          [
+            "Interactive explorer",
+            "https://xhvoid.github.io/Shack-Hartmann-AO-Simulation/"
+          ],
+          [
+            "Source code",
+            "https://github.com/xhvoid/Shack-Hartmann-AO-Simulation"
+          ]
         ]
-      ]
-    },
-    {
-      "title": "Optical Reconstruction of ESO’s 100 m OWL Telescope",
-      "url": "https://xhvoid.github.io/Xu-Han.github.io/projects/elt-owl/",
-      "role": "Independent extension of a Zemax laboratory project",
-      "bullets": [
-        "Rebuilt the proposed OverWhelmingly Large Telescope from ESO’s Blue Book prescription. At 5 arcmin off axis, the RMS wavefront error was 1.472 µm, within 0.3% of ESO’s 1.476 µm.",
-        "At 3 arcmin, traced a 27-percentage-point discrepancy in ensquared energy to the focal surface. A spherical surface brought the model within 0.4 percentage points of ESO’s sampled curve."
-      ],
-      "date": "2026"
-    },
-    {
-      "title": "Weak Lensing Void Finder",
-      "url": "https://xhvoid.github.io/Xu-Han.github.io/files/watershed-voids-thesis.pdf",
-      "role": "Master's thesis | LMU Munich",
-      "date": "Mar 2023 - Aug 2024",
-      "supervisors": "Dr. Chris Davies and Prof. Joseph Mohr",
-      "bullets": [
-        "Developed a watershed void finder for 2D full-sky weak-lensing maps and tested its parameter sensitivity. Measured void abundance, effective radii, ellipticities and convergence profiles in DES Y3 data.",
-        "Trained Gaussian-process emulators (scikit-learn) on simulations of 2,500 cosmologies and used them with MCMC for parameter inference."
-      ]
-    },
-    {
-      "title": "Experimental Collisional Charging Apparatus",
-      "url": "https://xhvoid.github.io/Xu-Han.github.io/projects/#experimental-apparatus",
-      "role": "Bachelor's thesis | University of Duisburg-Essen",
-      "date": "Mar 2021 - Aug 2021",
-      "supervisors": "Prof. Gerhard Wurm and Dr. Felix Jungmann",
-      "bullets": [
-        "Designed the mechanical apparatus in CAD, fabricated components by 3D printing and assembled the setup; integrated and debugged electronic charge-measurement modules.",
-        "Conducted measurements and analysed grain-size dependence of collisional charging, testing a dust-collision growth hypothesis relevant to early planet formation."
-      ]
-    }
-  ],
+      },
+      {
+        "title": "Optical Reconstruction of ESO’s 100 m OWL Telescope",
+        "url": "https://xhvoid.github.io/Xu-Han.github.io/projects/elt-owl/",
+        "role": "Independent extension of a Zemax laboratory project",
+        "bullets": [
+          "Rebuilt the proposed OverWhelmingly Large Telescope from ESO’s Blue Book prescription. At 5 arcmin off axis, the RMS wavefront error was 1.472 µm, within 0.3% of ESO’s 1.476 µm.",
+          "At 3 arcmin, traced a 27-percentage-point discrepancy in ensquared energy to the focal surface. A spherical surface brought the model within 0.4 percentage points of ESO’s sampled curve."
+        ],
+        "date": "2026"
+      }
+    ],
+    "Degree Theses": [
+      {
+        "title": "Weak Lensing Void Finder",
+        "url": "https://xhvoid.github.io/Xu-Han.github.io/files/watershed-voids-thesis.pdf",
+        "role": "Master's thesis | LMU Munich",
+        "date": "Mar 2023 - Aug 2024",
+        "supervisors": "Dr. Chris Davies and Prof. Joseph Mohr",
+        "bullets": [
+          "Developed a watershed void finder for 2D full-sky weak-lensing maps and tested its parameter sensitivity. Measured void abundance, effective radii, ellipticities and convergence profiles in DES Y3 data.",
+          "Trained Gaussian-process emulators (scikit-learn) on simulations of 2,500 cosmologies and used them with MCMC for parameter inference."
+        ]
+      },
+      {
+        "title": "Experimental Collisional Charging Apparatus",
+        "url": "https://xhvoid.github.io/Xu-Han.github.io/projects/#experimental-apparatus",
+        "role": "Bachelor's thesis | University of Duisburg-Essen",
+        "date": "Mar 2021 - Aug 2021",
+        "supervisors": "Prof. Gerhard Wurm and Dr. Felix Jungmann",
+        "bullets": [
+          "Designed the mechanical apparatus in CAD, fabricated components by 3D printing and assembled the setup; integrated and debugged electronic charge-measurement modules.",
+          "Conducted measurements and analysed grain-size dependence of collisional charging, testing a dust-collision growth hypothesis relevant to early planet formation."
+        ]
+      }
+    ]
+  },
   "labs": [
     [
       "Astronomical instrumentation laboratory",
@@ -116,15 +120,6 @@
       "Observatory experience",
       "Took and processed images with my supervisor at Wendelstein (43 cm)."
     ]
-  ],
-  "additional": [
-    {
-      "title": "Astrophotonics",
-      "url": "https://github.com/xhvoid/Astrophotonics",
-      "bullets": [
-        "Modelled how AO wavefront error, injection jitter and photonic-lantern mode count affect fibre coupling, spectral SNR and radial-velocity precision."
-      ]
-    }
   ],
   "work": {
     "title": "Python Developer | BaryonBib",
