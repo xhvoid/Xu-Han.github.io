@@ -149,19 +149,54 @@ I designed and built an apparatus to investigate charging in granular materials.
 <a id="weak-lensing"></a>
 <a id="2d-voids"></a>
 
+<section aria-labelledby="weak-lensing-void-finder" markdown="1">
+
 ### Weak Lensing Void Finder
 
 <p class="project-role">M.Sc. Astrophysics thesis · LMU Munich · March 2023–August 2024</p>
 
 **Thesis:** *Watershed Cosmic Void Finder for Weak Gravitational Lensing Voids on 2D Full-Sky Convergence Maps.*
 
-I developed a watershed algorithm for detecting cosmic voids in full-sky convergence maps and worked with Dark Energy Survey Year 3 (DES Y3) weak-lensing maps.
+I built **2DWVF**, a watershed algorithm that finds voids in weak-lensing maps by tracing the basins around local minima. It lets me study how often voids occur at different sizes, what shapes they take, and how the lensing signal changes across them.
 
-- Implemented void detection and studied the influence of algorithm parameters on the recovered populations.
-- Characterised void abundance, effective radii, ellipticities and convergence profiles.
+#### Where it’s useful
+
+- Mapping and comparing voids in simulated weak-lensing maps.
+- Testing how noise and smoothing change which voids the algorithm finds.
+- Exploring which void statistics might help constrain cosmology.
+
+#### Void sizes and shapes in simulations
+
+<div class="project-figure-pair">
+  <figure class="project-case-figure">
+    <img src="{{ '/images/projects/takahashi-void-size-fig20.png' | relative_url }}" width="586" height="457" loading="lazy" decoding="async" alt="Void abundance versus effective radius for five Takahashi source redshifts, with peaks near 0.4 degrees">
+    <figcaption>In the Takahashi simulations, void abundance peaks at an effective radius of about 0.4° across five source redshifts.</figcaption>
+  </figure>
+  <figure class="project-case-figure">
+    <img src="{{ '/images/projects/takahashi-void-ellipticity-fig23.png' | relative_url }}" width="582" height="453" loading="lazy" decoding="async" alt="Void ellipticity distributions for the same five Takahashi source redshifts, with peaks near 0.35">
+    <figcaption>The void ellipticity distribution peaks near 0.35 across all five source redshifts in the Takahashi simulations.</figcaption>
+  </figure>
+</div>
+
+#### What the DES survey mask changes
+
+In **DES Year 3** maps, I kept voids with at most **10% masked pixels**, leaving about 1,600 per redshift bin. This cut removed unusually large candidates spanning gaps in survey coverage. How much error remains in the retained voids’ sizes, shapes, and boundaries is still unquantified.
+
+<figure class="project-case-figure">
+  <img src="{{ '/images/projects/des-y3-voids-before-after.png' | relative_url }}" width="1269" height="807" loading="lazy" decoding="async" alt="The same DES Year 3 field before and after filtering, with large void boundaries crossing coverage gaps visible on the left only">
+  <figcaption>Void boundaries in the same DES Y3 field before filtering (left) and after excluding voids with more than 10% masked pixels (right).</figcaption>
+</figure>
+
+The gaps also matter earlier. Kaiser–Squires reconstructs the mass map from shear measurements across the field, so missing measurements can affect reconstructed values outside the mask. The finder itself is sensitive to noise, which can split one basin into several detections, while stronger smoothing can erase small voids. [DES Y3 mass map reconstruction](https://arxiv.org/html/2105.13539#S5.SS1)
+
+#### DES observations and parameter forecasts
+
+The **DES results** describe voids found in the survey maps. The **parameter constraints** are a separate forecast based on CosmoGridV1 simulations, using the emulator’s prediction at a reference cosmology as mock data.
 
 **Supervisors:** Prof. Joseph Mohr and Dr. Chris Davies.
 
 [Thesis (PDF)]({{ '/files/watershed-voids-thesis.pdf' | relative_url }}) · [2D-Voids repository](https://github.com/xhvoid/2D-Voids)
+
+</section>
 
 [Education and laboratory experience]({{ '/experience/' | relative_url }}) · [CV]({{ '/cv/' | relative_url }})
