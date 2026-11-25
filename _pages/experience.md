@@ -62,7 +62,7 @@ Completed experiments included:
 
 - **Scientific CCD imaging:** Imaging principles, image acquisition and subsequent data reduction.
 - **Optical interferometry:** Interferometric measurements.
-- **Adaptive optics:** [Wavefront measurements and correction on the ALPAO bench]({{ '/projects/#lmu-ao-lab' | relative_url }}) with a deformable mirror and a Shack–Hartmann sensor.
+- **Adaptive optics (elective laboratory experiment):** [Wavefront measurements and correction on the ALPAO bench]({{ '/projects/#lmu-ao-lab' | relative_url }}) with a deformable mirror and a Shack–Hartmann sensor. We applied individual Zernike modes and studied static and dynamic closed-loop correction with an artificial turbulence screen.
 - **Radio astronomy:** Measurements of Galactic rotation.
 
 My supervisor and I observed with the **43 cm telescope** at **Wendelstein Observatory** and processed the images.

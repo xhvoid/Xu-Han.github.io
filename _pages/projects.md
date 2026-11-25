@@ -16,10 +16,19 @@ My projects range from telescope optics and adaptive optics simulations to an ex
   <a href="#weak-lensing">Weak lensing</a>
 </nav>
 
-## Laboratory Adaptive Optics — LMU Munich, 2022
+## Independent Projects
+
+<a id="adaptive-optics"></a>
+<a id="adaptive-optics--basics"></a>
+
+### Shack-Hartmann Wavefront Sensing & Adaptive Optics Simulation
+
+<p class="project-role">Independent engineering project · March 2026–present · Ongoing development</p>
+
+#### Laboratory background at LMU Munich
 {: #lmu-ao-lab}
 
-In July 2022, I worked with an ALPAO bench in the Instrumental Astrophysics Laboratory at LMU Munich. We applied individual Zernike modes with the deformable mirror and measured the wavefront with a Shack–Hartmann sensor. We studied static correction, then introduced an artificial turbulence screen to investigate dynamic correction. We followed the wavefront error and Strehl ratio and examined the point-spread function (PSF) on the science camera.
+My first hands-on experience with adaptive optics was an elective experiment in the Instrumental Astrophysics Laboratory at LMU Munich in July 2022. On the ALPAO bench, we applied individual Zernike modes with the deformable mirror and measured the wavefront with a Shack–Hartmann sensor. We studied static correction, then introduced an artificial turbulence screen to investigate dynamic correction. We followed the wavefront error and Strehl ratio and examined the point-spread function (PSF) on the science camera.
 
 <p class="project-role">Laboratory supervisor · Dr. Frank Grupp, USM / LMU Munich</p>
 
@@ -35,18 +44,13 @@ In July 2022, I worked with an ALPAO bench in the Instrumental Astrophysics Labo
   </figure>
 </details>
 
-## Independent Projects
+#### From lecture notes to a wavefront sensor
 
-<a id="adaptive-optics"></a>
-<a id="adaptive-optics--basics"></a>
+In early 2026 I wanted to understand how to recover a wavefront from a set of spot measurements. My Photonics programme had no dedicated AO course, so I worked through UC Santa Cruz lecture notes, papers and textbooks on my own. In my astrophysics labs at LMU, we had used Jupyter notebooks to model and analyse measurements. I took the same approach here. I wrote a geometric Shack–Hartmann model, sampled a known wavefront across the lenslets and compared the reconstruction with the input.
 
-### Shack-Hartmann Wavefront Sensing & Adaptive Optics Simulation
+As I extended the model to detector pixels and a closed loop, I used AI tools to find papers, discuss how to test an idea, and write and debug code. Looking at the mirror commands and science images often gave me the next question to investigate.
 
-<p class="project-role">Independent project · March 2026–present · Ongoing development</p>
-
-The LMU bench was my first hands-on experience with adaptive optics. In 2026 I started a Python model so I could follow the correction from a shift in a detector spot to the next mirror command. I propagate light through a Shack–Hartmann lenslet array and measure spot centroids in the presence of photon noise and detector read noise. In the 2.2 m case, I reconstruct the correction using a truncated singular value decomposition (TSVD) of the calibrated interaction matrix. The 42 m replay uses damped least squares.
-
-I varied gain, delay and detector noise, then measured the residual wavefront error, Strehl and encircled energy. In a layered atmosphere I also examined how well the on-axis correction worked for a science target farther from the guide star. The Explorer replays the recorded wavefronts and science images. I compared selected optical calculations with analytic solutions and HCIPy.
+The model now propagates each lenslet spot to detector pixels and measures its centroid with photon and read noise. The 2.2 m loop uses a truncated singular value decomposition (TSVD) of the calibrated interaction matrix to turn those measurements into mirror commands. The 42 m replay uses damped least squares. I compared selected optical calculations with analytic solutions and HCIPy.
 
 <nav class="portfolio-jump" aria-label="AO project links">
   <a href="https://xhvoid.github.io/Shack-Hartmann-AO-Simulation/">Interactive explorer</a>
@@ -57,9 +61,9 @@ I varied gain, delay and detector noise, then measured the residual wavefront er
 
 #### Where did the four spots in the 42 m image come from?
 
-Four faint spots in my simulated 42 m telescope image lay 0.45 arcseconds from the star along each axis. At 2.2 µm, a checkerboard pattern on a mirror with actuators spaced 0.5 m apart would send light to those positions. The simulated wavefront sensor registered this *waffle* pattern only weakly.
+I noticed four faint spots on the diagonals of the simulated 42 m image. Each was offset from the star by 0.45 arcseconds in both coordinates. Their spacing made me ask whether a pattern on the mirror could account for them. At 2.2 µm, a checkerboard pattern on a mirror with actuators spaced 0.5 m apart would send light to those positions. The simulated wavefront sensor registered this *waffle* pattern only weakly.
 
-I filtered 96 checkerboard modes out of the mirror updates. On a replay of the same atmosphere, the average light at the four positions fell from 10.8 to 0.91 times the surrounding halo. I fixed the cutoff before testing three more realizations of the same system. All three met the image-quality and loop-operation criteria I had set in advance.
+To test that explanation, I filtered 96 checkerboard modes out of each mirror update. On a replay of the same atmosphere, the average light at the four positions fell from 10.8 to 0.91 times the surrounding halo. I fixed the cutoff before testing three more realizations of the same system. All three met the image-quality and loop-operation criteria I had set in advance.
 
 <figure class="project-case-figure">
   <img src="{{ '/images/projects/waffle-42m-fields.png' | relative_url }}"
@@ -75,11 +79,15 @@ I filtered 96 checkerboard modes out of the mirror updates. On a replay of the s
 
 #### Keeping the 2.2 m loop locked
 
-In a 2.2 m simulation, rejected spot measurements drove the mirror to larger commands until reconstruction stopped at 0.981 s. I raised the reconstruction cutoff and replayed the same atmosphere. The revised loop reconstructed all 1,500 frames, and the mirror stayed within its stroke limits. [See the two loop traces.](https://xhvoid.github.io/Shack-Hartmann-AO-Simulation/#ngs22)
+I noticed the mirror commands growing before the 2.2 m loop lost lock at 0.981 s. Why did losing spots produce larger corrections? With fewer valid slope rows, the inverse amplified weakly sensed modes. I raised the relative TSVD cutoff from 0.001 to 0.05, applied it to the available rows and replayed the same atmosphere with the same calibration. The revised loop reconstructed all 1,500 frames, and the mirror stayed within its stroke limits. [See the two loop traces.](https://xhvoid.github.io/Shack-Hartmann-AO-Simulation/#ngs22)
+
+#### Performance studies and model extensions
+
+I varied gain, reconstruction cutoff, delay and detector noise to see how they affected spot acceptance, residual wavefront error, Strehl and encircled energy. With layered turbulence I also examined how well the guide-star correction held up for an off-axis science target.
 
 In a separate [42 m gain comparison](https://xhvoid.github.io/Shack-Hartmann-AO-Simulation/#gain42), lower gain softened a late residual excursion, while higher gain gave the sharper image over the full exposure.
 
-For the separate multi-conjugate AO study, I used a frequency-domain model. I added a high-frequency fitting term to the TIPTOP/P3 residual spectrum and calculated the long-exposure PSF with MASTSEL.
+To study the long-exposure PSF in multi-conjugate AO, I used a separate frequency-domain model. It adds a high-frequency fitting term to the TIPTOP/P3 residual spectrum and calculates the long-exposure PSF with MASTSEL.
 
 <section class="project-evidence" aria-labelledby="ao-explorer-preview">
   <h4 id="ao-explorer-preview">AO correction in motion</h4>
@@ -98,7 +106,7 @@ For the separate multi-conjugate AO study, I used a frequency-domain model. I ad
     </figure>
     <div class="ao-preview-more">
       <h5>Explore the full experiment</h5>
-      <p>Replay the wavefronts and images, compare recorded cases, and inspect performance curves, methods and model limitations in the interactive explorer.</p>
+      <p>I built the Explorer to compare the wavefront, mirror response and science image at the same instant. You can replay a run, inspect its performance curves and read how the model was set up.</p>
       <div class="portfolio-actions">
         <a class="btn btn--primary" href="https://xhvoid.github.io/Shack-Hartmann-AO-Simulation/#galaxy-panel">Open AO Explorer</a>
       </div>
