@@ -52,9 +52,9 @@ Foundation in electronics, signals and systems, control systems and embedded sys
 
 ### Photonics laboratory
 
-I worked with avalanche photodiodes (APDs), measured laser spectra and carried out experiments in nonlinear optics and laser interferometry. The fibre experiments covered coupling, fibre Bragg gratings, polarisation and optical time-domain reflectometry (OTDR).
+**Micro and Fiber Optics** — Avalanche photodiodes (APDs) and photon statistics, laser spectrum measurement, laser interferometry, fibre coupling, fibre Bragg grating fabrication and characterisation, laser polarisation, and optical time-domain reflectometry (OTDR).
 
-In the ultrashort-pulse lab I studied pulse shaping and the Fourier limit on pulse duration, using autocorrelation to characterise the pulses. In a separate experiment I measured the beam quality factor M² to compare laser beam propagation with the diffraction limit.
+**Laser Physics** — Pulse autocorrelation, beam quality (M²) measurement and nonlinear optics.
 
 ### Astronomical instrumentation laboratory
 
@@ -62,20 +62,12 @@ Completed experiments included:
 
 - **Scientific CCD imaging:** Imaging principles, image acquisition and subsequent data reduction.
 - **Optical interferometry:** Interferometric measurements.
-- **Adaptive optics (elective laboratory experiment):** [Wavefront measurements and correction on the ALPAO bench]({{ '/projects/#lmu-ao-lab' | relative_url }}) with a deformable mirror and a Shack–Hartmann sensor. We applied individual Zernike modes and studied static and dynamic closed-loop correction with an artificial turbulence screen.
+- [Adaptive optics]({{ '/projects/#lmu-ao-lab' | relative_url }})
 - **Radio astronomy:** Measurements of Galactic rotation.
 
-My supervisor and I observed with the **43 cm telescope** at **Wendelstein Observatory** and processed the images.
+I observed with the **43 cm telescope** at **Wendelstein Observatory** and processed the images.
 
 [Astronomical photography gallery]({{ '/hobbies/astronomical-photography/' | relative_url }})
-
-## Professional experience
-
-### Python Developer — BaryonBib
-
-**December 2024–January 2025 · MAX!mize start-up team, MPA, Garching**
-
-Contributed to a centralised bibliography platform in Python, including implementation and testing of LLM-based functionality.
 
 ## Talks, workshops and schools
 

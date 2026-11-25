@@ -28,7 +28,7 @@ My projects range from telescope optics and adaptive optics simulations to an ex
 #### Laboratory background at LMU Munich
 {: #lmu-ao-lab}
 
-My first hands-on experience with adaptive optics was an elective experiment in the Instrumental Astrophysics Laboratory at LMU Munich in July 2022. On the ALPAO bench, we applied individual Zernike modes with the deformable mirror and measured the wavefront with a Shack–Hartmann sensor. We studied static correction, then introduced an artificial turbulence screen to investigate dynamic correction. We followed the wavefront error and Strehl ratio and examined the point-spread function (PSF) on the science camera.
+My first hands-on experience with adaptive optics was an experiment in the Instrumental Laboratory at LMU Munich in 2022. On the ALPAO bench, we applied individual Zernike modes with the deformable mirror and measured the wavefront with a Shack–Hartmann sensor. We studied static correction, then introduced an artificial turbulence screen to investigate dynamic correction. We followed the wavefront error and Strehl ratio and examined the PSF on the science camera.
 
 <p class="project-role">Laboratory supervisor · Dr. Frank Grupp, USM / LMU Munich</p>
 
@@ -46,48 +46,17 @@ My first hands-on experience with adaptive optics was an elective experiment in 
 
 #### From lecture notes to a wavefront sensor
 
-In early 2026 I wanted to understand how to recover a wavefront from a set of spot measurements. My Photonics programme had no dedicated AO course, so I worked through UC Santa Cruz lecture notes, papers and textbooks on my own. In my astrophysics labs at LMU, we had used Jupyter notebooks to model and analyse measurements. I took the same approach here. I wrote a geometric Shack–Hartmann model, sampled a known wavefront across the lenslets and compared the reconstruction with the input.
+In early 2026 I wanted to understand how to recover a wavefront from a set of spot measurements. My Photonics programme had no dedicated AO course, so I worked through public lecture notes, papers and textbooks on my own. At LMU I had used Jupyter notebooks in labs on exoplanets, weak lensing and Lyman-alpha. I took the same approach here. I wrote a geometric Shack–Hartmann model, sampled a known wavefront across the lenslets and compared the reconstruction with the input.
 
-As I extended the model to detector pixels and a closed loop, I used AI tools to find papers, discuss how to test an idea, and write and debug code. Looking at the mirror commands and science images often gave me the next question to investigate.
+As I extended the model to detector pixels and a closed loop, I used LLMs to find papers, discuss how to test an idea, and write and debug code.
 
-The model now propagates each lenslet spot to detector pixels and measures its centroid with photon and read noise. The 2.2 m loop uses a truncated singular value decomposition (TSVD) of the calibrated interaction matrix to turn those measurements into mirror commands. The 42 m replay uses damped least squares. I compared selected optical calculations with analytic solutions and HCIPy.
+The model measures spot centroids with photon and read noise and uses them to calculate mirror commands. I compared selected optical calculations with analytic solutions and HCIPy.
 
 <nav class="portfolio-jump" aria-label="AO project links">
   <a href="https://xhvoid.github.io/Shack-Hartmann-AO-Simulation/">Interactive explorer</a>
   <a href="https://github.com/xhvoid/Shack-Hartmann-AO-Simulation">Source code</a>
   <a href="https://github.com/xhvoid/Shack-Hartmann-AO-Simulation/blob/main/docs/design-decisions.md">Design decisions</a>
-  <a href="https://xhvoid.github.io/Shack-Hartmann-AO-Simulation/#ngs22">Loss-of-lock case study</a>
 </nav>
-
-#### Where did the four spots in the 42 m image come from?
-
-I noticed four faint spots on the diagonals of the simulated 42 m image. Each was offset from the star by 0.45 arcseconds in both coordinates. Their spacing made me ask whether a pattern on the mirror could account for them. At 2.2 µm, a checkerboard pattern on a mirror with actuators spaced 0.5 m apart would send light to those positions. The simulated wavefront sensor registered this *waffle* pattern only weakly.
-
-To test that explanation, I filtered 96 checkerboard modes out of each mirror update. On a replay of the same atmosphere, the average light at the four positions fell from 10.8 to 0.91 times the surrounding halo. I fixed the cutoff before testing three more realizations of the same system. All three met the image-quality and loop-operation criteria I had set in advance.
-
-<figure class="project-case-figure">
-  <img src="{{ '/images/projects/waffle-42m-fields.png' | relative_url }}"
-       width="1400" height="650" loading="lazy" decoding="async"
-       alt="Four circled diagonal spots are visible around the simulated star on the left. At the same positions on the right, no distinct spots stand out.">
-  <figcaption>Before filtering (left) and after filtering (right). Both mean images show the same simulated atmosphere at 2.2 µm on a shared logarithmic scale. Peak Strehl rose from 0.754 to 0.767.
-    <a href="{{ '/images/projects/waffle-42m-corner-spots.png' | relative_url }}">Enlarge the figure with upper-right corner views.</a>
-    The zooms share a narrower intensity range. The ratios beneath them give the average light in all four marked regions relative to the halo at the same distance from the star.
-  </figcaption>
-</figure>
-
-[See the spot positions, filter comparison and held-out results in AO Explorer →](https://xhvoid.github.io/Shack-Hartmann-AO-Simulation/#waffle42)
-
-#### Keeping the 2.2 m loop locked
-
-I noticed the mirror commands growing before the 2.2 m loop lost lock at 0.981 s. Why did losing spots produce larger corrections? With fewer valid slope rows, the inverse amplified weakly sensed modes. I raised the relative TSVD cutoff from 0.001 to 0.05, applied it to the available rows and replayed the same atmosphere with the same calibration. The revised loop reconstructed all 1,500 frames, and the mirror stayed within its stroke limits. [See the two loop traces.](https://xhvoid.github.io/Shack-Hartmann-AO-Simulation/#ngs22)
-
-#### Performance studies and model extensions
-
-I varied gain, reconstruction cutoff, delay and detector noise to see how they affected spot acceptance, residual wavefront error, Strehl and encircled energy. With layered turbulence I also examined how well the guide-star correction held up for an off-axis science target.
-
-In a separate [42 m gain comparison](https://xhvoid.github.io/Shack-Hartmann-AO-Simulation/#gain42), lower gain softened a late residual excursion, while higher gain gave the sharper image over the full exposure.
-
-To study the long-exposure PSF in multi-conjugate AO, I used a separate frequency-domain model. It adds a high-frequency fitting term to the TIPTOP/P3 residual spectrum and calculates the long-exposure PSF with MASTSEL.
 
 <section class="project-evidence" aria-labelledby="ao-explorer-preview">
   <h4 id="ao-explorer-preview">AO correction in motion</h4>

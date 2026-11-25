@@ -21,16 +21,14 @@ I am a Photonics M.Sc. student at Hochschule München and an Astrophysics gradua
   <a class="btn" href="mailto:xuhanphysik@gmail.com">Email</a>
 </div>
 
-Rebuilding ESO's 100 m OWL design in Zemax from its published prescription, I matched the 5′ wavefront error to the ESO value to 0.3%. At 3′, changing the focal surface from a hyperboloid to a sphere brought the ensquared-energy curve within 0.4 percentage points of the published curve.
-
 ## Selected research and engineering work
 
 <div class="portfolio-highlights">
   <article class="portfolio-highlight portfolio-highlight--featured">
     <span class="portfolio-kicker">Featured · Current independent project</span>
     <h3><a href="{{ '/projects/#adaptive-optics' | relative_url }}">Wavefront sensing &amp; AO</a></h3>
-    <p>When my 2.2 m AO model lost lock at 0.981 s, I traced the growing mirror commands to weakly sensed modes. I raised the reconstruction cutoff and replayed the same two-second atmosphere. The loop held lock for all 1,500 frames.</p>
-    <a class="btn" href="https://xhvoid.github.io/Shack-Hartmann-AO-Simulation/#ngs22">Explore the loss-of-lock case</a>
+    <p>I model how a Shack–Hartmann sensor measures a distorted wavefront and how a deformable mirror corrects it. I use the simulation to study how detector noise and feedback delay affect the final image.</p>
+    <a class="btn" href="https://xhvoid.github.io/Shack-Hartmann-AO-Simulation/">Open AO Explorer</a>
   </article>
   <article class="portfolio-highlight">
     <span class="portfolio-kicker">Physics bachelor's thesis</span>
@@ -46,13 +44,13 @@ Rebuilding ESO's 100 m OWL design in Zemax from its published prescription, I ma
 
 [Explore the projects and supporting work]({{ '/projects/' | relative_url }})
 
-## From measurements to astronomical instruments
+<a id="from-measurements-to-astronomical-instruments"></a>
 
-I was interested in observing the night sky long before my Astrophysics Master's. After studying electrical engineering and automation, I built a charge-measurement apparatus for my physics thesis, from CAD drawings and 3D-printed parts to the electronic readout. At LMU my research focused on weak-lensing cosmology. I developed a void finder for DES Y3 convergence maps and followed the analysis from simulation to posterior.
+## My roadmap in Astronomy
 
-During the same degree, I worked with an [adaptive optics bench]({{ '/projects/#lmu-ao-lab' | relative_url }}) and studied telescope optics in an [advanced seminar]({{ '/experience/#telescope-optics-seminar' | relative_url }}). Working with the lensing maps made me think about how the instrument's point-spread function and calibration shape what we can infer from its data. After graduating from LMU, I decided to pursue astronomical instrumentation professionally. I chose the Photonics MSc at Hochschule München to study optical design and laser physics and spend more time making optical measurements in the lab.
+During my bachelor thesis, I built a charge-measurement experiment setup, from CAD drawings and 3D-printed parts to the electronic readout, the aim was to investigate the granulate growth in planet formation. At LMU my research focused on large scale structure and cosmology. I developed a void finder algorithm for 2D full-sky weak-lensing maps and followed the analysis from simulation to posterior.
 
-**I am looking for work on ELT-generation instruments, particularly wavefront sensing and control, optical performance, and the integration and testing of optical systems.**
+My instrumental lab work at LMU covered various techniques of astronomical observation. I also studied large telescope systems in an advanced seminar. I chose the Photonics MSc at Hochschule München for systematic training in optics and photonics, also for more hands-on experience in the lab.&#x20;
 
 ## Hobbies
 
